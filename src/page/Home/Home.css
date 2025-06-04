@@ -1,28 +1,24 @@
-.container-home{
-   margin-bottom: 260px;
-  
-   
-    
-
+.container-home {
+    margin-bottom: 260px;
 }
 
 .container-dashboard {
     max-width: 1800px;
     margin: 0 auto;
-   
+
 }
 
 .salir {
     cursor: pointer;
     font-size: 1.3em;
-    
+
 }
 
 .section-informacion {
     margin-left: 30%;
     padding: 1px 16px;
     height: 100%;
-   
+
 }
 
 .submenu-vertical-dashboard {
@@ -31,7 +27,7 @@
     padding: 10px;
     width: 25%;
     position: fixed;
-   
+
     overflow: auto;
 }
 
@@ -48,7 +44,7 @@
     display: block;
     padding: 8px 16px;
     text-decoration: none;
-    
+
 }
 
 .submenu-vertical-dashboard li a.active {
@@ -82,47 +78,50 @@
     box-sizing: border-box;
 }
 
-.marcos:hover{
+.marcos:hover {
     transition: all 1s;
     box-shadow: 10px 10px #FDFAF6;
 }
 
-.fondo-negro{
-    background-color: #555;
+.fondo-negro {
+    background-color: #FBDB93;
+    color: #555;
 }
-.fondo-blanco{
+
+.fondo-blanco {
     background-color: #04AA6D;
     color: #F5F5F5;
 }
 
-.link-cliente{
+.link-cliente {
     text-decoration: none;
-    color: #F5F5F5;
+
 }
 
 
 /*calculador*/
-.calculadora{
+.calculadora {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
 }
-.inputs{
+
+.inputs {
     border: 1px solid black;
     background-color: #FDFAF6;
     padding: 5px;
     color: #555;
     width: 50%;
     margin: 10px auto;
-    
+
 }
 
-.btn-calcular{
+.btn-calcular {
     border: 1px solid black;
     width: 50%;
     margin: 10px auto;
-    padding: 5px;   
+    padding: 5px;
 }
 
 /*salir de calculadora*/

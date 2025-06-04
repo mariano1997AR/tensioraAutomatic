@@ -95,8 +95,8 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                 {/* Aparece en dispositivos pero no en pc (solo a partir de 1060px) */}
                 {/* dividirlo en componentes en NavbarResponsive */}
                 <ul className="nav-links-responsive-aparece desaparece-PC ">
-                    <li className="li-responsive" style={{ background: theme === "dark" ? '#243642' : '#60B5FF', border: theme === "dark" ? '#F2F4F7' : '#ffff' }}><Link className="link-responsives " style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to='/iniciar-sesion'>Ingresar</Link></li>
-                    <li className="li-responsive" style={{ background: theme === "dark" ? '#243642' : '#60B5FF', border: theme === "dark" ? '#F2F4F7' : '#ffff' }}><Link className="link-responsives" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to='/agendar'>Agendar Cita</Link></li>
+                    <li className="li-responsive" style={{ background: theme === "dark" ? '#FCEF91' : '#60B5FF', border: theme === "dark" ? '#F2F4F7' : '#ffff' }}><Link className="link-responsives " style={{ color: theme === "dark" ? '#222831' : '#4A4947' }} to='/iniciar-sesion'>Ingresar</Link></li>
+                    <li className="li-responsive" style={{ background: theme === "dark" ? '#FCEF91' : '#60B5FF', border: theme === "dark" ? '#F2F4F7' : '#ffff' }}><Link className="link-responsives" style={{ color: theme === "dark" ? '#222831' : '#4A4947' }} to='/agendar'>Agendar Cita</Link></li>
                     <li className="switch "><ThemeSwitcher /></li>
                 </ul>
 

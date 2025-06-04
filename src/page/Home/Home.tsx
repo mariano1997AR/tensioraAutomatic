@@ -272,18 +272,18 @@ export const Home: React.FC = () => {
                 <section className='container-dashboard-responsive desaparecer-pc'>
                     {/* cada enlace va a llegar a funcionalidades */}
                     <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/clientes'>CLIENTES</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/sueldos'>SUELDOS</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/liquidaciones'>LIQUIDACIONES</Link>
+                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/calcularVoltajes'>VOLTAJES</Link>
+                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-en-paralelo'>CIRCUITO EN PARALELO</Link>
+                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-en-serie'>CIRCUITO EN SERIE</Link>
 
                     </section >
                     <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/reportes'>REPORTES</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/facturacion'>FACTURACIÓN</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/informacion'>INFORMACIÓN</Link>
+                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/reportes'>POTENCIA CON RESISTENCIA</Link>
+                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/facturacion'>CORRIENTE EN MONOFASICO</Link>
+                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/informacion'>CORRIENTE EN TRIFASICO</Link>
                     </section>
                     <section className="d-flex mb-2">
-                        <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >IA </article>
+                        <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos  ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >IA </article>
                         <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >Calculadora</article>
                         <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >ATENCIÓN AL CLIENTE</article>
                     </section>

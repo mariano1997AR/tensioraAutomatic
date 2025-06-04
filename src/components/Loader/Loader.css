@@ -17,7 +17,7 @@
   /* Estilo del loader */
   .loader {
     border: 8px solid #f3f3f3; /* Color de fondo del círculo */
-    border-top: 8px solid #FF885B; /* Color de la parte superior del círculo */
+    border-top: 8px solid #FCEF91; /* Color de la parte superior del círculo */
     border-radius: 50%;
     width:150px;
     height: 150px;
