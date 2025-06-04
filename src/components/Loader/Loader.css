@@ -1,0 +1,31 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgba(255, 255, 255, 0.7);  Fondo semitransparente */
+    z-index: 9999; /* Asegura que el loader esté encima de otros elementos */
+    background-image: url("../../assets/img/loader-mejorado.png");
+  }
+  
+  /* Estilo del loader */
+  .loader {
+    border: 8px solid #f3f3f3; /* Color de fondo del círculo */
+    border-top: 8px solid #FF885B; /* Color de la parte superior del círculo */
+    border-radius: 50%;
+    width:150px;
+    height: 150px;
+    animation: spin 1.5s linear infinite;
+    background-image: url('../../assets/img/apoloONELOGO.png');
+    background-size: contain;
+  }
+  
+  /* Animación para el giro del loader */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

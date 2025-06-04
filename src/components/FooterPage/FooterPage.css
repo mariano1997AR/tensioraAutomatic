@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.container-footer {
+    width: 100%;
+    height: auto;
+   
+   
+}
+
+.columna-container {
+    display: flex;
+    gap: 20px;
+    
+    /* Espacio entre columnas */
+}
+
+.columna-redes-sociales {
+    flex: 1;
+    text-align: center;
+
+}
+
+.columna-redes-sociales ul {
+    /* border: 1px solid black;*/
+    margin-top: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.columna-redes-sociales ul li {
+    /* border: 1px solid black;*/
+    padding: 10px;
+    /* color: #F5F5F5;*/
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.subtitulo-footer {
+    font-size: 1.9vh;
+}
+
+.columna-redes-sociales ul li a:hover {
+    transition: all 5ms;
+    /*background-color: #F5F5F5;*/
+    border-bottom: 1px solid #18230F;
+    /*color: #1D1616;*/
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+.top-line-copy {
+    margin-top: 20px;
+    border-top: 1px solid #18230F;
+
+}
+
+.submenu-enterprise-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+.submenu-enterprise-footer li a:hover {
+    transition: all .9s;
+    border-bottom: 1px solid #18230F;
+}
+
+.naranja {
+    color: #DF6D14;
+}
+
+.ar {
+    color: #60B5FF;
+}
+
+.icons {
+    font-size: 3.5vh;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.container-footer-dispositivos {
+    display: none;
+}
+
+
+@media (max-width: 1060px) {
+    .container-footer-pc {
+        display: none;
+    }
+
+    .container-footer-dispositivos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .submenu-footer-dispositivo li {
+
+        padding: 10px;
+        margin-left: -30px;
+
+
+
+
+    }
+
+    .submenu-footer-dispositivo li:hover {
+        transition: all 1s;
+        border-radius: 50px;
+        background-color: #60B5FF;
+        cursor: pointer;
+
+    }
+
+    .submenu-footer-dispositivo li a {
+        text-decoration: none;
+        cursor: none;
+    }
+
+    .logo-dispositivo {
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .container-footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .copyright-dispositivo {
+        border-top: 1px solid black;
+        padding: 70px;
+    }
+
+    .copyright-logo-act {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+}

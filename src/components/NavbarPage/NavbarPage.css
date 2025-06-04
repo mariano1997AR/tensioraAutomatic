@@ -1,0 +1,150 @@
+
+.menu-links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-links li{
+    
+    margin-top: -30px;
+    margin-left: 10px;
+    list-style: none;
+    text-align: center;
+}
+.menu-links  .a{
+    list-style: none;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.menu-links  .a:hover{
+
+    border-bottom: 2px solid #60B5FF;
+}
+
+.item-link-menu{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    margin-top: 20px;
+    text-decoration: none;
+}
+.logo .a{
+    text-decoration: none;
+    font-size: 1.3em;
+  
+}
+.logo-header{
+    color: #222831;
+}
+.azul{
+    color: #60B5FF;
+}
+
+.switch{
+   margin-left: 30px;
+   margin-right: 50px;
+}
+
+.navbar-container{
+    padding: 20px;
+    border-bottom: 1px solid #222831;
+    max-width: 1800px;
+    margin: 0 auto;
+  
+}
+
+.ancho{
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: center;
+}
+.link{
+    margin-top: 20px;
+    text-align: center;
+}
+.link-submenu{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.link-externo a{
+    
+    color: #DF6D14;
+    text-decoration: none;
+}
+
+.image-logo{
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+}
+.bordes{
+
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #60B5FF;
+    font-weight: bold;
+}
+
+.bordes:hover{
+    transition: all 1s;
+    font-size: 1.1em;
+}
+.aparece-PC{
+    display: flex;
+}
+.nav-links-responsive-aparece{
+    display: none;
+}
+
+@media (max-width: 1060px) {
+    .logo {
+        text-align: center;
+        margin-bottom: 50px;
+
+        display: flex;
+        justify-content: center;
+    }
+ 
+
+    .desaparece-dispositivo{
+        display: none;
+    }
+    .nav-links-responsive-aparece{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+       
+       
+    }
+
+    .nav-links-responsive-aparece li{
+       
+        padding-top: 10px;
+        padding-bottom: 10px; 
+        margin-top: 10px;
+    }
+
+    .nav-links-responsive-aparece .li-responsive:hover{
+        transition: all 1s;
+        padding-left: 50px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }
+    .link-responsives{
+       text-decoration: none;
+    }
+ 
+ 
+    .switch{
+       margin: 0 auto;
+    }
+
+
+ 
+    
+}
