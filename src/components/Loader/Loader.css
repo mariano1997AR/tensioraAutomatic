@@ -9,7 +9,9 @@
     align-items: center;
     /*background-color: rgba(255, 255, 255, 0.7);  Fondo semitransparente */
     z-index: 9999; /* Asegura que el loader esté encima de otros elementos */
-    background-image: url("../../assets/img/loader-mejorado.png");
+    background-image: url("../../assets/loader/fondos-loader.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   /* Estilo del loader */
@@ -20,7 +22,7 @@
     width:150px;
     height: 150px;
     animation: spin 1.5s linear infinite;
-    background-image: url('../../assets/img/apoloONELOGO.png');
+    background-image: url('../../assets/loader/logo-basico-tensiora.png');
     background-size: contain;
   }
   
