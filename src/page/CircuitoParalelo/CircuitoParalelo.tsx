@@ -54,7 +54,7 @@ export const CircuitoParalelo: React.FC = () => {
                 <BtnAtras />
                 <article className='py-2'>
                     <h3 className='text-center'>Circuitos</h3>
-                    <p className='text-2xl'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.
+                    <p className='text-2xl mx-2'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.
                         En serie, la corriente sigue un único camino a través de todos los componentes, mientras
                         que el voltaje se divide entre ellos. En paralelo, la corriente se divide entre los componentes, pero todos
                         tienen el mismo voltaje.
@@ -62,14 +62,14 @@ export const CircuitoParalelo: React.FC = () => {
                     </p>
                 </article>
                 <article className='py-2'>
-                    <h3>Circuitos en Paralelo:</h3>
-                    <ul>
+                    <h3 className='mx-2'>Circuitos en Paralelo:</h3>
+                    <ul className='text-2xl'>
                         <li> - <b>Corriente: </b> La corriente total se divide entre los componentes, y la corriente</li>
                         <li> - <b>Voltaje:</b> Todos los componentes tienen el mismo voltaje </li>
                         <li> - <b>Resistencia: </b> La resistencia total es menor que la resistencia de cualquier componente individual.</li>
                     </ul>
-                    <h4>Características del circuito en Paralelo: </h4>
-                    <ul>
+                    <h4 className='mx-2'>Características del circuito en Paralelo: </h4>
+                    <ul className='text-2xl'>
                         <li> - <b>Ventajas: </b> Si un componente se interrumpe, el resto del circuito sigue
                             funcionando.
                         </li>
@@ -80,7 +80,7 @@ export const CircuitoParalelo: React.FC = () => {
                 <article className='py-3'>
                     <div className='container-formula-circuito-en-serie'>
                         <h4>Fórmula de Circuito en Paralelo</h4>
-                        <ul>
+                        <ul className='text-2xl'>
                             <li> * Resistencia total: 1/Rtotal = 1/R1 + 1/R2 + 1/R3 + ...</li>
                             <li> * Corriente: I = Vtotal / Rtotal</li>
                             <li> * Voltaje en cada resistencia: Vn = I * Rn</li>

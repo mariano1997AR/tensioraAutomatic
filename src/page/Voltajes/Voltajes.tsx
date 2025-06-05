@@ -34,7 +34,7 @@ export const Voltajes: React.FC = () => {
                 <section>
                     <h2 className='text-center'>Ley de Ohm</h2>
                     <p className='text-2xl'>Fórmula:    V = I.R </p>
-                    <ul>
+                    <ul className='text-2xl'>
                         <li> * V: Voltaje (Voltios,V)</li>
                         <li> * I: Corriente (Amperios,A)</li>
                         <li> * R: Resistencia (Ohmnios,Ω)</li>
@@ -43,7 +43,7 @@ export const Voltajes: React.FC = () => {
                 <section>
                     <h3 className='text-center py-2'>Calcular Voltaje (V)</h3>
                     <p className=' text-2xl'>Formula: V = I.R</p>
-                    <p>Ejemplo: Tenes una resistencia de 20 Ω  y pasa una corriente de 2 amperios o 2A</p>
+                    <p className='text-2xl'>Ejemplo: Tenes una resistencia de 20 Ω  y pasa una corriente de 2 amperios o 2A</p>
                 </section>
                 {/* ACA INGRESAMOS LOS DATOS */}
 
@@ -77,7 +77,7 @@ export const Voltajes: React.FC = () => {
                 <section>
                     <h3 className='text-center py-2'>Calcular Corriente (I)</h3>
                     <p className=' text-2xl'>Formula:  I = V / R</p>
-                    <p>Ejemplo: Tenés un foco que funciona con 220V y su resistencia es de 110 Ω.</p>
+                    <p className='text-2xl'>Ejemplo: Tenés un foco que funciona con 220V y su resistencia es de 110 Ω.</p>
                 </section>
 
                 <section className='calculadora'>
@@ -110,7 +110,7 @@ export const Voltajes: React.FC = () => {
                 <section>
                     <h3 className='text-center py-2'>Calcular Resistencia(Ω)</h3>
                     <p className=' text-2xl'>Formula: R = V / I</p>
-                    <p>Ejemplo: Un equipo consume 5 amperios con una tensión de 120 V</p>
+                    <p className='text-2xl'>Ejemplo: Un equipo consume 5 amperios con una tensión de 120 V</p>
                 </section>
 
                 <section className='calculadora'>

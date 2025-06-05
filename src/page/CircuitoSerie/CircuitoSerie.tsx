@@ -48,7 +48,7 @@ export const CircuitoSerie: React.FC = () => {
                 <BtnAtras />
                 <article className='py-2'>
                     <h3 className='text-center'>Circuitos</h3>
-                    <p className='text-2xl'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.
+                    <p className='text-2xl mx-2'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.
                         En serie, la corriente sigue un único camino a través de todos los componentes, mientras
                         que el voltaje se divide entre ellos. En paralelo, la corriente se divide entre los componentes, pero todos
                         tienen el mismo voltaje.
@@ -57,38 +57,38 @@ export const CircuitoSerie: React.FC = () => {
                 </article>
 
                 <article className='py-2'>
-                    <h3>Circuitos en Serie:</h3>
-                    <ul>
+                    <h3 className='mx-2'>Circuitos en Serie:</h3>
+                    <ul className='text-2xl'>
                         <li> - <b>Corriente:</b> La corriente es la misma en todos los componentes</li>
                         <li> - <b>Voltaje:</b> El voltaje total se divide entre los componentes, y el voltaje total es la
                             suma de las caídas de voltaje individuales.
                         </li>
                         <li> - <b>Resistencia:</b> La resistencia total es la suma de las resistencias individuales. </li>
                     </ul>
-                    <h4>Características del circuito en serie: </h4>
-                    <ul>
+                    <h4 className='mx-2'>Características del circuito en serie: </h4>
+                    <ul className='text-2xl'>
                         <li> - <b>Ventajas:</b> Simplicidad en la construcción y fácil cálculo de la resistencia total. </li>
                         <li> - <b>Desventajas:</b> Si un componente se interrumpe, todo el circuito deja de funcionar.</li>
                     </ul>
                 </article>
                 <article className='py-2'>
-                    <h4>Resistencia Total (Rₜ):</h4>
-                    <p>La resistencia total es la suma de todas las resistencias</p>
-                    <p>Rₜ = R1 + R2 + R3 + ... + Rn</p>
+                    <h4 className='mx-2'>Resistencia Total (Rₜ):</h4>
+                    <p className='text-2xl mx-2'>La resistencia total es la suma de todas las resistencias</p>
+                    <p className='text-2xl mx-2'>Rₜ = R1 + R2 + R3 + ... + Rn</p>
 
-                    <h4>Corriente Total (I):</h4>
-                    <p>La corriente es la misma en todos los elementos del circuito:</p>
-                    <p>I = Vt / Rt</p>
-                    <p>Donde: </p>
-                    <ul>
+                    <h4 className='mx-2'>Corriente Total (I):</h4>
+                    <p className='text-2xl mx-2'>La corriente es la misma en todos los elementos del circuito:</p>
+                    <p className='text-2xl mx-2'>I = Vt / Rt</p>
+                    <p className='text-2xl mx-2'>Donde: </p>
+                    <ul className='text-2xl'>
                         <li> - I = corriente Total</li>
                         <li> - Vt = voltaje total</li>
                         <li> - Rt = resistencia total</li>
                     </ul>
 
                     <h4>Voltaje en cada resistencia (Ley de Ohm):</h4>
-                    <p>La caída de voltaje en cada resistencia es:</p>
-                    <p>Vn = I x Rn</p>
+                    <p className='text-2xl mx-2'>La caída de voltaje en cada resistencia es:</p>
+                    <p className='text-2xl mx-2'>Vn = I x Rn</p>
                 </article>
                 <article className='py-2'>
                     <input
@@ -148,7 +148,7 @@ export const CircuitoSerie: React.FC = () => {
                     >
                         Calcular Corriente
                     </button>
-                    {mostrarResistencia &&   <p>I: {valorCorrienteTotal?.toFixed(2)} A</p>}
+                    {mostrarResistencia &&   <p className='text-center text-2xl '>I: {valorCorrienteTotal?.toFixed(2)} A</p>}
                   
                 </article>
 

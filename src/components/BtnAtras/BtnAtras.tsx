@@ -11,7 +11,7 @@ export const BtnAtras: React.FC = () => {
             <section>
                 <button
                     onClick={() => navigate(-1)}
-                    className='btn-volver'
+                    className='btn-volver mx-2'
                     style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}
                 >
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
