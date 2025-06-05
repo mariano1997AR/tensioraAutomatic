@@ -21,6 +21,7 @@ export default defineConfig({
         background_color:'#F7F7F7',
         display:'standalone',
         start_url:'/tensioraElectric/',
+        scope: '/tensioraElectric/',
         icons:[
            {
              src:'/192x192.png',
