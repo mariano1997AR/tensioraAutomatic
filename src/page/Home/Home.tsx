@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import './Home.css';
 import { CircuitoParalelo } from '../CircuitoParalelo/CircuitoParalelo';
@@ -41,10 +41,12 @@ export const Home: React.FC = () => {
         setValorResistencia(R);
     };
 
+
     return (
         <>
             <main className='container-home'>
                 {/* vista en pc */}
+              
                 <section className={` container-dashboard desaparecer-dispositivo`} >
                     <ul className={`submenu-vertical-dashboard nav-pills ${theme === "dark" ? 'border-negro' : 'border-blanco'}`} role="tablist">
                         <li className='nav-item'><a className="nav-link active" data-bs-toggle="pill" href="#home">INICIO</a></li>

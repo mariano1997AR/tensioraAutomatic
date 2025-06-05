@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './CircuitoParalelo.css';
+import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 
 
 
@@ -49,8 +50,8 @@ export const CircuitoParalelo: React.FC = () => {
     return (
 
         <>
-
             <section className='container-circuito-paralelo'>
+                <BtnAtras />
                 <article className='py-2'>
                     <h3 className='text-center'>Circuitos</h3>
                     <p className='text-2xl'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.

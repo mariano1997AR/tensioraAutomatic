@@ -80,11 +80,11 @@
 
 .marcos:hover {
     transition: all 1s;
-    box-shadow: 10px 10px #FDFAF6;
+    box-shadow: 10px 10px #FCEF91;
 }
 
 .fondo-negro {
-    background-color: #FBDB93;
+    background-color: #EFEEEA;
     color: #555;
 }
 
