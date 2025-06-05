@@ -86,7 +86,7 @@ export const CircuitoSerie: React.FC = () => {
                         <li> - Rt = resistencia total</li>
                     </ul>
 
-                    <h4>Voltaje en cada resistencia (Ley de Ohm):</h4>
+                    <h4 className='mx-2'>Voltaje en cada resistencia (Ley de Ohm):</h4>
                     <p className='text-2xl mx-2'>La caída de voltaje en cada resistencia es:</p>
                     <p className='text-2xl mx-2'>Vn = I x Rn</p>
                 </article>
