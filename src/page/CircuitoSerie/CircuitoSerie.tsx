@@ -139,7 +139,7 @@ export const CircuitoSerie: React.FC = () => {
                         type="text"
                         value={voltajeTotal}
                         onChange={(e) => setVoltajeTotal(e.target.value)}
-                        placeholder='ingresa la resistencia'
+                        placeholder='ingresa el voltaje'
                         className='inputs'
                     />
                     <button
@@ -148,7 +148,7 @@ export const CircuitoSerie: React.FC = () => {
                     >
                         Calcular Corriente
                     </button>
-                    {mostrarResistencia &&   <p>I: {valorCorrienteTotal} A</p>}
+                    {mostrarResistencia &&   <p>I: {valorCorrienteTotal?.toFixed(2)} A</p>}
                   
                 </article>
 
