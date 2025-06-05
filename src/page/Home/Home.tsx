@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import './Home.css';
+import { CircuitoParalelo } from '../CircuitoParalelo/CircuitoParalelo';
+import { CircuitoSerie } from '../CircuitoSerie/CircuitoSerie';
 
 
 export const Home: React.FC = () => {
@@ -175,46 +177,11 @@ export const Home: React.FC = () => {
                         <div id='panel-tributario' className='section-informacion tab-pane'>
                             <section>
                                 <article className='py-2'>
-                                    <h3 className='text-center'>Circuitos</h3>
-                                    <p className='text-2xl'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.
-                                        En serie, la corriente sigue un único camino a través de todos los componentes, mientras
-                                        que el voltaje se divide entre ellos. En paralelo, la corriente se divide entre los componentes, pero todos
-                                        tienen el mismo voltaje.
-
-                                    </p>
-                                </article>
-                                <article className='py-2'>
-                                    <h3>Circuitos en Serie:</h3>
-                                    <ul>
-                                        <li> - <b>Corriente:</b> La corriente es la misma en todos los componentes</li>
-                                        <li> - <b>Voltaje:</b> El voltaje total se divide entre los componentes, y el voltaje total es la
-                                            suma de las caídas de voltaje individuales.
-                                        </li>
-                                        <li> - <b>Resistencia:</b> La resistencia total es la suma de las resistencias individuales. </li>
-                                    </ul>
-                                    <h4>Características del circuito en serie: </h4>
-                                    <ul>
-                                        <li> - <b>Ventajas:</b> Simplicidad en la construcción y fácil cálculo de la resistencia total. </li>
-                                        <li> - <b>Desventajas:</b> Si un componente se interrumpe, todo el circuito deja de funcionar.</li>
-                                    </ul>
+                                    <CircuitoParalelo />
                                 </article>
 
                                 <article className='py-2'>
-                                    <h3>Circuitos en Paralelo:</h3>
-                                    <ul>
-                                        <li> - <b>Corriente: </b> La corriente total se divide entre los componentes, y la corriente</li>
-                                        <li> - <b>Voltaje:</b> Todos los componentes tienen el mismo voltaje </li>
-                                        <li> - <b>Resistencia: </b> La resistencia total es menor que la resistencia de cualquier componente individual.</li>
-                                    </ul>
-
-                                    <h4>Característica del circuito en paralelo:</h4>
-                                    <ul>
-                                        <li> - <b>Ventajas: </b> Si un componente se interrumpe, el resto del circuito sigue
-                                            funcionando.
-                                        </li>
-                                        <li> - <b>Desventajas: </b> Más complejo de diseñar y calcular la resistencia total.</li>
-                                    </ul>
-
+                                    <CircuitoSerie />
                                 </article>
                                 <article className='py-4'>
                                     <h4 className='text-center py-4'>Diferencias entre los dos tipos de circuitos:</h4>
@@ -278,7 +245,7 @@ export const Home: React.FC = () => {
 
                     </section >
                     <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/reportes'>POTENCIA CON RESISTENCIA</Link>
+                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/reportes'>POTENCIA</Link>
                         <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/facturacion'>CORRIENTE EN MONOFASICO</Link>
                         <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/informacion'>CORRIENTE EN TRIFASICO</Link>
                     </section>

@@ -5,7 +5,7 @@ import {App} from './App.tsx'
 import { ThemeProvider } from './components/ThemeContext/ThemeContext.tsx';
 
 createRoot(document.getElementById('root')!).render(
-    <BrowserRouter>
+    <BrowserRouter basename='/tensioraElectric'>
         <ThemeProvider>
               <App />
         </ThemeProvider>
