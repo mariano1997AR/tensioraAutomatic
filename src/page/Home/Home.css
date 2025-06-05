@@ -89,8 +89,13 @@
 }
 
 .fondo-blanco {
-    background-color: #04AA6D;
+    background-color: #60B5FF;
     color: #F5F5F5;
+}
+
+.fondo-blanco:hover{
+    transition: all 1s;
+    box-shadow: 10px 10px #222831;
 }
 
 .link-cliente {
