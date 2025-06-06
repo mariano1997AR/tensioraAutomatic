@@ -24,8 +24,9 @@ export const App:React.FC =()=> {
        ):(
           <Routes>
                <Route element={<Layout />} >
+                  <Route path='/' element={<Home />}></Route>
                   <Route path='/home' element={<Home />} />
-                  <Route path='*' element={<Home />}/>
+                 {/* <Route path='*' element={<Home />}/> */}
                   <Route path='/calcularVoltajes' element={<Voltajes />} />
                   <Route path='/circuito-en-paralelo' element={<CircuitoParalelo />} />
                   <Route path='/circuito-en-serie' element={<CircuitoSerie />} />
