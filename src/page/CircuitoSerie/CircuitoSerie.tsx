@@ -45,7 +45,10 @@ export const CircuitoSerie: React.FC = () => {
     return (
         <>
             <section className='container-circuito-serie'>
-                <BtnAtras />
+                <article className='btn-atras-desaparecer-pc btn-atras-aparecer-dispositivo'>
+                      <BtnAtras />      
+                </article>
+              
                 <article className='py-2'>
                     <h3 className='text-center'>Circuitos</h3>
                     <p className='text-2xl mx-2'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.

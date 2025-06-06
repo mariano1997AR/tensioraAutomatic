@@ -51,7 +51,10 @@ export const CircuitoParalelo: React.FC = () => {
 
         <>
             <section className='container-circuito-paralelo'>
-                <BtnAtras />
+                <article className='btn-atras-desaparecer-pc btn-atras-aparecer-dispositivo'>
+                    <BtnAtras />
+                </article>
+
                 <article className='py-2'>
                     <h3 className='text-center'>Circuitos</h3>
                     <p className='text-2xl mx-2'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.
@@ -81,9 +84,9 @@ export const CircuitoParalelo: React.FC = () => {
                     <div className='container-formula-circuito-en-serie'>
                         <h4>Fórmula de Circuito en Paralelo</h4>
                         <ul className='text-2xl'>
-                            <li> * Resistencia total: 1/Rtotal = 1/R1 + 1/R2 + 1/R3 + ...</li>
-                            <li> * Corriente: I = Vtotal / Rtotal</li>
-                            <li> * Voltaje en cada resistencia: Vn = I * Rn</li>
+                            <li> * Resistencia total: 1/Rtotal = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn.</li>
+                            <li> * Corriente: I = Vtotal / Rtotal.</li>
+                            <li> * Voltaje en cada resistencia: Vn = I x Rn.</li>
                         </ul>
                         <input
                             type="text"

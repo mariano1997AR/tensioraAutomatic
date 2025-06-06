@@ -1,4 +1,11 @@
+.btn-atras-desaparecer-pc{
+    display: none;
+}
+
 @media (max-width: 800px) {
+    .btn-atras-aparecer-dispositivo{
+        display: block;
+    }
     .btn-agregar {
         
         display: flex;
