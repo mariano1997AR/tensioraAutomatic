@@ -1,5 +1,4 @@
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
-import { NavbarResponsive } from '../../components/NavbarResponsive/NavbarResponsive';
 import './Voltajes.css';
 import { useState } from 'react';
 
