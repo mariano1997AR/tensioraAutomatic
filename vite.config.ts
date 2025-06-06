@@ -18,7 +18,7 @@ export default defineConfig({
         short_name:"Tensiora",
         description:"Aplicacion para electricista",
         theme_color:'#222831',
-        background_color:'#F7F7F7',
+        background_color:'#fffefe',
         display:'standalone',
         start_url:'/tensioraElectric/',
         scope: '/tensioraElectric/',
