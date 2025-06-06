@@ -17,7 +17,7 @@ export const WhatsappFlotante:React.FC = ()=>{
                    className="whatsapp-button"
                 >
                 <span className="tooltip">¿Necesitas Ayuda?</span>
-                <section className="icon"><FontAwesomeIcon icon={faWhatsapp} className="whatsapp" style={{color:theme === "dark" ? 'white' : 'black'}} /></section>   
+                <section className="icon"><FontAwesomeIcon icon={faWhatsapp} className="whatsapp" style={{color:theme === "dark" ? 'white' : '#60B5FF'}} /></section>   
                 </a>
            </section>
         

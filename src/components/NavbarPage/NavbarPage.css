@@ -101,13 +101,17 @@
     display: none;
 }
 
-@media (max-width: 1060px) {
-    .logo {
-        text-align: center;
-        margin-bottom: 50px;
+.aparecer-responsive{
+    display: none;
+}
 
-        display: flex;
-        justify-content: center;
+
+@media (max-width: 798px) {
+    .logo {
+       display: none;
+    }
+    .aparecer-responsive{
+        display: block;
     }
  
 
@@ -144,6 +148,16 @@
     .switch{
        margin: 0 auto;
     }
+    .logo-desaparecer{
+        display: flex;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .logo-desaparecer .a{
+        text-decoration: none;
+    }
+    
 
 
  

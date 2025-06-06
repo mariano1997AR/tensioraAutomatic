@@ -1,0 +1,87 @@
+.menu-container {
+  position: relative;
+  color: white;
+  padding: 0.5rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
+/* Menú base */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.menu li a {
+
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Versión móvil */
+@media (max-width: 798px) {
+
+  .menu-button {
+    display:flex;
+    justify-content: end;
+
+    
+    
+  }
+
+  .menu {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .menu-toggle:checked + .menu-button + .menu {
+    max-height: 500px; /* Ajustar según número de links */
+  }
+  .logo-responsive{
+    position: absolute;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+  
+  }
+  .a-logo{
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  .switch-responsive{
+    display: flex;
+     margin-left: 2px;
+     position: relative;
+     padding-top: 14px;
+     padding-right: 3px;
+    
+
+  }
+  .menu li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+   .menu li  .a-link-navbar-responsive:hover{
+       transition: all 1s;
+       border-bottom: 1px solid black;
+  }
+
+  
+}

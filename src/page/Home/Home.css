@@ -1,5 +1,5 @@
 .container-home {
-    margin-bottom: 260px;
+    margin-bottom: 150px;
 }
 
 .container-dashboard {
@@ -146,7 +146,7 @@
     .container-dashboard-responsive {
         margin-left: 6px;
         margin-right: 5px;
-        margin-top: 80px;
+        
     }
 
     .section-app-item {

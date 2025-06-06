@@ -1,18 +1,20 @@
 import { useTheme } from '../ThemeContext/ThemeContext';
-import './NavbarPage.css';
+import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
+import './NavbarResponsive.css';
 import { Link } from 'react-router-dom';
-import { NavbarResponsive } from '../NavbarResponsive/NavbarResponsive';
-import { NavbarPc } from '../NavbarPc/NavbarPc';
 
 
-
-export const NavbarPage: React.FC = () => {
+export const NavbarResponsive: React.FC = () => {
     const { theme } = useTheme();
     return (
         <>
-            <nav className="navbar-container mb-4" style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
-                <header className="logo flex items-center gap-2">
-                    <Link className="a " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/home">
+
+
+            <nav className="menu-container">
+
+                <section className='logo-responsive items-center gap-2' style={{ color: theme === "dark" ? 'white' : 'black' }}>
+
+                    <Link className="a-logo " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/home">
                         Tensiora <span className="azul" style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Electric</span>
                     </Link>
 
@@ -70,23 +72,23 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                         </g>
                     </svg>
 
-                </header>
 
-                {/* Aparece de forma en PC pero no en dispositivos */}
-                {/* dividirlo en componente NavbarPC */}
-                <section>
-                    <NavbarPc />
+
                 </section>
-              
-                {/* Aparece en dispositivos pero no en pc (solo a partir de 1060px) */}
-                {/* dividirlo en componentes en NavbarResponsive */}
 
-               <section className='aparecer-responsive'>
-                    <NavbarResponsive />
-               </section>
-    
+
+                <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+                <label htmlFor="menu-toggle" className="menu-button" style={{ color: theme === "dark" ? 'white' : 'black' }}>    <section className='switch-responsive'>
+                    <ThemeSwitcher />
+                </section>☰</label>
+
+                <ul className="menu" >
+                    <li><Link to='/home' className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
+                    <li><a href="#" className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Ingresar</a></li>
+                    <li><a href="#" className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Contacto</a></li>
+                </ul>
+
             </nav>
-
         </>
     )
 }

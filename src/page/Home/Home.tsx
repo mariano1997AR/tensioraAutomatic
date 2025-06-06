@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import './Home.css';
 import { CircuitoParalelo } from '../CircuitoParalelo/CircuitoParalelo';
 import { CircuitoSerie } from '../CircuitoSerie/CircuitoSerie';
 import { VideoEmbebido } from '../../components/VideoEmbebido/VideoEmbebido';
+import { WhatsappFlotante } from '../../components/WhatsappFlotante/WhatsappFlotante';
+
 
 
 export const Home: React.FC = () => {
@@ -47,7 +49,7 @@ export const Home: React.FC = () => {
         <>
             <main className='container-home'>
                 {/* vista en pc */}
-              
+
                 <section className={` container-dashboard desaparecer-dispositivo`} >
                     <ul className={`submenu-vertical-dashboard nav-pills ${theme === "dark" ? 'border-negro' : 'border-blanco'}`} role="tablist">
                         <li className='nav-item'><a className="nav-link active" data-bs-toggle="pill" href="#home">INICIO</a></li>
@@ -213,7 +215,7 @@ export const Home: React.FC = () => {
                                                 <td>Mayormente menor que la resistencia individual</td>
                                             </tr>
 
-                                              <tr>
+                                            <tr>
                                                 <td>Impacto de falla</td>
                                                 <td>Interrupción total</td>
                                                 <td>No afecta al resto del circuito</td>
@@ -224,13 +226,13 @@ export const Home: React.FC = () => {
                             </section>
                         </div>
                         <div id='gestion-sueldos-jornales' className='section-informacion tab-pane'>
-                            
+
                         </div>
                         <div id='facturacion-electronica' className='section-informacion tab-pane'>
-                            
+
                         </div>
                         <div id='gestion-documental' className='section-informacion tab-pane'>
-                            
+
                         </div>
 
 
@@ -240,10 +242,10 @@ export const Home: React.FC = () => {
 
                 {/* vista en celulares o tabletas */}
                 <section className='container-dashboard-responsive desaparecer-pc'>
-       
+
                     {/* video en el main */}
                     <section className='py-2 mb-2'>
-                          <VideoEmbebido />
+                        <VideoEmbebido />
                     </section>
                     {/* cada enlace va a llegar a funcionalidades */}
                     <section className="d-flex mb-2">
@@ -263,8 +265,10 @@ export const Home: React.FC = () => {
                         <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >ATENCIÓN AL CLIENTE</article>
                     </section>
 
-
                 </section>
+
+                <WhatsappFlotante />
+
 
 
             </main>

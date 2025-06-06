@@ -3,3 +3,13 @@
     margin: 0 auto;
     margin-left:12px;
 }
+.aparecer-responsive{
+    display: none;
+}
+
+@media (max-width: 768px) {
+   .aparecer-responsive{
+    display: block;
+   }
+}
+

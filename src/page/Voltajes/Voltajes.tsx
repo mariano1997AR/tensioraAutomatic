@@ -1,4 +1,5 @@
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
+import { NavbarResponsive } from '../../components/NavbarResponsive/NavbarResponsive';
 import './Voltajes.css';
 import { useState } from 'react';
 
@@ -30,7 +31,13 @@ export const Voltajes: React.FC = () => {
     return (
         <>
             <main className='container-voltajes'>
-                <BtnAtras />
+                <section className='aparecer-responsive'>
+                    
+                </section>
+               <section>
+                    <BtnAtras />
+               </section>
+             
                 <section>
                     <h2 className='text-center'>Ley de Ohm</h2>
                     <p className='text-2xl'>Fórmula:    V = I.R </p>
