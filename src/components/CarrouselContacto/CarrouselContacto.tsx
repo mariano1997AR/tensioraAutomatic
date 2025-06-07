@@ -1,8 +1,8 @@
 import './CarrouselContacto.css';
 
-import imagenComunicacion1 from '../../assets/contacto/comunicacion-1.png';
-import imagenComunicacion2 from '../../assets/contacto/comunicacion-2.png';
-import imagenComunicacion3 from '../../assets/contacto/comunicacion-4.png';
+import imagenComunicacion1 from '../../assets/contacto/comunicacion-1.webp';
+import imagenComunicacion2 from '../../assets/contacto/comunicacion-2.webp';
+import imagenComunicacion3 from '../../assets/contacto/comunicacion-4.webp';
 import { useTheme } from '../ThemeContext/ThemeContext';
 
 

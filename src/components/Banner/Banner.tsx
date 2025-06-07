@@ -1,7 +1,7 @@
 import { useTheme } from '../ThemeContext/ThemeContext';
 import './Banner.css';
 import { Link } from 'react-router-dom';
-import imagenqr from '../../assets/codigo/codigoqr.png';
+import imagenqr from '../../assets/codigo/codigoqr.webp';
 
 
 export const Banner: React.FC = () => {
