@@ -21,9 +21,9 @@ export const Banner: React.FC = () => {
 
                     </article>
                     <article className="flex-item-iniciar-registro-right py-30 pr-5" >
-                        <h3 className="text-center text-2xl "><b className="subtitulo-hover">¿NECESITAS UN ASISTENTE PARA POTENCIAR TU TRABAJO?</b></h3>
-                        <p className=" mb-4">
-                            Registrate, y utiliza a CalculAR para realizar tu trabajo para rapido en el aréa contable.
+                        <h3 className="text-center text-2xl "><b className="subtitulo-hover">Escanea el código QR</b></h3>
+                        <p className="mb-4 mx-2">
+                            Si quieres probar la aplicacion has click abajo en el boton de inicia sesion
                         </p>
                         <Link className="hover:bg-sky-700 text-center inicia-registro " to='/home'>Inicia sesion</Link>
 
