@@ -1,0 +1,64 @@
+.container-flex-informacionApp{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+
+}
+.image-informacion{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+
+.item-left-image{
+    flex: 50%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+   
+     
+}
+.item-right-info{
+    flex: 50%;
+  
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.fondo-oscuro{
+    background-color: #222;
+}
+.logo-marca{
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+@media (max-width: 798px) {
+    .container-flex-informacionApp{
+        flex-direction: column;
+    }
+    .image-informacion{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .item-left-image{
+        width: 100%;
+    }
+    .logo-marca{
+        width: 100%;
+    }
+
+}

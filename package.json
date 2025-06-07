@@ -2,7 +2,7 @@
   "name": "tensiora",
   "homepage": "https://github.com/mariano1997AR/tensioraElectric",
   "private": true,
-  "version": "0.1.2",
+  "version": "1.2.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,6 +26,7 @@
     "react-bootstrap": "^2.10.10",
     "react-calendly": "^4.4.0",
     "react-dom": "^19.1.0",
+    "react-lazy": "^1.1.0",
     "react-router-dom": "^7.6.2",
     "swiper": "^11.2.8",
     "tailwindcss": "^4.1.8"

@@ -10,6 +10,7 @@ import { CircuitoSerie } from './page/CircuitoSerie/CircuitoSerie';
 import { Potencia } from './page/Potencia/Potencia';
 import { CorrienteMonofasico } from './page/CorrienteMonofasico/CorrienteMonofasico';
 import { CorrienteTrafasico } from './page/CorrienteTrifasico/CorrienteTrifasico';
+import { Formulas } from './page/Formulas/Formulas';
 
 export const App:React.FC =()=> {
   const [loading,setLoading] = useState<boolean>(true);
@@ -36,6 +37,7 @@ export const App:React.FC =()=> {
                   <Route path='/potencia-tension' element={<Potencia />} />
                   <Route path='/corriente-monofasico' element={<CorrienteMonofasico />} />
                   <Route path='/corriente-trifasico' element={<CorrienteTrafasico />} />
+                  <Route path='/formulas-para-electricistas' element={<Formulas />} />
 
                </Route>
           </Routes>

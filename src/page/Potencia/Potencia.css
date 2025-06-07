@@ -1,0 +1,13 @@
+
+
+.calculos-potencia{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.btn-calcular-potencia{
+    font-size: 1.5em;
+    
+}

@@ -30,9 +30,6 @@ export const Voltajes: React.FC = () => {
     return (
         <>
             <main className='container-voltajes'>
-                <section className='aparecer-responsive'>
-                    
-                </section>
                <section>
                     <BtnAtras />
                </section>
