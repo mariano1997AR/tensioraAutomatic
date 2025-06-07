@@ -68,7 +68,7 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                     <section className='item-right-info'>
                         <h1 className='text-center py-2'>¿Qué es Tensiora Electric?</h1>
                         <p>Tensiora Electric es una aplicación de incidencias donde podrás comunicarnos tu problema electrico y te daremos la solucion utilizando el sistema de metrica donde 
-                            1: es el mas urgente, 2: es menos urgente, 3: es poco urgente donde utilizando un algoritmo vamos a clasificar el trabajo asi siendo todo automatizado sin problema alguno
+                            1: es el mas urgente, 2: es menos urgente, 3: es poco urgente donde utilizando un algoritmo para clasificar el trabajo asi siendo automatizando sin problema alguno
                         </p>
                     </section>
 
@@ -156,7 +156,7 @@ l-87 0 50 105 c27 58 49 117 49 131 0 54 -74 92 -123 63z"/>
                     </section>
                     <section className='item-right-info'>
                         <h1 className='text-center py-2'>¿Comó podemos ayudarte?</h1>
-                        <p>En la medida que se realicé el trabajo para terminar vas a poder comunicarte en el plazo establecido para dar la orden que termino el trabajo y se libera el sistema. Esto agilizará los tiempos de trabajo</p>
+                        <p >En la medida que se realicé el trabajo para terminar vas a poder comunicarte en el plazo establecido para dar la orden que termino el trabajo y se libera el sistema. Esto agilizará los tiempos de trabajo</p>
                     </section>
 
 
