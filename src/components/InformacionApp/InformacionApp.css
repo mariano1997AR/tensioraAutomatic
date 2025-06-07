@@ -17,6 +17,7 @@
     width: 300px;
     height: 300px;
     border: 1px solid black;
+    margin-right: 10px;
    
      
 }
@@ -61,6 +62,7 @@
     }
     .item-left-image{
         width: 100%;
+        
     }
     .logo-marca{
         width: 100%;

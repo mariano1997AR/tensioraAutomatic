@@ -8,7 +8,7 @@ export const InformacionApp: React.FC = () => {
         <>
             <main>
                 <section className={`container-flex-informacionApp ${theme === "dark" ? 'fondo-oscuro' : 'fondo-claro'}`} >
-                    <section className='item-left-image mx-3' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
+                    <section className='item-left-image ' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                         <header className='logo-marca text-center text-3xl gap-2'>Tensiora <span className="azul" style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Electric</span>
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 width="25.000000pt" height="25.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -77,7 +77,7 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                 </section>
 
                 <section className={`container-flex-informacionApp ${theme === "dark" ? 'fondo-oscuro' : 'fondo-claro'}`} >
-                    <section className='item-left-image mx-3' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
+                    <section className='item-left-image' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                         <header className='logo-marca' >
                             <p className='text-2xl mx-3'>Vamos a <span className="azul" style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Ayudarte</span></p>
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
