@@ -3,7 +3,7 @@ import { useState } from 'react';
 //import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../ThemeContext/ThemeContext';
 import {ToastContainer} from "react-toastify";
-import presentacionContacto from '../../assets/loader/fondos-loader.webp';
+import presentacionContacto from '../../assets/contacto/comunicacion-1.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser,faEnvelope} from '@fortawesome/free-solid-svg-icons';
 

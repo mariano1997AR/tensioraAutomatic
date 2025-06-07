@@ -7,9 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: rgba(255, 255, 255, 0.7);  Fondo semitransparente */
+    background-color: #222831; 
     z-index: 9999; /* Asegura que el loader esté encima de otros elementos */
-    background-image: url("../../assets/loader/fondos-loader.webp");
+   /* background-image: url("../../assets/loader/fondos-loader.webp");*/
     background-repeat: no-repeat;
     background-size: cover;
   }
