@@ -1,8 +1,9 @@
 import { useTheme } from '../ThemeContext/ThemeContext';
 import './NavbarPage.css';
 import { Link } from 'react-router-dom';
-import { NavbarResponsive } from '../NavbarResponsive/NavbarResponsive';
+//import { NavbarResponsive } from '../NavbarResponsive/NavbarResponsive';
 import { NavbarPc } from '../NavbarPc/NavbarPc';
+import { NavbarPhone } from '../NavbarPhone/NavbarPhone';
 
 
 
@@ -82,7 +83,7 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                 {/* dividirlo en componentes en NavbarResponsive */}
 
                <section className='aparecer-responsive'>
-                    <NavbarResponsive />
+                    <NavbarPhone />
                </section>
     
             </nav>

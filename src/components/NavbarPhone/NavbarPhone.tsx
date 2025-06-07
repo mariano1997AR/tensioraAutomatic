@@ -1,15 +1,16 @@
+import './NavbarPhone.css';
 import { useTheme } from '../ThemeContext/ThemeContext';
 import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
-import './NavbarResponsive.css';
 import { Link } from 'react-router-dom';
 
 
-export const NavbarResponsive: React.FC = () => {
-    const { theme } = useTheme();
-    return (
+
+
+export const NavbarPhone:React.FC = ()=>{
+    const {theme} = useTheme();
+    return(
         <>
-
-
+        
             <nav className="menu-container">
 
                 <section className='logo-responsive items-center gap-2' style={{ color: theme === "dark" ? 'white' : 'black' }}>
@@ -90,6 +91,7 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                 </ul>
 
             </nav>
+        
         </>
     )
 }

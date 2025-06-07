@@ -19,7 +19,8 @@ export const Home: React.FC = () => {
                     </section>
 
                     <section>
-                        <Funcionamiento />
+                       {/* <Funcionamiento />*/}
+
                     </section>
 
                     <section>
