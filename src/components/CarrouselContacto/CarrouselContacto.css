@@ -1,0 +1,14 @@
+
+
+@media (max-width: 1060px) {
+    .carousel-contacto {
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+    }
+
+}

@@ -86,7 +86,7 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                     <li><Link to='/home' className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
                     <li><Link to='/formulas-para-electricistas' className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Formulas</Link></li>
                     <li><a href="#" className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Ingresar</a></li>
-                    <li><a href="#" className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Contacto</a></li>
+                    <li><Link to='/contacto' className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }} >Contacto</Link></li>
                 </ul>
 
             </nav>

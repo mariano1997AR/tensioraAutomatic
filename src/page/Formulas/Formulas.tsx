@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { CircuitoSerie } from '../CircuitoSerie/CircuitoSerie';
 import { CircuitoParalelo } from '../CircuitoParalelo/CircuitoParalelo';
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
+import { VideoEmbebido } from '../../components/VideoEmbebido/VideoEmbebido';
 
 
 export const Formulas: React.FC = () => {
@@ -237,6 +238,9 @@ export const Formulas: React.FC = () => {
 
                 </section>
                 <section className='container-dashboard-responsive desaparecer-pc'>
+                    <section>
+                         <VideoEmbebido />
+                    </section>
                     <section>
                          <h4 className='text-center py-2 text-2xl'>Formulas</h4>
                     </section>
