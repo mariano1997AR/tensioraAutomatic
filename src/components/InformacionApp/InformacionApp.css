@@ -20,6 +20,11 @@
    
      
 }
+
+.item-left-image:hover{
+    transition: all 1s;
+    border-radius: 30px;
+}
 .item-right-info{
     flex: 50%;
   
