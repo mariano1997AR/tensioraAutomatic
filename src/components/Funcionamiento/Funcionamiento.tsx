@@ -48,6 +48,7 @@ export const Funcionamiento:React.FC = ()=>{
                            onClick={()=> setSelectedID(item.id)}
                            
                         >
+                       
                             {item.image}
                             <motion.h3 className='py-2' style={{color:theme === "dark" ? '#f5f5f5':''}} layoutId={`title-${item.id}`}>{item.title}</motion.h3>
                         </motion.div>

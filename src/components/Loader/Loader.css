@@ -1,33 +1,45 @@
+.container-load{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+   
+}
+
 .loader-container {
-    position: fixed;
+    width: 30%;
+    height: 30px;
+    margin: 400px auto;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .loader-bar {
+    height: 100%;
+    background: linear-gradient(to right, #60B5FF, #AFDDFF);
+    transition: width 0.3s ease;
+  }
+  
+  .loader-text {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #222831; 
-    z-index: 9999; /* Asegura que el loader esté encima de otros elementos */
-   /* background-image: url("../../assets/loader/fondos-loader.webp");*/
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: #333;
+    
   }
-  
-  /* Estilo del loader */
-  .loader {
-    border: 8px solid #f3f3f3; /* Color de fondo del círculo */
-    border-top: 8px solid #FCEF91; /* Color de la parte superior del círculo */
-    border-radius: 50%;
-    width:150px;
-    height: 150px;
-    animation: spin 1.5s linear infinite;
-    background-image: url('../../assets/loader/logo-basico-tensiora.png');
-    background-size: contain;
-  }
-  
-  /* Animación para el giro del loader */
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+  @media (max-width: 800px) {
+      .loader-container{
+        width: 90%;
+      }
+      .container-load{
+        background-size: cover;
+      }
   }
