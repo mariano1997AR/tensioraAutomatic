@@ -79,15 +79,15 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
 
 
                 <input type="checkbox" id="menu-toggle" className="menu-toggle" />
-                <label htmlFor="menu-toggle" className="menu-button" style={{ color: theme === "dark" ? 'white' : 'black' }}>    <section className='switch-responsive'>
+                <label htmlFor="menu-toggle" className="menu-button " style={{ color: theme === "dark" ? 'white' : 'black' }}>    <section className='switch-responsive mx-2'>
                     <ThemeSwitcher />
                 </section>☰</label>
 
                 <ul className="menu" >
-                    <li><Link to='/home' className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
-                    <li><Link to='/formulas-para-electricistas' className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Formulas</Link></li>
-                    <li><a href="#" className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }}>Ingresar</a></li>
-                    <li><Link to='/contacto' className='a-link-navbar-responsive' style={{ color: theme === "dark" ? 'white' : 'black' }} >Contacto</Link></li>
+                    <li><Link to='/home' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
+                    <li><Link to='/formulas-para-electricistas' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Formulas</Link></li>
+                    <li><a href="#" className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Ingresar</a></li>
+                    <li><Link to='/contacto' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Contacto</Link></li>
                 </ul>
 
             </nav>

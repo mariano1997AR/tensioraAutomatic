@@ -32,12 +32,23 @@
   padding: 0.5rem;
 }
 
+.borde-blanco:hover{
+    transition: all 1s;
+    border-bottom: 1px solid white;
+   
+}
+.borde-negro:hover{
+    transition: all 1s;
+    border-bottom: 1px solid black;
+}
+
 /* Versión móvil */
 @media (max-width: 798px) {
 
   .menu-button {
     display:flex;
     justify-content: end;
+    
 
     
     
@@ -48,10 +59,13 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    margin-bottom: 10px;
   }
 
   .menu-toggle:checked + .menu-button + .menu {
-    max-height: 500px; /* Ajustar según número de links */
+    max-height: 600px; /* Ajustar según número de links */
+   
+    
   }
   .logo-responsive{
     position: absolute;
@@ -80,7 +94,7 @@
   }
    .menu li  .a-link-navbar-responsive:hover{
        transition: all 1s;
-       border-bottom: 1px solid black;
+       
   }
 
   
