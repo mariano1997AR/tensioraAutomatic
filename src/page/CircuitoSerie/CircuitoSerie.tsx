@@ -1,6 +1,7 @@
 import './CircuitoSerie.css';
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 import { useState } from 'react';
+import { ModalFormulas } from '../../components/ModalFormulas/ModalFormulas';
 
 
 
@@ -9,8 +10,9 @@ export const CircuitoSerie: React.FC = () => {
     const [resistencia, setResistencia] = useState<string>('R');
     const [itemsResistencias, setItemsResistencias] = useState<number[]>([]);
     const [voltajeTotal, setVoltajeTotal] = useState<string>("V");
-    const [valorCorrienteTotal,setValorCorrienteTotal] = useState<number | undefined>(undefined);
+    const [valorCorrienteTotal, setValorCorrienteTotal] = useState<number | undefined>(undefined);
     const [mostrarResistencia, setMostrarResistencia] = useState<boolean>(false);
+    const [mostrarmodal, setMostrarModal] = useState<boolean>(false);
 
     //Agregar valor de la resistencia
     const AgregarResistencias = () => {
@@ -28,13 +30,13 @@ export const CircuitoSerie: React.FC = () => {
         setItemsResistencias(itemsResistencias.filter((_, i) => i !== index));
     }
 
-    const resistenciaTotal = ():number => {
+    const resistenciaTotal = (): number => {
         if (itemsResistencias.length === 0) return 0;
         const sumaResistencia = itemsResistencias.reduce((acc, val) => acc + val, 0);
         return sumaResistencia;
     };
 
-    const calcularCorrienteTotal = (datonumber:number)=>{
+    const calcularCorrienteTotal = (datonumber: number) => {
         const I = parseFloat(voltajeTotal) / datonumber;
         setValorCorrienteTotal(I);
     }
@@ -46,9 +48,9 @@ export const CircuitoSerie: React.FC = () => {
         <>
             <section className='container-circuito-serie'>
                 <article className='btn-atras-desaparecer-pc btn-atras-aparecer-dispositivo'>
-                      <BtnAtras />      
+                    <BtnAtras />
                 </article>
-              
+
                 <article className='py-2'>
                     <h3 className='text-center'>Circuitos</h3>
                     <p className='text-2xl mx-2'>En circuitos eléctricos, los componentes pueden ser conectados en serie o en paralelo.
@@ -94,66 +96,73 @@ export const CircuitoSerie: React.FC = () => {
                     <p className='text-2xl mx-2'>Vn = I x Rn</p>
                 </article>
                 <article className='py-2'>
-                    <input
-                        type="text"
-                        value={resistencia}
-                        onChange={(e) => setResistencia(e.target.value)}
-                        placeholder='ingresa la resistencia'
-                        className='inputs'
-                    />
-                    <button
-                        onClick={AgregarResistencias}
-                        className=' btn-general'
-                    >
-
-                        Agregar
-                    </button>
-
-                </article>
-                <article>
-
-                    <ul className=''>
-                        {itemsResistencias.map((item, index) => (
-                            <li
-
-                                key={index}
-                                className='item-resistencias'
-
-
+                    <button className='btn-calcular-circuito-serie text-2xl' onClick={() => setMostrarModal(true)}>Abrir calculadora</button>
+                    <ModalFormulas mostrar={mostrarmodal} cerrar={() => setMostrarModal(false)}>
+                        <article>
+                            <h4 className='text-center'>Agregar Resistencias</h4>
+                            <input
+                                type="text"
+                                value={resistencia}
+                                onChange={(e) => setResistencia(e.target.value)}
+                                placeholder='ingresa la resistencia'
+                                className='inputs'
+                            />
+                            <button
+                                onClick={AgregarResistencias}
+                                className=' btn-general'
                             >
-                                <p className='text-2xl'>Resistencia {index} : <span className=' text-2xl'> {item} Ω</span> </p>
-                                <button
-                                    onClick={() => borrarResistencias(index)}
-                                    className='btn-borrar-resistencias '
-                                >
-                                    Borrar
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
+
+                                Agregar
+                            </button>
+                        </article>
+
+                        <article>
+                            <ul className=''>
+                                {itemsResistencias.map((item, index) => (
+                                    <li
+
+                                        key={index}
+                                        className='item-resistencias'
+
+
+                                    >
+                                        <p className='text-2xl'>Resistencia {index} : <span className=' text-2xl'> {item} Ω</span> </p>
+                                        <button
+                                            onClick={() => borrarResistencias(index)}
+                                            className='btn-borrar-resistencias '
+                                        >
+                                            Borrar
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        </article>
+                        <article>
+                            <p className='text-center text-2xl'>Resistencia total: {resistenciaTotal().toFixed(2)}Ω </p>
+                        </article>
+
+                        <article>
+                            <h4 className='text-center'>Ingresar voltaje</h4>
+                            <input
+                                type="text"
+                                value={voltajeTotal}
+                                onChange={(e) => setVoltajeTotal(e.target.value)}
+                                placeholder='ingresa el voltaje'
+                                className='inputs'
+                            />
+                            <button
+                                onClick={() => calcularCorrienteTotal(resistenciaTotal())}
+                                className='btn-borrar-resistencias btn-general'
+                            >
+                                Calcular Corriente
+                            </button>
+                            {mostrarResistencia && <p className='text-center text-2xl '>I: {valorCorrienteTotal?.toFixed(2)} A</p>}
+                        </article>
+
+                    </ModalFormulas>
+
                 </article>
 
-                <article className='py-2'>
-                    <p className='text-center text-2xl'>Resistencia total: {resistenciaTotal().toFixed(2)}Ω </p>
-                </article>
-
-                <article>
-                    <input
-                        type="text"
-                        value={voltajeTotal}
-                        onChange={(e) => setVoltajeTotal(e.target.value)}
-                        placeholder='ingresa el voltaje'
-                        className='inputs'
-                    />
-                    <button
-                      onClick={()=> calcularCorrienteTotal(resistenciaTotal())}
-                       className='btn-borrar-resistencias btn-general'
-                    >
-                        Calcular Corriente
-                    </button>
-                    {mostrarResistencia &&   <p className='text-center text-2xl '>I: {valorCorrienteTotal?.toFixed(2)} A</p>}
-                  
-                </article>
 
             </section>
 

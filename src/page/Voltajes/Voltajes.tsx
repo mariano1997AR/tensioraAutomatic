@@ -1,4 +1,5 @@
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
+import { ModalFormulas } from '../../components/ModalFormulas/ModalFormulas';
 import './Voltajes.css';
 import { useState } from 'react';
 
@@ -11,29 +12,57 @@ export const Voltajes: React.FC = () => {
     const [voltios, setVoltios] = useState<number | undefined>();
     const [valorCorriente, setValorCorriente] = useState<number | undefined>();
     const [valorResistencia, setValorResistencia] = useState<number | undefined>();
+    const [mostrarmodalVoltaje, setMostrarModalVoltaje] = useState<boolean>(false);
+    const [mostramodalcorriente, setMostrarModalCorriente] = useState<boolean>(false);
+    const [mostramodalresistencia, setMostrarModalResistencia] = useState<boolean>(false);
     //calculadoras
     const calcularVoltaje = () => {
-        const v = Number(corriente) * Number(resistencia);
-        setVoltios(v);
+        let c = parseFloat(corriente);
+        let r = parseFloat(resistencia);
+        if ((!isNaN(c) && c > 0) && (!isNaN(r) && r > 0)) {
+            const v = c * r;
+            setVoltios(v);
+
+        } else {
+            setVoltios(0);
+        }
+
+
     };
 
     const calcularCorriente = () => {
-        const I = Number(voltaje) / Number(resistencia);
-        setValorCorriente(I);
+        let v = parseFloat(voltaje);
+        let r = parseFloat(resistencia);
+        if ((!isNaN(v) && v > 0) && (!isNaN(r) && r > 0)) {
+            const I = v / r;
+            setValorCorriente(I);
+        } else {
+            setValorCorriente(0);
+        }
+
     };
 
     const calcularResistencia = () => {
-        const R = Number(voltaje) / Number(corriente);
-        setValorResistencia(R);
+        let v = parseFloat(voltaje);
+        let c = parseFloat(corriente);
+        if ((!isNaN(v) && v > 0) && (!isNaN(c) && c > 0)) {
+            const R = v / c;
+            setValorResistencia(R);
+
+        } else {
+            setValorResistencia(0);
+        }
+
+
     };
 
     return (
         <>
             <main className='container-voltajes'>
-               <section>
+                <section>
                     <BtnAtras />
-               </section>
-             
+                </section>
+
                 <section>
                     <h2 className='text-center'>Ley de Ohm</h2>
                     <p className='text-2xl'>Fórmula:    V = I.R </p>
@@ -50,31 +79,37 @@ export const Voltajes: React.FC = () => {
                 </section>
                 {/* ACA INGRESAMOS LOS DATOS */}
 
-                <section className='calculadora'>
-                    <input
-                        type="type"
-                        value={corriente}
-                        onChange={(e) => setCorriente(e.target.value)}
-                        placeholder='Ingresa el valor de corriente en Amperios'
-                        className='inputs text-center'
-                    />
+                <section className='calculadora py-3'>
+                    <button className='btn-calcular-circuito-serie text-2xl' onClick={() => setMostrarModalVoltaje(true)}>Abrir calculadora</button>
+                    <ModalFormulas mostrar={mostrarmodalVoltaje} cerrar={() => setMostrarModalVoltaje(false)}>
+                        <h4 className='text-center'>Ingresa el valor de corriente</h4>
+                        <input
+                            type="type"
+                            value={corriente}
+                            onChange={(e) => setCorriente(e.target.value)}
+                            placeholder='Ingresa el valor de corriente en Amperios'
+                            className='inputs text-center'
+                        />
+                        <h4 className='text-center'>Ingresa el valor de resistencia</h4>
+                        <input
+                            type="type"
+                            value={resistencia}
+                            onChange={(e) => setResistencia(e.target.value)}
+                            placeholder='Ingresa la resistencia en Ohmnios '
+                            className='inputs text-center py-2'
+                        />
 
-                    <input
-                        type="type"
-                        value={resistencia}
-                        onChange={(e) => setResistencia(e.target.value)}
-                        placeholder='Ingresa la resistencia en Ohmnios '
-                        className='inputs text-center'
-                    />
+                        <button
+                            onClick={calcularVoltaje}
+                            className='btn-calcular py-2'
 
-                    <button
-                        onClick={calcularVoltaje}
-                        className='btn-calcular'
+                        >
+                            Obtener Voltaje
+                        </button>
+                        <p className='text-center text-2xl py-2'>El valor de V es : {voltios}V</p>
+                    </ModalFormulas>
 
-                    >
-                        Obtener Voltaje
-                    </button>
-                    <p className='text-center text-2xl py-2'>El valor de V es : {voltios}V</p>
+
                 </section>
 
                 <section>
@@ -84,63 +119,73 @@ export const Voltajes: React.FC = () => {
                 </section>
 
                 <section className='calculadora'>
-                    <input
-                        type="type"
-                        value={voltaje}
-                        onChange={(e) => setVoltaje(e.target.value)}
-                        placeholder='Ingresa el valor de voltaje en v'
-                        className='inputs text-center'
-                    />
+                    <button className='btn-calcular-circuito-serie text-2xl' onClick={() => setMostrarModalCorriente(true)}>Abrir calculadora</button>
+                    <ModalFormulas mostrar={mostramodalcorriente} cerrar={() => setMostrarModalCorriente(false)}>
+                        <h4 className='text-center'>Ingresa el valor de voltaje</h4>
+                        <input
+                            type="type"
+                            value={voltaje}
+                            onChange={(e) => setVoltaje(e.target.value)}
+                            placeholder='Ingresa el valor de voltaje en v'
+                            className='inputs text-center'
+                        />
+                        <h4 className='text-center'>Ingresa el valor de resistencia</h4>
+                        <input
+                            type="type"
+                            value={resistencia}
+                            onChange={(e) => setResistencia(e.target.value)}
+                            placeholder='Ingresa la resistencia en Ohmnios '
+                            className='inputs text-center'
+                        />
 
-                    <input
-                        type="type"
-                        value={resistencia}
-                        onChange={(e) => setResistencia(e.target.value)}
-                        placeholder='Ingresa la resistencia en Ohmnios '
-                        className='inputs text-center'
-                    />
+                        <button
+                            onClick={calcularCorriente}
+                            className='btn-calcular'
 
-                    <button
-                        onClick={calcularCorriente}
-                        className='btn-calcular'
+                        >
+                            Obtener Corriente
+                        </button>
+                        <p className='text-center text-2xl py-2'>El valor de I es : {valorCorriente}A</p>
+                    </ModalFormulas>
 
-                    >
-                        Obtener Corriente
-                    </button>
-                    <p className='text-center text-2xl py-2'>El valor de I es : {valorCorriente}A</p>
                 </section>
 
                 <section>
-                    <h3 className='text-center py-2'>Calcular Resistencia(Ω)</h3>
+                    <h3 className='text-center py-3'>Calcular Resistencia(Ω)</h3>
                     <p className=' text-2xl'>Formula: R = V / I</p>
                     <p className='text-2xl'>Ejemplo: Un equipo consume 5 amperios con una tensión de 120 V</p>
                 </section>
 
-                <section className='calculadora'>
-                    <input
-                        type="type"
-                        value={voltaje}
-                        onChange={(e) => setVoltaje(e.target.value)}
-                        placeholder='Ingresa el valor de voltaje en v'
-                        className='inputs text-center'
-                    />
+                <section className='calculadora py-3'>
+                    <button className='btn-calcular-circuito-serie text-2xl' onClick={() => setMostrarModalResistencia(true)}>Abrir calculadora</button>
+                    <ModalFormulas mostrar={mostramodalresistencia} cerrar={() => setMostrarModalResistencia(false)}>
+                        <h4 className='text-center'>Ingresa el valor de voltaje</h4>
+                        <input
+                            type="type"
+                            value={voltaje}
+                            onChange={(e) => setVoltaje(e.target.value)}
+                            placeholder='Ingresa el valor de voltaje en v'
+                            className='inputs text-center'
+                        />
+                        <h4 className='text-center'>Ingresa el valor de corriente</h4>
+                        <input
+                            type="type"
+                            value={corriente}
+                            onChange={(e) => setCorriente(e.target.value)}
+                            placeholder='Ingresa el valor de corriente en amperios '
+                            className='inputs text-center'
+                        />
 
-                    <input
-                        type="type"
-                        value={corriente}
-                        onChange={(e) => setCorriente(e.target.value)}
-                        placeholder='Ingresa el valor de corriente en amperios '
-                        className='inputs text-center'
-                    />
+                        <button
+                            onClick={calcularResistencia}
+                            className='btn-calcular'
 
-                    <button
-                        onClick={calcularResistencia}
-                        className='btn-calcular'
+                        >
+                            Obtener Corriente
+                        </button>
+                        <p className='text-center text-2xl py-2'>El valor de R es : {valorResistencia}Ω</p>
+                    </ModalFormulas>
 
-                    >
-                        Obtener Corriente
-                    </button>
-                    <p className='text-center text-2xl py-2'>El valor de R es : {valorResistencia}Ω</p>
                 </section>
             </main>
 
