@@ -1,11 +1,8 @@
 import './Home.css';
-import { WhatsappFlotante } from '../../components/WhatsappFlotante/WhatsappFlotante';
 import { InformacionApp } from '../../components/InformacionApp/InformacionApp';
 import { Banner } from '../../components/Banner/Banner';
 import { TarjetaFlip } from '../../components/TarjetaFlip/TarjetaFlip';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
-//import { Funcionamiento } from '../../components/Funcionamiento/Funcionamiento';
-//import { CardInfo } from '../../components/CardInfo/CardInfo';
 
 
 
@@ -303,7 +300,7 @@ l-15 -24 -132 132 c-121 121 -134 131 -169 131 -49 0 -77 -28 -77 -77 0 -34
 
                 </section>
 
-                <WhatsappFlotante />
+               
 
 
 

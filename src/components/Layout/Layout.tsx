@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import { NavbarPage } from "../NavbarPage/NavbarPage"
+import { FooterPage } from "../FooterPage/FooterPage"
 //import { FooterPage } from "../FooterPage/FooterPage"
 
 
@@ -12,6 +13,7 @@ export const Layout:React.FC = ()=>{
            <main>
               <Outlet />
            </main>
+           <FooterPage />
          
         
         </>

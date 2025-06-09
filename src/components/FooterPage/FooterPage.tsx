@@ -47,16 +47,13 @@ export const FooterPage: React.FC = () => {
 
                 </section>
                 <section className="container-footer-dispositivos">
-                    <header className="logo-dispositivo">Calcula<span className="ar">AR</span></header>
+                    <header className="logo-dispositivo">Tensiora <span style={{color:theme === "dark" ? '#FCEF91':'#60B5FF'}}>Electric</span> ™</header>
                     <ul className="submenu-footer-dispositivo">
                         <li><Link to='/politicas' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}> Politica de privacidad</Link></li>
                         <li><a target="_blank" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://www.linkedin.com/company/apoloixcode/?viewAsMember=true">Linkedln</a></li>
                         <li><Link to='/anuncios' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Reddit</Link></li>
                         <li><a target="_blank" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://x.com/apoloixcode">X</a></li>
                     </ul>
-                    <footer className="copyright-dispositivo" style={{ borderTopColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
-                        <p className="copyright-logo-act">Copyright CalculAR 2025™</p>
-                    </footer>
                 </section>
                 <WhatsappFlotante />
 
