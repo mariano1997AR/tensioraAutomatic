@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const API  = axios.create({
-    baseURL:'http://localhost/tensioraapi',
+    baseURL:'https://tensioraapi.onrender.com/',
     withCredentials:true,
     headers:{
         "Content-Type":"application/json"
@@ -10,8 +10,8 @@ const API  = axios.create({
 })
 
 
-export const login = (user:string,pass:string) => API.post("/auth.php",{user,pass});
+export const login = (user:string,pass:string) => API.post("/auth",{user,pass});
 
-export const getProtected = (token:string)=>API.get("/protected.php",{
+export const getProtected = (token:string)=>API.get("/protected",{
    headers:{Authorization:`Bearer ${token}`}
 });
