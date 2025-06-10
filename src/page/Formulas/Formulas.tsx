@@ -6,6 +6,7 @@ import { CircuitoSerie } from '../CircuitoSerie/CircuitoSerie';
 import { CircuitoParalelo } from '../CircuitoParalelo/CircuitoParalelo';
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 import { VideoEmbebido } from '../../components/VideoEmbebido/VideoEmbebido';
+import { Title,Meta } from 'react-head';
 
 
 export const Formulas: React.FC = () => {
@@ -44,6 +45,9 @@ export const Formulas: React.FC = () => {
 
     return (
         <>
+            <Title>Formulas | Tensiora Electric</Title>
+            <Meta name='description' content='formulas para electricistas, formulas electricas,formulas matematicas,matematicas,herramientas para electricistas'/>
+            <Meta name='keywords' content='formulas,matematica,electricistas,electrico,leyohm,circuitos,circuitos matematicos'/>
             <main className='container-formulas'>
                 <section className='py-3 mx-2'>
                     <BtnAtras />

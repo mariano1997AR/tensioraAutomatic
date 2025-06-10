@@ -5,13 +5,20 @@ import { TarjetaFlip } from '../../components/TarjetaFlip/TarjetaFlip';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import { Bienvenida } from '../../components/Bienvenida/Bienvenida';
 import { BrandCarousel } from '../../components/BrandCarousel/BrandCarousel';
-
+import {Title,Meta} from 'react-head';
 
 
 export const Home: React.FC = () => {
     const { theme } = useTheme();
     return (
         <>
+           <Title>Home | Tensiora</Title>
+           <Meta name='description' content='inicio de tensiora electric, plataforma de trabajo para automatizar tareas de incidencias, donde ya el cliente tenga la seguridad que realicen su trabajo electrico' />
+           <Meta name='keywords' content='plataforma web, tensiora electric, trabajos electricos, certificacion ISO 9001,Formulario de trabajo' />
+           <Meta property='og:title' content='Home | Tensiora Electric'/>
+           <Meta property='og:description' content='Es pantalla de inicio de Tensiora Electric'/>
+           <Meta property='og:type' content='website'/>
+           <Meta property='og:url' content='https://mariano1997ar.github.io/tensioraElectric/home' />
             <main className='container-home'>
                 {/* vista en pc */}
 

@@ -1,19 +1,20 @@
 import './Ingresar.css';
 import { useState } from 'react';
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../../components/apis/apis';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser,faKey } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faKey } from '@fortawesome/free-solid-svg-icons';
 import { toast, ToastContainer } from 'react-toastify';
 import bienvenida from '../../assets/contacto/comunicacion-1.webp';
+import { Title, Meta } from 'react-head';
 
 export const Ingresar: React.FC = () => {
 
-     const { theme } = useTheme();
+    const { theme } = useTheme();
     const [user, setUser] = useState<string>("");
     const [pass, setPass] = useState<string>("");
-  //  const [loading, setLoading] = useState<boolean>(false);
+    //  const [loading, setLoading] = useState<boolean>(false);
 
     const navigate = useNavigate();
 
@@ -21,23 +22,27 @@ export const Ingresar: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const res = await login(user,pass);
-            console.log(user,pass);
-            localStorage.setItem('token',res.data.token);
-            navigate('/dashboard',{replace:true});
-        
+            const res = await login(user, pass);
+            console.log(user, pass);
+            localStorage.setItem('token', res.data.token);
+            navigate('/dashboard', { replace: true });
+
         } catch (error) {
-           toast.error("Credenciales Incorrectas",{
-              className:'error',
-              position:"top-center",
-              autoClose:3000,
-              hideProgressBar:true
-           })
-        }  
+            toast.error("Credenciales Incorrectas", {
+                className: 'error',
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: true
+            })
+        }
     }
 
     return (
         <>
+            <Title>Ingresar | Tensiora Electric</Title>
+            <Meta name='description' content='Sitio de ingreso para entrar en la aplicacion de tensiora Electric' />
+            <Meta name='keywords' content='login de tensiora electric, entrada de tensiora electric, electricos' />
+
             <section className="flex-container-iniciar-sesion">
                 <section className="flex-item-left-sesion">
                     <img
