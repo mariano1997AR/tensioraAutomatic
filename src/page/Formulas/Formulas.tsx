@@ -251,12 +251,12 @@ export const Formulas: React.FC = () => {
 
                     </section >
                     <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/potencia-tension'>POTENCIA</Link>
-                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/corriente-monofasico'>CORRIENTE EN MONOFASICO</Link>
+                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-mixto'>CIRCUITO MIXTO</Link>
+                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/potencia-tension'>POTENCIA</Link>
                         <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/corriente-trifasico'>CORRIENTE EN TRIFASICO</Link>
                     </section>
                     <section className="d-flex mb-2">
-                        <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos  ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >IA </article>
+                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/corriente-monofasico'>CORRIENTE EN MONOFASICO</Link>
                         <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >Calculadora</article>
                         <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >ATENCIÓN AL CLIENTE</article>
                     </section>

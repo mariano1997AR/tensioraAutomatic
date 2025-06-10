@@ -12,6 +12,8 @@ import { CorrienteMonofasico } from './page/CorrienteMonofasico/CorrienteMonofas
 import { CorrienteTrafasico } from './page/CorrienteTrifasico/CorrienteTrifasico';
 import { Formulas } from './page/Formulas/Formulas';
 import { Contacto } from './page/Contacto/Contacto';
+import { CircuitoMixto } from './page/CircuitoMixto/CircuitoMixto';
+import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondiciones';
 
 export const App:React.FC =()=> {
   const [loading,setLoading] = useState<boolean>(true);
@@ -40,6 +42,8 @@ export const App:React.FC =()=> {
                   <Route path='/corriente-trifasico' element={<CorrienteTrafasico />} />
                   <Route path='/formulas-para-electricistas' element={<Formulas />} />
                   <Route path='/contacto' element={<Contacto />} />
+                  <Route path='/circuito-mixto' element={<CircuitoMixto />} />
+                  <Route path='/terminos-condiciones' element={<TerminosCondiciones />} />
 
                </Route>
           </Routes>

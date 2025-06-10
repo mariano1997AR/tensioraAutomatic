@@ -48,11 +48,11 @@ export const FooterPage: React.FC = () => {
                 </section>
                 <section className="container-footer-dispositivos">
                     <header className="logo-dispositivo">Tensiora <span style={{color:theme === "dark" ? '#FCEF91':'#60B5FF'}}>Electric</span> ™</header>
-                    <ul className="submenu-footer-dispositivo">
-                        <li><Link to='/politicas' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}> Politica de privacidad</Link></li>
+                    <ul className={` submenu-footer-dispositivo ${theme === "dark" ? 'hover-oscuro':'hover-amarillo'}`}>
+                        <li><Link to='/terminos-condiciones' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} > Términos y Condiciones</Link></li>
                         <li><a target="_blank" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://www.linkedin.com/company/apoloixcode/?viewAsMember=true">Linkedln</a></li>
                         <li><Link to='/anuncios' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Reddit</Link></li>
-                        <li><a target="_blank" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://x.com/apoloixcode">X</a></li>
+                        <li></li>
                     </ul>
                 </section>
                 <WhatsappFlotante />

@@ -69,6 +69,7 @@
 .submenu-enterprise-footer li a:hover {
     transition: all .9s;
     border-bottom: 1px solid #18230F;
+    cursor: pointer;
 }
 
 .naranja {
@@ -148,5 +149,13 @@
         font-weight: bold;
         font-size: 1.4em;
     }
+    /*
+    .hover-oscuro :hover{
+        transition: all 1s;
+        background-color: #FCEF91;
+        cursor: pointer;
+        color: #18230F;
+    }*/
+
 
 }

@@ -3,6 +3,7 @@ import { InformacionApp } from '../../components/InformacionApp/InformacionApp';
 import { Banner } from '../../components/Banner/Banner';
 import { TarjetaFlip } from '../../components/TarjetaFlip/TarjetaFlip';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
+import { Bienvenida } from '../../components/Bienvenida/Bienvenida';
 
 
 
@@ -36,7 +37,9 @@ export const Home: React.FC = () => {
 
                     {/* cada enlace va a llegar a funcionalidades */}
                     {/* informacion sobre la aplicacion de tensiora App */}
-
+                    <section>
+                        <Bienvenida />
+                    </section>
                     <section>
                         <InformacionApp />
                     </section>

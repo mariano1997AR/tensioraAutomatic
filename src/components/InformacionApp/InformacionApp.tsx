@@ -8,6 +8,7 @@ export const InformacionApp: React.FC = () => {
         <>
             <main>
                 <section className={`container-flex-informacionApp ${theme === "dark" ? 'fondo-oscuro' : 'fondo-claro'}`} >
+
                     <section className='item-left-image ' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                         <header className='logo-marca text-center text-3xl gap-2'>Tensiora <span className="azul" style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Electric</span>
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +67,8 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                         </header>
                     </section>
                     <section className='item-right-info'>
-                        <h1 className='text-center py-2'>¿Qué es Tensiora Electric?</h1>
-                        <p className='text-2xl'>Tensiora Electric es una aplicación de incidencias donde podrás comunicarnos tu problema electrico y te daremos la solucion utilizando el sistema de metrica donde 
+                        <h2 className='text-center py-2'>¿Qué es Tensiora Electric?</h2>
+                        <p className='text-2xl'>Tensiora Electric es una aplicación de incidencias donde podrás comunicarnos tu problema electrico y te daremos la solucion utilizando el sistema de metrica donde
                             1: es el mas urgente, 2: es menos urgente, 3: es poco urgente donde utilizando un algoritmo para clasificar el trabajo asi siendo automatizando sin problema alguno
                         </p>
                     </section>
@@ -155,7 +156,7 @@ l-87 0 50 105 c27 58 49 117 49 131 0 54 -74 92 -123 63z"/>
                         </header>
                     </section>
                     <section className='item-right-info'>
-                        <h1 className='text-center py-2'>¿Comó podemos ayudarte?</h1>
+                        <h2 className='text-center py-2'>¿Comó podemos ayudarte?</h2>
                         <p className='text-2xl' >En la medida que se realicé el trabajo para terminar vas a poder comunicarte en el plazo establecido para dar la orden que termino el trabajo y se libera el sistema. Esto agilizará los tiempos de trabajo</p>
                     </section>
 
