@@ -14,6 +14,9 @@ import { Formulas } from './page/Formulas/Formulas';
 import { Contacto } from './page/Contacto/Contacto';
 import { CircuitoMixto } from './page/CircuitoMixto/CircuitoMixto';
 import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondiciones';
+import { Ingresar } from './page/Ingresar/Ingresar';
+import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
+import { Dashboard } from './page/Dashboard/Dashboard';
 
 export const App:React.FC =()=> {
   const [loading,setLoading] = useState<boolean>(true);
@@ -44,8 +47,18 @@ export const App:React.FC =()=> {
                   <Route path='/contacto' element={<Contacto />} />
                   <Route path='/circuito-mixto' element={<CircuitoMixto />} />
                   <Route path='/terminos-condiciones' element={<TerminosCondiciones />} />
-
+                  <Route path='/ingresar' element={<Ingresar />} />
+                   
                </Route>
+               <Route 
+                  path='/dashboard'
+                  element={
+                     <PrivateRoute>
+                          <Dashboard />
+                     </PrivateRoute>
+                  }
+                  
+               />
           </Routes>
 
        )}

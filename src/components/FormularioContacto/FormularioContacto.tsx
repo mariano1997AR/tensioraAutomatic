@@ -59,7 +59,7 @@ export const FormularioContacto: React.FC = () => {
                 {/*style={{border:theme === "dark" ?  '2px solid rgba(255, 255, 255, .2)' : '2px solid #222831'}} */}
                 <section className="flex-item-right-sesion mx-5">
                     <form className="mx-5" onSubmit={handleSubmit} >
-                        <p className="contacto">Bienvenido!</p>
+                        <p className="contacto">Contactanos!</p>
                         <p className="text-center ">Ingresa tus datos </p>
                         <article className={`input-box-iniciar-sesion`} >
                             <input
