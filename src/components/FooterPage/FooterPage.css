@@ -43,9 +43,7 @@
 
 .columna-redes-sociales ul li a:hover {
     transition: all 5ms;
-    /*background-color: #F5F5F5;*/
     border-bottom: 1px solid #18230F;
-    /*color: #1D1616;*/
 }
 
 .link {
@@ -72,17 +70,6 @@
     cursor: pointer;
 }
 
-.naranja {
-    color: #DF6D14;
-}
-
-.ar {
-    color: #60B5FF;
-}
-
-.icons {
-    font-size: 3.5vh;
-}
 
 .logo {
     font-size: 1.5em;

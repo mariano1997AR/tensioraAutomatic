@@ -1,0 +1,41 @@
+
+.carousel-container-brand {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 50px;
+   
+}
+  
+  .carousel-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollBrands 20s linear infinite;
+  }
+  
+  .brand-logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .brand-logo:hover {
+    filter: grayscale(0%);
+    transition: all 1s;
+    border-radius: 20px;
+  }
+  
+  @keyframes scrollBrands {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+@media (max-width: 1060px) {}
