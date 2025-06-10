@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
     const { theme } = useTheme();
     return (
         <>
-           <Title>Home | Tensiora</Title>
+           <Title>Home | Tensiora Electric</Title>
            <Meta name='description' content='inicio de tensiora electric, plataforma de trabajo para automatizar tareas de incidencias, donde ya el cliente tenga la seguridad que realicen su trabajo electrico' />
            <Meta name='keywords' content='plataforma web, tensiora electric, trabajos electricos, certificacion ISO 9001,Formulario de trabajo' />
            <Meta property='og:title' content='Home | Tensiora Electric'/>
