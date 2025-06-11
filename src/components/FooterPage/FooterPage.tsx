@@ -13,7 +13,7 @@ export const FooterPage: React.FC = () => {
                     <section className='columna-container desaparecer-columnas'>
                         <article className='columna-redes-sociales'>
                             <ul className='submenu-redesociales'>
-                                <li className="logo">Calcul<span className="ar">AR</span>™</li>
+                                <li className="logo">Tensiora<span style={{color:theme === "dark" ? '#FCEF91' : '#60B5FF'}}> Electric</span>™</li>
                             </ul>
 
                         </article>
@@ -38,7 +38,7 @@ export const FooterPage: React.FC = () => {
 
                     <section className='top-line-copy' style={{ borderTopColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                         <ul className='submenu-enterprise-footer'>
-                            <li>Copyright 2025 - Calcul<span className="ar">AR ™</span></li>
+                            <li>Copyright 2025 - Tensionar<span style={{color:theme === "dark" ? '#FCEF91' : '#60B5FF'}}> Electric™</span></li>
                             <li><a></a></li>
                             <li><a></a></li>
                             <li><Link to='/medios-pagos' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} >Medios de Pagos</Link></li>

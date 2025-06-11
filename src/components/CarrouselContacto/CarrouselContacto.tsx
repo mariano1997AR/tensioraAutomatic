@@ -14,7 +14,7 @@ export const CarrouselContacto: React.FC = () => {
 
     return (
         <>
-            <section id="demo" className="carousel slide carousel-contacto" data-bs-ride="carousel">
+            <section id="demo" className="carousel slide carousel-contacto-pc carousel-contacto" data-bs-ride="carousel">
 
                 {/* Indicators/dots */}
                 <section className="carousel-indicators">

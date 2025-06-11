@@ -8,8 +8,8 @@ export const NavbarPc: React.FC = () => {
     return (
         <>
             <ul className="menu-links desaparece-dispositivo aparece-PC">
-                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/funcionamiento" >¿Cómo funciona la App?</Link></li>
-                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/blogger" >Consejos</Link></li>
+                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/Home" >Home</Link></li>
+                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/formulas-para-electricistas" >Formulas</Link></li>
 
                 {/* proxima funcionalidad
                                <li className="nav-item dropdown">
@@ -21,8 +21,8 @@ export const NavbarPc: React.FC = () => {
                                    </ul>
                                </li>*/}
 
-                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FCEF91' : '#60B5FF' }} to='/iniciar-sesion'>Ingresar</Link></li>
-                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FCEF91' : '#60B5FF' }} to='/agendar'>Agendar Cita</Link></li>
+                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FCEF91' : '#60B5FF' }} to='/ingresar'>Ingresar</Link></li>
+                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FCEF91' : '#60B5FF' }} to='/contacto'>Contacto</Link></li>
                 <li className="switch desaparecer-responsive "><ThemeSwitcher /></li>
             </ul>
 

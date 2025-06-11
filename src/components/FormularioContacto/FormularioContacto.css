@@ -14,8 +14,31 @@
 
 .flex-item-left-sesion {
     flex: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
   
 
+}
+
+.flex-item-left-sesion:hover{
+    transition: all 1s;
+    border-radius: 35px;
+
+}
+.fondo-blanco{
+    background-color: #F7F7F7;
+}
+
+.titulo-contacto{
+    margin: 32.33% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-contacto:hover{
+    transition: all 1s;
+    font-size: 3em;
 }
 
 .img-left-sesion{

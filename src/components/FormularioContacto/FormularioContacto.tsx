@@ -3,7 +3,6 @@ import { useState } from 'react';
 //import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../ThemeContext/ThemeContext';
 import {ToastContainer} from "react-toastify";
-import presentacionContacto from '../../assets/contacto/comunicacion-1.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser,faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
@@ -48,13 +47,8 @@ export const FormularioContacto: React.FC = () => {
     return (
         <>
             <section className="flex-container-iniciar-sesion">
-                <section className="flex-item-left-sesion">
-                    <img
-                        src={presentacionContacto}
-                        alt="es una imagen ilustrativa de un obrero trabajando en un edificio donde otorga sus servicios gracias a LabureYA"
-                        className="img-left-sesion"
-                        loading="lazy"
-                    />
+                <section className="flex-item-left-sesion" style={{background:theme === "dark" ? '#F7F7F7':'#393E46'}}>
+                   <h1 className='titulo-contacto' style={{color:theme === "dark" ? '#393E46':'#F7F7F7'}}>Contactanos para tus  <span className='mx-2' style={{color:theme === "dark" ? '#FFD66B':'#60B5FF'}}>consultas!</span></h1>
                 </section>
                 {/*style={{border:theme === "dark" ?  '2px solid rgba(255, 255, 255, .2)' : '2px solid #222831'}} */}
                 <section className="flex-item-right-sesion mx-5">

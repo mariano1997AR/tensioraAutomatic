@@ -25,7 +25,7 @@ export const Loader: React.FC = () => {
     return (
         <>
             <section className="container-load" style={{ background: theme === "dark" ? '#222' : '#F2F4F7' }}>
-                <section className='text-center mx-2 logo-responsive items-center gap-2 py-2'>
+                <section className='text-center mx-2 logo-responsive items-center gap-2 py-2 logo-loader'>
                     <h1 className='text-center py-4'>Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Electric</span></h1>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="20.000000pt" height="20.000000pt" viewBox="0 0 512.000000 512.000000"
