@@ -17,6 +17,8 @@ import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondicio
 import { Ingresar } from './page/Ingresar/Ingresar';
 import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 import { Dashboard } from './page/Dashboard/Dashboard';
+import { TipoCables } from './page/TipoCables/TipoCables';
+import { PublicRoute } from './components/PublicRoute/PublicRoute';
 
 export const App:React.FC =()=> {
   const [loading,setLoading] = useState<boolean>(true);
@@ -43,22 +45,28 @@ export const App:React.FC =()=> {
                   <Route path='/potencia-tension' element={<Potencia />} />
                   <Route path='/corriente-monofasico' element={<CorrienteMonofasico />} />
                   <Route path='/corriente-trifasico' element={<CorrienteTrafasico />} />
-                  <Route path='/formulas-para-electricistas' element={<Formulas />} />
+                  <Route path='/herramientas/formulas-para-electricistas' element={<Formulas />} />
                   <Route path='/contacto' element={<Contacto />} />
                   <Route path='/circuito-mixto' element={<CircuitoMixto />} />
                   <Route path='/terminos-condiciones' element={<TerminosCondiciones />} />
-                  <Route path='/ingresar' element={<Ingresar />} />
-                   
+                  <Route path='/ingresar' element={
+                      <PublicRoute>
+                           <Ingresar />
+                      </PublicRoute>
+                  } />
+                  <Route path='/herramientas/tipo-de-cables' element={<TipoCables />}/>
                </Route>
                <Route 
                   path='/dashboard'
+                  
                   element={
-                     <PrivateRoute>
-                          <Dashboard />
+                     <PrivateRoute >
+                          <Dashboard  />
                      </PrivateRoute>
                   }
                   
                />
+               
           </Routes>
 
        )}

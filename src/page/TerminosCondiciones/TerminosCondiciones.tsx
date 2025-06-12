@@ -1,4 +1,5 @@
 import { BtnAtras } from "../../components/BtnAtras/BtnAtras";
+import './TerminosCondiciones.css';
 
 
 export const TerminosCondiciones: React.FC = () => {
@@ -14,7 +15,7 @@ export const TerminosCondiciones: React.FC = () => {
                 <section className="py-3">
                     <BtnAtras />
                 </section>
-                <section className='container-politicas mx-2'>
+                <section className='container-politicas'>
                     <article className='terminos-condiciones'>
                         <p className='terminos-privacidad text-center'><u>TÉRMINOS Y CONDICIONES DE USO</u></p>
                         <p className='pb-3'><b>Última actualizacion:</b> {day}/{month}/{year}</p>

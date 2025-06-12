@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
             <main className='container-home'>
                 {/* vista en pc */}
 
-                <section className={` container-dashboard desaparecer-dispositivo`} >
+                <section className={` container-dashboard desaparecer-dispositivo`} id='home' >
                     <section>
                         <InformacionApp />
                     </section>

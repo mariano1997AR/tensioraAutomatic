@@ -1,6 +1,6 @@
 import { type JSX } from "react";
 import { Navigate } from "react-router-dom";
-
+import { isAuthenticated } from "../../utils/auth";
 
 interface Props{
     children:JSX.Element;
@@ -8,6 +8,5 @@ interface Props{
 
 
 export const PrivateRoute:React.FC<Props>=({children})=>{
-    const token = localStorage.getItem('token');
-    return token ? children:<Navigate to='/ingresar' replace />;
+    return isAuthenticated() ? children:<Navigate to='/ingresar' replace />;
 }

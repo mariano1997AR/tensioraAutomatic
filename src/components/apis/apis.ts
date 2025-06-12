@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const API  = axios.create({
-    baseURL:'https://tensioraapi.onrender.com/',
+    baseURL:'https://tensioraapi.onrender.com/' ,
     withCredentials:true,
     headers:{
         "Content-Type":"application/json"

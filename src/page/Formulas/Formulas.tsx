@@ -1,77 +1,67 @@
-import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import './Formulas.css';
-import { Link } from 'react-router-dom';
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
-import { VideoEmbebido } from '../../components/VideoEmbebido/VideoEmbebido';
+
 import { Title, Meta } from 'react-head';
+import { Card3D } from '../../components/Card3D/Card3D';
+
+const cards = [
+    { title: 'Voltaje', linkText: 'Ir a voltaje', to: '/calcularVoltajes' },
+    { title: 'Circuito en Paralelo', linkText: 'Ir a circuito en paralelo', to: '/circuito-en-paralelo' },
+    { title: 'Circuito en Serie', linkText: 'Ir a Circuito en serie', to: '/circuito-en-serie' },
+    { title: 'Circuito Mixto', linkText: 'Ir a Circuito mixto', to: '/circuito-mixto' },
+    { title: 'Potencia', linkText: 'Ir a potencia', to: '/potencia-tension' },
+    { title: 'Corriente Monofasico', linkText: 'Ir a corriente monofasica', to: '/corriente-monofasico' },
+];
 
 
 export const Formulas: React.FC = () => {
-    const { theme } = useTheme();
- 
+
+
+
+
     return (
         <>
             <Title>Formulas | Tensiora Electric</Title>
             <Meta name='description' content='formulas para electricistas, formulas electricas,formulas matematicas,matematicas,herramientas para electricistas' />
             <Meta name='keywords' content='formulas,matematica,electricistas,electrico,leyohm,circuitos,circuitos matematicos' />
             <main className='container-formulas'>
-                <section className='py-3 mx-2'>
+                <section className='py-3  btn-atras-formulas'>
                     <BtnAtras />
                 </section>
                 <section className={` container-dashboard desaparecer-dispositivo`} >
-                    <section>
-                        <VideoEmbebido />
-                    </section>
+
                     <section>
                         <h4 className='text-center py-2 text-2xl'>Formulas</h4>
                     </section>
 
-                    <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/calcularVoltajes'>VOLTAJES</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-en-paralelo'>CIRCUITO EN PARALELO</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-en-serie'>CIRCUITO EN SERIE</Link>
-
-                    </section >
-
-                    <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-mixto'>CIRCUITO MIXTO</Link>
-                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/potencia-tension'>POTENCIA</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/corriente-trifasico'>CORRIENTE EN TRIFASICO</Link>
+                    <section className='card-row '>
+                        {cards.map((card, index) => (
+                            <div key={index} className="card-column ">
+                                <Card3D {...card} />
+                            </div>
+                        ))}
                     </section>
 
-                    <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/corriente-monofasico'>CORRIENTE EN MONOFASICO</Link>
-                        <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >Calculadora</article>
-                        <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >ATENCIÓN AL CLIENTE</article>
-                    </section>
+
 
 
                 </section>
 
 
                 <section className='container-dashboard-responsive desaparecer-pc'>
-                    <section>
-                        <VideoEmbebido />
-                    </section>
+    
                     <section>
                         <h4 className='text-center py-2 text-2xl'>Formulas</h4>
                     </section>
-                    <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/calcularVoltajes'>VOLTAJES</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-en-paralelo'>CIRCUITO EN PARALELO</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-en-serie'>CIRCUITO EN SERIE</Link>
 
-                    </section >
-                    <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/circuito-mixto'>CIRCUITO MIXTO</Link>
-                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/potencia-tension'>POTENCIA</Link>
-                        <Link className={`p-2 flex-fill  text-center py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/corriente-trifasico'>CORRIENTE EN TRIFASICO</Link>
+                       <section className='card-row '>
+                        {cards.map((card, index) => (
+                            <div key={index} className="card-column">
+                                <Card3D {...card} />
+                            </div>
+                        ))}
                     </section>
-                    <section className="d-flex mb-2">
-                        <Link className={`p-2 flex-fill  py-5 pb-5 mx-2 marcos link-cliente ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'}`} to='/corriente-monofasico'>CORRIENTE EN MONOFASICO</Link>
-                        <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >Calculadora</article>
-                        <article className={`p-2 flex-fill text-center py-5 pb-5 mx-2 marcos ${theme === "dark" ? 'fondo-negro' : 'fondo-blanco'} `} >ATENCIÓN AL CLIENTE</article>
-                    </section>
+                   
                 </section>
 
             </main>

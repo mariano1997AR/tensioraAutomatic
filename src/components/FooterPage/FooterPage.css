@@ -3,14 +3,14 @@
 .container-footer {
     width: 100%;
     height: auto;
-   
-   
+
+
 }
 
 .columna-container {
     display: flex;
     gap: 20px;
-    
+
     /* Espacio entre columnas */
 }
 
@@ -80,6 +80,7 @@
 }
 
 
+
 @media (max-width: 1060px) {
     .container-footer-pc {
         display: none;
@@ -103,13 +104,18 @@
 
     }
 
-    .submenu-footer-dispositivo li:hover {
+    /*modificar esta parte*/
+
+    .submenu-footer-dispositivo  .li-submenu:hover{
         transition: all 1s;
-        border-radius: 50px;
-        background-color: #60B5FF;
         cursor: pointer;
+        
 
     }
+    .link-footer-redes{
+         color:#333446;
+    }
+
 
     .submenu-footer-dispositivo li a {
         text-decoration: none;
@@ -136,13 +142,8 @@
         font-weight: bold;
         font-size: 1.4em;
     }
-    /*
-    .hover-oscuro :hover{
-        transition: all 1s;
-        background-color: #FCEF91;
-        cursor: pointer;
-        color: #18230F;
-    }*/
+
+
 
 
 }

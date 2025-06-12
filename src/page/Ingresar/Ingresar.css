@@ -1,25 +1,43 @@
-.flex-container-iniciar-sesion{
+.container-ingresar-tensiora {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.flex-container-iniciar-sesion {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
-    
+
 }
 
 .flex-item-right-sesion {
     flex: 50%;
 
-   
+
 }
 
 .flex-item-left-sesion {
     flex: 50%;
-    
-  
+    background-color: #F7F7F7;
 
 }
 
-.img-left-sesion{
+.flex-item-left-sesion:hover {
+    transition: all 1s;
+    border-radius: 30px;
+}
+
+.titulo-bienvenida-tensiora-login {
+    color: #001524;
+    text-align: center;
+    margin: 30% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-left-sesion {
     margin: 0 auto;
     background-size: cover;
     width: 100%;
@@ -40,23 +58,24 @@
     width: 100%;
     height: 50px;
     margin: 30px 0;
-   
+
 }
 
 .input-box-iniciar-sesion .input-register {
     width: 100%;
     height: 100%;
-   background: transparent;
+    background: transparent;
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-   /* color: #fff;*/
+    /* color: #fff;*/
     padding: 20px 40px 20px 20px;
     text-align: center;
 }
-.input-box-iniciar-sesion .i{
+
+.input-box-iniciar-sesion .i {
     position: absolute;
     right: 90%;
     top: 50%;
@@ -65,14 +84,15 @@
 }
 
 
-.placeholder-oscuro::placeholder{
+.placeholder-oscuro::placeholder {
     color: #F7F7F7;
 }
-.placeholder-oscuro::placeholder:focus{
+
+.placeholder-oscuro::placeholder:focus {
     border: 3px solid #555;
 }
 
-.placeholder-claro::placeholder{
+.placeholder-claro::placeholder {
     color: #222831;
 }
 
@@ -126,62 +146,69 @@
 }
 
 
-.recuperar-contrasenia{
+.recuperar-contrasenia {
     margin-left: 34.33%;
     text-decoration: none;
 
 }
-.border-textarea{
+
+.border-textarea {
     width: 100%;
-    height:120px;
+    height: 120px;
     padding: 10px;
-    
+
 }
 
-.border-textarea::placeholder{
+.border-textarea::placeholder {
     margin: 0 auto;
-  
+
 }
 
 @media (max-width: 1060px) {
-    .flex-container-iniciar-sesion{
+    .flex-container-iniciar-sesion {
         flex-direction: column;
-    
-      
-        
+
+
+
     }
-    .flex-item-right-sesion{
-        margin-top: 50px;  
+
+    .flex-item-right-sesion {
+        margin-top: 50px;
         height: 100%;
         padding-top: 50px;
         padding-bottom: 80px;
-    
-       
-    
+
+
+
 
     }
-    .input-register{
+
+    .input-register {
         width: 100%;
     }
-    .contacto{
+
+    .contacto {
         font-size: 0.5em;
     }
-    .registrarse{
+
+    .registrarse {
         margin-top: 30px;
         margin-bottom: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    .flex-item-left-sesion{
-       display: none;
-    
+    .flex-item-left-sesion {
+        display: none;
+
     }
-    .top-left{
+
+    .top-left {
         padding-bottom: 50px;
-       margin-bottom: 60px;
+        margin-bottom: 60px;
     }
-    .flex-item-right-sesion{
+
+    .flex-item-right-sesion {
         width: 90%;
         margin-left: 20px;
 
@@ -191,21 +218,24 @@
 }
 
 @media (max-width: 600px) {
-    .flex-item-left-sesion{
+    .flex-item-left-sesion {
         display: none;
     }
-    .top-left{
+
+    .top-left {
         text-align: center;
     }
-    .recuperar-contrasenia{
+
+    .recuperar-contrasenia {
         margin-left: 15%;
     }
-    .flex-item-right-sesion{
-       
+
+    .flex-item-right-sesion {
+
         margin: auto;
         padding-right: 30px;
         justify-content: center;
         align-items: center;
-        
+
     }
 }

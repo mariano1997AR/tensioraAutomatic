@@ -6,17 +6,17 @@ import { Link } from 'react-router-dom';
 
 
 
-export const NavbarPhone:React.FC = ()=>{
-    const {theme} = useTheme();
-    return(
+export const NavbarPhone: React.FC = () => {
+    const { theme } = useTheme();
+    return (
         <>
-        
+
             <nav className="menu-container">
 
                 <section className='logo-responsive items-center gap-2' style={{ color: theme === "dark" ? 'white' : 'black' }}>
 
                     <Link className="a-logo " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/home">
-                        Tensiora <span className="azul" style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Electric</span>
+                        Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Electric</span>
                     </Link>
 
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -83,15 +83,25 @@ c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20
                     <ThemeSwitcher />
                 </section>☰</label>
 
-                <ul className="menu" >
-                    <li><Link to='/home' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
-                    <li><Link to='/formulas-para-electricistas' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Formulas</Link></li>
-                    <li><Link to='/ingresar' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Ingresar</Link></li>
-                    <li><Link to='/contacto' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco':'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Contacto</Link></li>
+                <ul className="menu py-1" >
+                    <li><Link to='/home' className={`a-link-navbar-responsive  ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
+                    {/*<li><Link to='/formulas-para-electricistas' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Formulas</Link></li>*/}
+                    <li className="dropdown dropend">
+                        <button type="button" className="btn  btn-herramientas-toggle dropdown-toggle" style={{ color: theme === "dark" ? 'white' : 'black' }}  data-bs-toggle="dropdown">
+                            Herramientas
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li><Link to='/herramientas/formulas-para-electricistas' className={`dropdown-item  a-link-navbar-responsive `} >Formulas</Link></li>
+                            <li><Link to='/herramientas/dibujar-circuitos' className={`dropdown-item  a-link-navbar-responsive `}>Circuitos</Link></li> 
+                            <li><Link to='/herramientas/tipo-de-cables' className={`dropdown-item  a-link-navbar-responsive`}>Tipo de cables</Link></li>
+                        </ul>
+                    </li>
+                    <li><Link to='/ingresar' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Ingresar</Link></li>
+                    <li><Link to='/contacto' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Contacto</Link></li>
                 </ul>
 
             </nav>
-        
+
         </>
     )
 }
