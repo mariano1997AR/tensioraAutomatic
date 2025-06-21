@@ -10,7 +10,7 @@ export const InformacionApp: React.FC = () => {
                 <section className={`container-flex-informacionApp ${theme === "dark" ? 'fondo-oscuro' : 'fondo-claro'}`} >
 
                     <section className='item-left-image ' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
-                        <header className='logo-marca text-center text-3xl gap-2'>Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Automatic</span>
+                        <header className='logo-marca text-center text-2xl gap-2'>Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Automatic</span>
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 width="25.000000pt" height="25.000000pt" viewBox="0 0 512.000000 512.000000"
                                 preserveAspectRatio="xMidYMid meet">
