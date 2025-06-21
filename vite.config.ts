@@ -14,9 +14,9 @@ export default defineConfig({
       registerType:'autoUpdate',
       includeAssets:['logo-basico-tensiora.ico','robots.txt'],
       manifest:{
-        name:"Tensiora Electric",
+        name:"Tensiora Auto",
         short_name:"Tensiora",
-        description:"Aplicacion para electricista",
+        description:"Aplicacion de servicios",
         theme_color:'#222831',
         background_color:'#fffefe',
         display:'standalone',

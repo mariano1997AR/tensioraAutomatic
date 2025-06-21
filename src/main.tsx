@@ -7,7 +7,7 @@ import { HeadProvider } from 'react-head';
 
 
 createRoot(document.getElementById('root')!).render(
-    <BrowserRouter basename='/tensioraElectric/'>
+    <BrowserRouter basename='/tensioraAutomatic/'>
         <HeadProvider>
             <ThemeProvider>
                 <App />
