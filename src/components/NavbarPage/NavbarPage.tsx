@@ -14,7 +14,7 @@ export const NavbarPage: React.FC = () => {
             <nav className="navbar-container mb-4" style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                 <header className="logo flex items-center gap-2">
                     <Link className="a " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/home">
-                        Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Automatic</span>
+                        Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Automatic </span>
                     </Link>
 
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
