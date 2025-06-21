@@ -72,8 +72,8 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                         </header>
                     </section>
                     <section className='item-right-info'>
-                        <h2 className='text-center py-2'>¿Qué es Tensiora Electric?</h2>
-                        <p className='text-2xl'>Tensiora Electric es una aplicación de incidencias donde podrás comunicarnos tu problema electrico y te daremos la solucion utilizando el sistema de metrica donde
+                        <h2 className='text-center py-2'>¿Qué es Tensiora Automatic?</h2>
+                        <p className='text-2xl'>Tensiora Automatic es una aplicación de incidencias donde podrás comunicarnos tu problema electrico y te daremos la solucion utilizando el sistema de metrica donde
                             1: es el mas urgente, 2: es menos urgente, 3: es poco urgente donde utilizando un algoritmo para clasificar el trabajo asi siendo automatizando sin problema alguno
                         </p>
                     </section>
