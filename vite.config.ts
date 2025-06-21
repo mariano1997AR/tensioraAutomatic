@@ -6,7 +6,7 @@ import {VitePWA} from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:"/tensioraElectric/",
+  base:"/tensioraAutomatic/",
   plugins: [
     react(),
     tailwindcss(),
@@ -20,8 +20,8 @@ export default defineConfig({
         theme_color:'#222831',
         background_color:'#fffefe',
         display:'standalone',
-        start_url:'/tensioraElectric/',
-        scope: '/tensioraElectric/',
+        start_url:'/tensioraAutomatic/',
+        scope: '/tensioraAutomatic/',
         icons:[
            {
              src:'/tensioraElectric/192x192.png',
