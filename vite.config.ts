@@ -24,12 +24,12 @@ export default defineConfig({
         scope: '/tensioraAutomatic/',
         icons:[
            {
-             src:'/tensioraElectric/192x192.png',
+             src:'/tensioraAutomatic/192x192.png',
              sizes:'192x192',
              type:'image/png',
            },
            {
-            src:'/tensioraElectric/512x512.png',
+            src:'/tensioraAutomatic/512x512.png',
             sizes:'512x512',
             type:'image/png',
            },
