@@ -44,7 +44,7 @@ export const TiposServicios: React.FC = () => {
                                      - Base de datos
                                </li>
                                <li>
-                                     - Servicios específicos para rubrtos
+                                     - Servicios específicos para rubros especificos
                                </li>
                            </ul>
                            <div className='btn-mas-informacion'>
