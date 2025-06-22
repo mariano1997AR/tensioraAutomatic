@@ -13,6 +13,11 @@
     margin-bottom: 30px;
 }
 
+.left-items-tipos-servicios:hover{
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+}
+
 .right-items-tipos-servicios {
     flex: 50%;
 }

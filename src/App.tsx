@@ -20,6 +20,7 @@ import { Dashboard } from './page/Dashboard/Dashboard';
 import { TipoCables } from './page/TipoCables/TipoCables';
 import { PublicRoute } from './components/PublicRoute/PublicRoute';
 import { Servicios } from './page/Servicios/Servicios';
+import { CalculadoraServicios } from './page/CalculadoraServicios/CalculadoraServicios';
 
 export const App:React.FC =()=> {
   const [loading,setLoading] = useState<boolean>(true);
@@ -51,6 +52,7 @@ export const App:React.FC =()=> {
                   <Route path='/circuito-mixto' element={<CircuitoMixto />} />
                   <Route path='/terminos-condiciones' element={<TerminosCondiciones />} />
                   <Route path='/servicios' element={<Servicios />} />
+                  <Route path='/herramientas/calculadora-servicios-informaticos' element={<CalculadoraServicios />}  />
                   <Route path='/ingresar' element={
                       <PublicRoute>
                            <Ingresar />

@@ -73,9 +73,8 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                     </section>
                     <section className='item-right-info'>
                         <h2 className='text-center py-2'>¿Qué es Tensiora Automatic?</h2>
-                        <p className='text-2xl'>Tensiora Automatic es una aplicación de incidencias donde podrás comunicarnos tu problema electrico y te daremos la solucion utilizando el sistema de metrica donde
-                            1: es el mas urgente, 2: es menos urgente, 3: es poco urgente donde utilizando un algoritmo para clasificar el trabajo asi siendo automatizando sin problema alguno
-                        </p>
+                        <p className='text-2xl'>Tensiora Automatic es una software factory donde ademas realizamos trabajos de automatización para empresas u organizaciones. Donde 
+                            Nos orientamos al desarrollo de aplicaciones web y mobile. Tanto en el software como en el hardware </p>
                     </section>
 
 
@@ -162,7 +161,7 @@ l-87 0 50 105 c27 58 49 117 49 131 0 54 -74 92 -123 63z"/>
                     </section>
                     <section className='item-right-info'>
                         <h2 className='text-center py-2'>¿Comó podemos ayudarte?</h2>
-                        <p className='text-2xl' >En la medida que se realicé el trabajo para terminar vas a poder comunicarte en el plazo establecido para dar la orden que termino el trabajo y se libera el sistema. Esto agilizará los tiempos de trabajo</p>
+                        <p className='text-2xl' >Vamos a ayudarte a desarrollar tu proyecto u idea para que puedas escalar facilmente donde vas a tener asesoria y recomendacion. Ya que dependiendo el trabajo que desees vas a tener opciones de usar diferentes lenguajes de programacion para la misma creación de la app</p>
                     </section>
 
 
