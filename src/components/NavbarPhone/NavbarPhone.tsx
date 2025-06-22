@@ -97,7 +97,6 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                         </button>
                         <ul className="dropdown-menu">
                             <li><Link to='/herramientas/formulas-para-electricistas' className={`dropdown-item  a-link-navbar-responsive `} >Formulas</Link></li>
-                            <li><Link to='/herramientas/dibujar-circuitos' className={`dropdown-item  a-link-navbar-responsive `}>Circuitos</Link></li>
                             <li><Link to='/herramientas/tipo-de-cables' className={`dropdown-item  a-link-navbar-responsive`}>Tipo de cables</Link></li>
                         </ul>
                     </li>

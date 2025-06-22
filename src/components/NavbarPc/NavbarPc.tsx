@@ -14,7 +14,6 @@ export const NavbarPc: React.FC = () => {
                     <ul className="dropdown-menu mt-4">
                         <li><Link className="dropdown-item item-link-menu" to='/herramientas/formulas-para-electricistas'>Formulas</Link></li>
                         <li><Link className='dropdown-item item-link-menu' to='/herramientas/tipo-de-cables'>Tipo de cables</Link></li>
-                        <li><Link className='dropdown-item item-link-menu' to='/herramientas/calculadora-servicios-informaticos'>Calcular Proyectos</Link></li>
 
                     </ul>
                 </li>
