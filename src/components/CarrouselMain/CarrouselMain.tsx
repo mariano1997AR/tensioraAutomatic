@@ -31,7 +31,7 @@ export const CarrouselMain: React.FC = () => {
             <section className='carousel-container'>
                 <section className='carousel-wrapper ' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {images.map((img, i) => (
-                        <img key={i} src={img} className='carousel-image' alt={`Slide ${i}`} />
+                        <img key={i} src={img} className='carousel-image' alt={`Slide ${i}`}  loading='lazy'/>
                     ))}
                 </section>
 
