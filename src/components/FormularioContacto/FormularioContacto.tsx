@@ -5,6 +5,8 @@ import { useTheme } from '../ThemeContext/ThemeContext';
 import {ToastContainer} from "react-toastify";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser,faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -16,32 +18,28 @@ export const FormularioContacto: React.FC = () => {
     const [consulta,setConsulta] = useState<string>("");
     const [loading, setLoading] = useState<boolean>(false);
 
+    const form = useRef<HTMLFormElement>(null);
+
 
     //const navigate = useNavigate();
 
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
+
+        if(!form.current) return;
+
+        emailjs
+          .sendForm(
+             "service_154g6mb",
+             "__ejs-test-mail-service__",
+             form.current,
+             "Piq7AaS3INx_H6EFB" //public key (en este caso se usa el backend para mostrar la clave publica para mas seguridad)
+          )
+
+
    
-        /*
-        const res = await login(user, pass);
-        setTimeout(() => {
-            if (res.data.success) {
-                onLogin();
-                navigate("/dashboard", { replace: true });
-            } else {
-                toast.error("Crendenciales incorrectas", {
-                    position: "top-center",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                });
-            }
-            setLoading(false);
-
-
-        }, 6000);*/
-
 
     }
     return (
@@ -52,7 +50,7 @@ export const FormularioContacto: React.FC = () => {
                 </section>
                 {/*style={{border:theme === "dark" ?  '2px solid rgba(255, 255, 255, .2)' : '2px solid #222831'}} */}
                 <section className="flex-item-right-sesion mx-5">
-                    <form className="mx-5" onSubmit={handleSubmit} >
+                    <form ref={form} className="mx-5" onSubmit={handleSubmit} >
                         <p className="contacto">Contactanos!</p>
                         <p className="text-center ">Ingresa tus datos </p>
                         <article className={`input-box-iniciar-sesion`} >
