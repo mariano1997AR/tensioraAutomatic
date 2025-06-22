@@ -64,11 +64,7 @@
 }
 
 
-.submenu-enterprise-footer li a:hover {
-    transition: all .9s;
-    border-bottom: 1px solid #18230F;
-    cursor: pointer;
-}
+
 
 
 .logo-footer {
@@ -106,12 +102,7 @@
 
     /*modificar esta parte*/
 
-    .submenu-footer-dispositivo  .li-submenu:hover{
-        transition: all 1s;
-        cursor: pointer;
-        
-
-    }
+ 
     .link-footer-redes{
          color:#333446;
     }

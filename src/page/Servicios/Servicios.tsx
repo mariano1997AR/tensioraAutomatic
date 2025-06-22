@@ -17,9 +17,7 @@ export const Servicios: React.FC = () => {
                     
                         <ul>
                             <li><b> - Landing pages</b> optimizadas para SEO</li>
-                            <li><b> - Sitios web institucionales</b> para negocios </li>
-                            <li><b> - Tiendas online (e-commerce)</b> con codigo personalizado</li>
-                            <li><b> - Desarrollo full-stack</b> (frontend,backend y base de datos)</li>
+                            <li><b> - Sitios web institucionales</b> para negocios </li>            
                             <li><b> - Integraciones con APIs</b> (Google Maps, Stripe, redes sociales, etc)</li>
                             <li><b> - Sistenas de gestión(ERP,CRM)</b> personalizados</li>
                         </ul>
@@ -27,7 +25,7 @@ export const Servicios: React.FC = () => {
 
                     </article>
                     <article className='item-servicios' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
-                         <h2 className='text-center py-3 subtitulo' style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Automatización y Scripts</h2>
+                         <h2 className='text-center py-3 subtitulo' style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Automatización </h2>
                 
                          <ul>
                             <li> - Automatización de tareas repetitivas (descargas,reportes, backups)</li>
