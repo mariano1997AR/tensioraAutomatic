@@ -13,7 +13,7 @@ export const FooterPage: React.FC = () => {
                     <section className='columna-container desaparecer-columnas'>
                         <article className='columna-redes-sociales'>
                             <ul className='submenu-redesociales'>
-                                <li className="logo-footer">Tensiora<span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}> Automatic</span>™</li>
+                                <li className="logo-footer">Tensiora<span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}> Automatic</span>™</li>
                             </ul>
 
                         </article>
@@ -38,7 +38,7 @@ export const FooterPage: React.FC = () => {
 
                     <section className='top-line-copy' style={{ borderTopColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                         <ul className='submenu-enterprise-footer'>
-                            <li>Copyright 2025 - Tensionar<span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}> Automatic™</span></li>
+                            <li>Copyright 2025 - Tensionar<span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}> Automatic™</span></li>
                             <li><a></a></li>
                             <li><a></a></li>
                             <li><Link to='/medios-pagos' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} >Medios de Pagos</Link></li>
@@ -47,7 +47,7 @@ export const FooterPage: React.FC = () => {
 
                 </section>
                 <section className="container-footer-dispositivos">
-                    <header className="logo-dispositivo">Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Electric</span> ™</header>
+                    <header className="logo-dispositivo">Tensiora <span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>Electric</span> ™</header>
                     <ul className={` submenu-footer-dispositivo ${theme === "dark" ? 'hover-oscuro' : 'hover-amarillo'}`}>
                         <li className='li-submenu'><Link to='/terminos-condiciones'  style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} > Términos y Condiciones</Link></li>
                         <li className='li-submenu'><a target="_blank" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://www.linkedin.com/company/apoloixcode/?viewAsMember=true">Linkedln</a></li>

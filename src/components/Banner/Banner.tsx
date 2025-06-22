@@ -23,9 +23,9 @@ export const Banner: React.FC = () => {
                     <article className="flex-item-iniciar-registro-right py-30 pr-5" >
                         <h3 className="text-center text-2xl "><b className="subtitulo-hover">Escanea el código QR</b></h3>
                         <p className="mb-4 mx-2">
-                            Si quieres probar la aplicacion has click abajo en el boton de Ingresar
+                            Si quieres conocer más de nuestros servicios haz click en el boton de abajo.
                         </p>
-                        <Link className="hover:bg-sky-700 text-center inicia-registro " to='/ingresar'>Ingresar</Link>
+                        <Link className="hover:bg-sky-700 text-center inicia-registro " to='/servicios'>Más información</Link>
 
                     </article>
 

@@ -1,0 +1,31 @@
+.container-flex-tipos-servicios {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-items-tipos-servicios {
+    flex: 50%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.right-items-tipos-servicios {
+    flex: 50%;
+}
+
+.btn-mas-informacion .a-link-servicios{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.btn-mas-informacion .a-link-servicios:hover{
+    border-radius: 5px;
+    transition: all 1s;
+}

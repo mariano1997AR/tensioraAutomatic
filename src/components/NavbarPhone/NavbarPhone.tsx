@@ -16,7 +16,7 @@ export const NavbarPhone: React.FC = () => {
                 <section className='logo-responsive items-center gap-2' style={{ color: theme === "dark" ? 'white' : 'black' }}>
 
                     <Link className="a-logo " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/home">
-                        Tensiora <span style={{ color: theme === "dark" ? '#FCEF91' : '#60B5FF' }}>Automatic</span>
+                        Tensiora <span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>Automatic</span>
                     </Link>
 
 
@@ -101,7 +101,7 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                             <li><Link to='/herramientas/tipo-de-cables' className={`dropdown-item  a-link-navbar-responsive`}>Tipo de cables</Link></li>
                         </ul>
                     </li>
-                    <li><Link to='/ingresar' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Ingresar</Link></li>
+                    <li><Link to='/servicios' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Servicios</Link></li>
                     <li><Link to='/contacto' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Contacto</Link></li>
                 </ul>
 

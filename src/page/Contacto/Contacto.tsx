@@ -11,7 +11,7 @@ export const Contacto:React.FC = ()=>{
    
     return(
         <>
-         <Title>Contacto | Tensiora Electric</Title>
+         <Title>Contacto | Tensiora Automatic</Title>
          <Meta name='description' content='sitio web de contacto' />
          <Meta name='keywords' content='contacto de tensiora electric, contactanos por dudas, contacto de electricidad'/>
          <Meta property='og:title' content='Contacto | Tensiora Electric'/>

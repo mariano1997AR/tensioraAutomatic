@@ -8,7 +8,7 @@ export const NavbarPc: React.FC = () => {
     return (
         <>
             <ul className="menu-links desaparece-dispositivo aparece-PC">
-                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/Home" >Home</Link></li>
+                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/Home" >Inicio</Link></li>
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle mb-2 py-1" role="button" data-bs-toggle="dropdown">Herramientas</a>
                     <ul className="dropdown-menu mt-4">
@@ -17,9 +17,10 @@ export const NavbarPc: React.FC = () => {
 
                     </ul>
                 </li>
+                
 
-                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FCEF91' : '#60B5FF' }} to='/ingresar'>Ingresar</Link></li>
-                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FCEF91' : '#60B5FF' }} to='/contacto'>Contacto</Link></li>
+                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FFA55D' : '#60B5FF' }} to='/servicios'>Servicios</Link></li>
+                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FFA55D' : '#60B5FF' }} to='/contacto'>Contacto</Link></li>
                 <li className="switch desaparecer-responsive "><ThemeSwitcher /></li>
             </ul>
 

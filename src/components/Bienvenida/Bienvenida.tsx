@@ -6,7 +6,7 @@ import './Bienvenida.css';
 
 export const Bienvenida: React.FC = () => {
     const frases = [
-        "Bienvenido a Tensiora Electric",
+        "Bienvenido a Tensionar Automatic",
         "Realiza tus trabajos electricos en tiempo y forma",
         "Mejora tu productividad mediante la actualizacion",
 
@@ -38,7 +38,7 @@ export const Bienvenida: React.FC = () => {
     return (
         <>
             <section ref={ref} className={`zoom-animado text-center ${visible ? 'visible' : ''}`}>
-                <h1 className='py-4'>Bienvenido a Tensionar Electric </h1>
+                <h1 className='py-4'>Bienvenido a Tensionar </h1>
                 <p className='py-4 text-2xl'>{fraseActual}</p>
             </section>
 

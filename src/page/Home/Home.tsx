@@ -6,13 +6,15 @@ import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import { Bienvenida } from '../../components/Bienvenida/Bienvenida';
 import { BrandCarousel } from '../../components/BrandCarousel/BrandCarousel';
 import {Title,Meta} from 'react-head';
+import { CarrouselMain } from '../../components/CarrouselMain/CarrouselMain';
+import { TiposServicios } from '../../components/TiposServicios/TiposServicios';
 
 
 export const Home: React.FC = () => {
     const { theme } = useTheme();
     return (
         <>
-           <Title>Home | Tensiora Electric</Title>
+           <Title>Inicio | Tensiora Automatic</Title>
            <Meta name='description' content='inicio de tensiora electric, plataforma de trabajo para automatizar tareas de incidencias, donde ya el cliente tenga la seguridad que realicen su trabajo electrico' />
            <Meta name='keywords' content='plataforma web, tensiora electric, trabajos electricos, certificacion ISO 9001,Formulario de trabajo' />
            <Meta property='og:title' content='Home | Tensiora Electric'/>
@@ -24,12 +26,17 @@ export const Home: React.FC = () => {
 
                 <section className={` container-dashboard desaparecer-dispositivo`} id='home' >
                     <section>
+                        <CarrouselMain />
+                    </section>
+                    
+                    <section>
                         <InformacionApp />
                     </section>
 
                     <section>
-                        {/* <Funcionamiento />*/}
-
+                        {/* Tipos de servicios */}
+                        <TiposServicios />
+                        
                     </section>
 
                     <section>
