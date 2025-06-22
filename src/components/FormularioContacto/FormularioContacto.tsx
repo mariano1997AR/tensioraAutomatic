@@ -2,9 +2,9 @@ import './FormularioContacto.css';
 import { useState } from 'react';
 //import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../ThemeContext/ThemeContext';
-import {ToastContainer} from "react-toastify";
+import { ToastContainer,toast } from "react-toastify";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faUser,faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -15,7 +15,7 @@ export const FormularioContacto: React.FC = () => {
     const { theme } = useTheme();
     const [nombre, setNombre] = useState<string>("");
     const [email, setEmail] = useState<string>("");
-    const [consulta,setConsulta] = useState<string>("");
+    const [consulta, setConsulta] = useState<string>("");
     const [loading, setLoading] = useState<boolean>(false);
 
     const form = useRef<HTMLFormElement>(null);
@@ -27,29 +27,51 @@ export const FormularioContacto: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
+        const loadingToast = toast.loading("Enviando mensaje...");
 
-        if(!form.current) return;
+        if (!form.current) return;
 
-        emailjs
-          .sendForm(
-             "service_154g6mb",
-             "__ejs-test-mail-service__",
-             form.current,
-             "Piq7AaS3INx_H6EFB" //public key (en este caso se usa el backend para mostrar la clave publica para mas seguridad)
-          )
+        try {
+            await emailjs.sendForm(
+                "service_154g6mb",
+                "template_jd0n67k",
+                form.current,
+                "Piq7AaS3INx_H6EFB" //public key (en este caso se usa el
+            );
+            toast.update( loadingToast,{
+              render: "Mensaje enviado con exito",
+              type:"success",
+              isLoading:false,
+              autoClose:3000,
+              closeButton:true,
+               
+            });
 
+            form.current.reset(); //Limpiar el formulario 
 
-   
+        } catch (error: any) {
+            toast.update(loadingToast,{
+                render:'Error al enviar el mensaje',
+                type:"error",
+                isLoading:false,
+                autoClose:4000,
+                closeButton:true,
+            });
+               console.error("Erro al enviar",error);
+             
+        } finally{
+            setLoading(false); //ocultar el loader
+        }
 
     }
     return (
         <>
-            <section className="flex-container-iniciar-sesion">
-                <section className="flex-item-left-sesion" style={{background:theme === "dark" ? '#F7F7F7':'#393E46'}}>
-                   <h1 className='titulo-contacto' style={{color:theme === "dark" ? '#393E46':'#F7F7F7'}}>Contactanos para tus  <span className='mx-2' style={{color:theme === "dark" ? '#FFD66B':'#60B5FF'}}>consultas!</span></h1>
+            <section className="flex-container-contacto" >
+                <section className="flex-item-left-contacto"   >
+                    <h1 className='titulo-contacto ' >Contactanos para mas  <span className='mx-2' style={{ color: theme === "dark" ? '#FFD66B' : '#60B5FF' }}>información!</span></h1>
                 </section>
-                {/*style={{border:theme === "dark" ?  '2px solid rgba(255, 255, 255, .2)' : '2px solid #222831'}} */}
-                <section className="flex-item-right-sesion mx-5">
+               
+                <section className="flex-item-right-contacto mx-5">
                     <form ref={form} className="mx-5" onSubmit={handleSubmit} >
                         <p className="contacto">Contactanos!</p>
                         <p className="text-center ">Ingresa tus datos </p>
@@ -57,6 +79,7 @@ export const FormularioContacto: React.FC = () => {
                             <input
                                 type="text"
                                 placeholder="Nombre"
+                                name='nombre'
                                 value={nombre}
                                 onChange={(e) => setNombre(e.target.value)}
                                 required
@@ -73,6 +96,7 @@ export const FormularioContacto: React.FC = () => {
                             <input
                                 type="email"
                                 placeholder="Email"
+                                name='email'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
@@ -87,11 +111,12 @@ export const FormularioContacto: React.FC = () => {
                         </article>
                         <article>
                             <textarea
-                               value={consulta}
-                               onChange={(e)=> setConsulta(e.target.value)}
-                               required
-                               placeholder='Escribe tu consulta....'
-                               className={`
+                                value={consulta}
+                                onChange={(e) => setConsulta(e.target.value)}
+                                required
+                                name='consulta'
+                                placeholder='Escribe tu consulta....'
+                                className={`
                                    border-textarea
                                    border
                                     ${theme === "dark" ? "placeholder-oscuro" : "placeholder-claro"}
@@ -100,7 +125,7 @@ export const FormularioContacto: React.FC = () => {
 
                             </textarea>
                         </article>
-                 
+
 
                         <button
                             type="submit"
@@ -115,7 +140,10 @@ export const FormularioContacto: React.FC = () => {
                             </div> : 'Enviar consulta'}
 
                         </button>
-                        <ToastContainer />
+                        <ToastContainer 
+                           
+                        
+                        />
 
                     </form>
 

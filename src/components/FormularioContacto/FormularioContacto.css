@@ -1,26 +1,26 @@
-.flex-container-iniciar-sesion{
+.flex-container-contacto{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
-    
+   
 }
 
-.flex-item-right-sesion {
+.flex-item-right-contacto {
     flex: 50%;
     
    
 }
 
-.flex-item-left-sesion {
+.flex-item-left-contacto {
     flex: 50%;
-    border: 1px solid black;
+  
     margin: 0 auto;
   
 
 }
 
-.flex-item-left-sesion:hover{
+.flex-item-left-contacto:hover{
     transition: all 1s;
     border-radius: 35px;
 
@@ -52,7 +52,7 @@
 }
 
 
-.flex-item-right-sesion .contacto {
+.flex-item-right-contacto .contacto {
     font-size: 36px;
     text-align: center;
 }
@@ -98,9 +98,13 @@
     color: #222831;
 }
 
+.titulo-contacto {
+    font-size: 2em;
+    width: 100%;
+}
 
 
-.flex-item-right-sesion .btn-send {
+.flex-item-right-contacto .btn-send {
     width: 100%;
     height: 45px;
     background: #fff;
@@ -115,7 +119,7 @@
     margin-top: 30px;
 }
 
-.flex-item-right-sesion .btn-send:hover {
+.flex-item-right-contacto .btn-send:hover {
     transition: all 1s;
     background-color: #333;
     color: #fff;
@@ -148,11 +152,6 @@
 }
 
 
-.recuperar-contrasenia{
-    margin-left: 34.33%;
-    text-decoration: none;
-
-}
 .border-textarea{
     width: 100%;
     height:120px;
@@ -166,13 +165,13 @@
 }
 
 @media (max-width: 1060px) {
-    .flex-container-iniciar-sesion{
+    .flex-container-contacto{
         flex-direction: column;
     
       
         
     }
-    .flex-item-right-sesion{
+    .flex-item-right-contacto{
         margin-top: 50px;  
         height: 100%;
         padding-top: 50px;
@@ -188,14 +187,9 @@
     .contacto{
         font-size: 0.5em;
     }
-    .registrarse{
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+   
 
-    .flex-item-left-sesion{
+    .flex-item-left-contacto{
        display: none;
     
     }
@@ -203,7 +197,7 @@
         padding-bottom: 50px;
        margin-bottom: 60px;
     }
-    .flex-item-right-sesion{
+    .flex-item-right-contacto{
         width: 90%;
         margin-left: 20px;
     }
@@ -212,13 +206,11 @@
 }
 
 @media (max-width: 600px) {
-    .flex-item-left-sesion{
+    .flex-item-left-contacto{
         display: none;
     }
     .top-left{
         text-align: center;
     }
-    .recuperar-contrasenia{
-        margin-left: 15%;
-    }
+ 
 }
