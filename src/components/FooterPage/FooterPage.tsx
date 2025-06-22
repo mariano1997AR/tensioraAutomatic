@@ -47,7 +47,7 @@ export const FooterPage: React.FC = () => {
 
                 </section>
                 <section className="container-footer-dispositivos">
-                    <header className="logo-dispositivo">Tensiora <span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>Electric</span> ™</header>
+                    <header className="logo-dispositivo">Tensiora <span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>Automatic</span> ™</header>
                     <ul className={` submenu-footer-dispositivo ${theme === "dark" ? 'hover-oscuro' : 'hover-amarillo'}`}>
                         <li className='li-submenu'><Link to='/terminos-condiciones'  style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} > Términos y Condiciones</Link></li>
                         <li className='li-submenu'><a target="_blank" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://www.linkedin.com/company/apoloixcode/?viewAsMember=true">Linkedln</a></li>

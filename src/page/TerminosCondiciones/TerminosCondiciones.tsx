@@ -32,7 +32,7 @@ export const TerminosCondiciones: React.FC = () => {
                     <article className='pb-3'>
                         <p><b>Propiedad intelectual</b></p>
                         <p>
-                            * Todo el contenido y código de la app es propiedad de <mark>Tensiora Electric</mark>. Esta prohibida su reproducción sin autorización.
+                            * Todo el contenido y código de la app es propiedad de <mark>Tensiora Automatic</mark>. Esta prohibida su reproducción sin autorización.
                         </p>
                     </article>
                     <article className='pb-3'>
