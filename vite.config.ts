@@ -11,6 +11,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    /*
     VitePWA({
       registerType:'autoUpdate',
       includeAssets:['logo-basico-tensiora.ico','robots.txt'],
@@ -56,7 +57,7 @@ export default defineConfig({
         ]
       }
 
-    }),
+    }),*/
    
   ],
 
