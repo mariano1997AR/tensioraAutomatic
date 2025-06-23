@@ -1,5 +1,6 @@
 import { BtnAtras } from "../../components/BtnAtras/BtnAtras";
 import './TerminosCondiciones.css';
+import { Meta,Title } from "react-head";
 
 
 export const TerminosCondiciones: React.FC = () => {
@@ -10,7 +11,9 @@ export const TerminosCondiciones: React.FC = () => {
     const year = today.getFullYear();
 
     return (
-        <>
+        <> 
+            <Title>Términos y condiciones | Tensiora Automatic</Title>
+            <Meta name="description" content="Términos y condiciones de uso para los clientes de tensiora automatic por los servicios prestados." />
             <section className="container-politica-privacidad" >
                 <section className="py-3">
                     <BtnAtras />

@@ -15,8 +15,8 @@ export const Home: React.FC = () => {
     return (
         <>
             <Title>Inicio | Tensiora Automatic</Title>
-            <Meta name='description' content='inicio de tensiora electric, plataforma de trabajo para automatizar tareas de incidencias, donde ya el cliente tenga la seguridad que realicen su trabajo electrico' />
-            <Meta name='keywords' content='plataforma web, tensiora electric, trabajos electricos, certificacion ISO 9001,Formulario de trabajo' />
+            <Meta name="keywords" content="desarrollador de software, desarrollo web, aplicaciones web, aplicaciones de escritorio,React,Node.js, Programador freelance, soluciones digitales, sistemas a medida, desarrollador full stack, desarrollo de sistemas, programación, software personalizado, aplicaciones para empresas,landing pages, sistemas de gestión, automatización, bots" />
+            <Meta name='description' content='desarrolladora de software especializado en crear soluciones web y de escritorio eficientes y modernas.' />
             <Meta property='og:title' content='Home | Tensiora Electric' />
             <Meta property='og:description' content='Es pantalla de inicio de Tensiora Electric' />
             <Meta property='og:type' content='website' />

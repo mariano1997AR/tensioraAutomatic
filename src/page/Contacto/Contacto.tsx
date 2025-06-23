@@ -12,10 +12,8 @@ export const Contacto:React.FC = ()=>{
     return(
         <>
          <Title>Contacto | Tensiora Automatic</Title>
-         <Meta name='description' content='sitio web de contacto' />
-         <Meta name='keywords' content='contacto de tensiora electric, contactanos por dudas, contacto de electricidad'/>
-         <Meta property='og:title' content='Contacto | Tensiora Electric'/>
-
+         <Meta name='keywords' content='contacto de tensiora automatic, contacto desarrollador, programador freelance, contratar programador, desarrollador de software, soluciones digitales'/>
+         <Meta name='description' content='Ponete en contacto con nosotros para desarrollar tu sitio web, sistemas personalizados o aplicación a medida' />
           <section className='container-contacto'>
                <article className='py-3'>
                   <BtnAtras />
