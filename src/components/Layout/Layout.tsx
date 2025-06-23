@@ -4,7 +4,7 @@ import { FooterPage } from "../FooterPage/FooterPage"
 
 
 
-export const Layout: React.FC = () => {
+const Layout: React.FC = () => {
 
     return (
         <>
@@ -18,3 +18,5 @@ export const Layout: React.FC = () => {
         </>
     )
 }
+
+export default Layout;

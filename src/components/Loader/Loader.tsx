@@ -3,7 +3,7 @@ import './Loader.css';
 import { useTheme } from '../ThemeContext/ThemeContext';
 
 
-export const Loader: React.FC = () => {
+const Loader: React.FC = () => {
     const [progress, setProgress] = useState<number>(0);
     const [loading, setLoading] = useState<boolean>(true);
     const { theme } = useTheme();
@@ -105,3 +105,5 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
         </>
     )
 }
+
+export default Loader;

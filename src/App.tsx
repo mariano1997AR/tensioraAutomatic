@@ -1,9 +1,7 @@
 //import { useEffect, useState } from 'react'
 import { lazy,Suspense } from 'react';
 import './App.css'
-import { Loader } from './components/Loader/Loader';
 import { Routes, Route } from 'react-router-dom';
-import { Layout } from './components/Layout/Layout';
 import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 import { PublicRoute } from './components/PublicRoute/PublicRoute';
 
@@ -25,6 +23,8 @@ export const App: React.FC = () => {
    const CircuitoMixto = lazy(()=>import('./page/CircuitoMixto/CircuitoMixto'));
    const Ingresar = lazy(()=>import('./page/Ingresar/Ingresar'));
    const Dashboard = lazy(()=>import('./page/Dashboard/Dashboard'));
+   const Loader = lazy(()=>import('./components/Loader/Loader'));
+   const Layout = lazy(()=>import('./components/Layout/Layout'));
 
    return (
       <>
