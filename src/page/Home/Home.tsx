@@ -10,7 +10,7 @@ import { CarrouselMain } from '../../components/CarrouselMain/CarrouselMain';
 import { TiposServicios } from '../../components/TiposServicios/TiposServicios';
 
 
-export const Home: React.FC = () => {
+const Home: React.FC = () => {
     const { theme } = useTheme();
     return (
         <>
@@ -403,3 +403,5 @@ l-15 -24 -132 132 c-121 121 -134 131 -169 131 -49 0 -77 -28 -77 -77 0 -34
         </>
     )
 }
+
+export default Home;
