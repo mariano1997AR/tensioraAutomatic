@@ -2,8 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite';
 import {VitePWA} from 'vite-plugin-pwa';
-import Pages from 'vite-plugin-pages';
-import Sitemap from 'vite-plugin-pages-sitemap';
+
 
 
 // https://vite.dev/config/
@@ -58,15 +57,7 @@ export default defineConfig({
       }
 
     }),
-    Pages({
-       dirs:'src/pages',
-       extensions:['tsx'],
-       onRoutesGenerated:routes => 
-        Sitemap({
-            hostname:'https://mariano1997ar.github.io/tensioraAutomatic/',
-            routes
-        })
-    })
+   
   ],
 
  
