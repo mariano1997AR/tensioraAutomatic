@@ -1,0 +1,1 @@
+import{u as a,j as e}from"./index-Dsdp4EtH.js";const r=()=>{const{theme:s,toggleTheme:t}=a();return e.jsx(e.Fragment,{children:e.jsxs("label",{className:"switch",children:[e.jsx("input",{type:"checkbox",checked:s==="dark",onChange:t}),e.jsx("span",{className:"slider"})]})})};export{r as T};
