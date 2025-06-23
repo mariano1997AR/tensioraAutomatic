@@ -2,8 +2,6 @@
 import { lazy,Suspense } from 'react';
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
-import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
-import { PublicRoute } from './components/PublicRoute/PublicRoute';
 
 
 export const App: React.FC = () => {
@@ -25,6 +23,8 @@ export const App: React.FC = () => {
    const Dashboard = lazy(()=>import('./page/Dashboard/Dashboard'));
    const Loader = lazy(()=>import('./components/Loader/Loader'));
    const Layout = lazy(()=>import('./components/Layout/Layout'));
+   const PrivateRoute = lazy(()=>import('./components/PrivateRoute/PrivateRoute'));
+   const PublicRoute = lazy(()=>import('./components/PublicRoute/PublicRoute'));
 
    return (
       <>

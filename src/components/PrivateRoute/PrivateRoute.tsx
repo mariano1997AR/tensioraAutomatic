@@ -7,6 +7,8 @@ interface Props{
 }
 
 
-export const PrivateRoute:React.FC<Props>=({children})=>{
+const PrivateRoute:React.FC<Props>=({children})=>{
     return isAuthenticated() ? children:<Navigate to='/ingresar' replace />;
 }
+
+export default PrivateRoute;
