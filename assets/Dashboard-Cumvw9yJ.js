@@ -1,0 +1,41 @@
+import{u as j,r,a as p,j as e,F as a,L as u,b as m,T as b}from"./index-Cim5t5Gh.js";import{g as f}from"./apis-Cl2nMSQa.js";import{d as h,f as x,e as N}from"./index-B6Tucmq6.js";const w=({user:n,message:l})=>{const{theme:s}=j(),[c,i]=r.useState(!0),o=p();r.useEffect(()=>{const d=setTimeout(()=>{i(!1)},3e3);return()=>clearTimeout(d)},[]);const t=()=>{localStorage.removeItem("token"),o("/ingresar")};return e.jsx(e.Fragment,{children:e.jsxs("nav",{className:"navbar-container mb-4",style:{borderBottomColor:s==="dark"?" #F5F5F5":"#4A4947"},children:[e.jsxs("header",{className:"logo flex items-center gap-2",children:[e.jsxs("p",{className:"logo-dashboard",children:["Tensiora",e.jsx("span",{className:"azul",style:{color:s==="dark"?"#FCEF91":"#60B5FF"},children:" Electric"})]}),e.jsxs("svg",{version:"1.0",xmlns:"http://www.w3.org/2000/svg",width:"20.000000pt",height:"20.000000pt",viewBox:"0 0 512.000000 512.000000",preserveAspectRatio:"xMidYMid meet",children:[e.jsx("metadata",{children:"Created by potrace 1.16, written by Peter Selinger 2001-2019"}),e.jsxs("g",{transform:"translate(0.000000,512.000000) scale(0.100000,-0.100000)",fill:s==="dark"?"white":"black",stroke:"none",children:[e.jsx("path",{d:`M295 4941 c-22 -10 -54 -34 -72 -52 -67 -71 -63 6 -63 -1211 0 -1053\r
+1 -1105 19 -1143 10 -22 34 -54 52 -72 66 -63 68 -63 499 -63 l390 0 0 -813\r
+c0 -777 1 -817 20 -891 63 -248 268 -453 516 -516 75 -19 118 -20 1603 -20\r
+1465 0 1528 1 1566 19 22 10 54 34 72 52 51 54 63 95 63 211 0 117 -15 162\r
+-71 215 -70 66 -24 63 -931 64 -610 0 -832 3 -858 12 -39 14 -57 48 -46 91 13\r
+52 43 56 381 56 337 0 349 2 414 63 70 67 71 71 71 469 l0 356 29 7 c41 9 116\r
+65 151 112 48 65 60 113 60 238 l0 113 53 7 c67 9 198 50 262 83 220 111 380\r
+302 457 548 21 65 22 92 26 499 2 301 0 441 -8 468 -14 49 -74 115 -125 138\r
+-27 13 -64 19 -112 19 l-73 0 0 355 c0 335 -1 357 -21 410 -97 260 -501 260\r
+-598 0 -20 -53 -21 -75 -21 -410 l0 -355 -160 0 -160 0 0 355 c0 335 -1 357\r
+-21 410 -97 260 -501 260 -598 0 -20 -53 -21 -75 -21 -410 l0 -355 -72 0 c-85\r
+0 -137 -20 -185 -71 -63 -67 -63 -66 -63 -521 0 -378 2 -420 20 -496 60 -251\r
+233 -467 465 -584 64 -33 195 -74 263 -83 l52 -7 0 -113 c0 -125 12 -173 60\r
+-238 35 -47 110 -103 151 -112 l29 -7 0 -317 c0 -212 -4 -329 -11 -351 -20\r
+-57 -41 -60 -386 -60 -348 0 -357 -2 -424 -77 -48 -53 -62 -99 -57 -183 4 -81\r
+35 -135 107 -185 l43 -30 851 -5 c648 -4 857 -8 873 -17 41 -24 56 -106 30\r
+-168 -11 -26 -23 -36 -53 -45 -27 -8 -443 -10 -1508 -8 -1588 4 -1494 1 -1615\r
+55 -108 49 -225 166 -273 273 -52 116 -50 89 -54 947 l-4 803 391 0 c431 0\r
+433 0 499 63 18 18 42 50 52 72 18 38 19 90 19 1143 0 1217 4 1140 -63 1211\r
+-18 18 -50 42 -72 52 -38 18 -83 19 -905 19 -822 0 -867 -1 -905 -19z m1729\r
+-155 c23 -9 37 -24 45 -46 16 -47 16 -2073 0 -2120 -22 -62 3 -60 -869 -60\r
+-872 0 -847 -2 -869 60 -16 47 -16 2073 0 2120 22 61 -5 59 867 60 655 0 798\r
+-2 826 -14z m1416 -19 c19 -12 43 -38 54 -57 20 -34 21 -52 24 -492 l3 -458\r
+-161 0 -161 0 3 458 c3 440 4 458 24 492 30 51 78 80 134 80 32 0 58 -7 80\r
+-23z m960 0 c19 -12 43 -38 54 -57 20 -34 21 -52 24 -492 l3 -458 -161 0 -161\r
+0 3 458 c3 440 4 458 24 492 30 51 78 80 134 80 32 0 58 -7 80 -23z m-1360\r
+-1027 c0 -150 -22 -140 320 -140 342 0 320 -10 320 140 l0 100 160 0 160 0 0\r
+-100 c0 -150 -22 -140 320 -140 342 0 320 -10 320 140 l0 100 35 0 c20 0 51\r
+-6 70 -14 55 -23 58 -46 53 -447 -5 -319 -7 -362 -26 -432 -69 -253 -270 -454\r
+-518 -517 -43 -11 -80 -20 -84 -20 -4 0 -10 22 -13 49 -12 98 -81 192 -175\r
+238 -49 24 -69 28 -142 28 -72 -1 -94 -5 -142 -28 -94 -46 -163 -140 -175\r
+-238 -3 -27 -9 -49 -13 -49 -4 0 -41 9 -83 19 -249 64 -443 255 -518 511 -20\r
+69 -22 103 -26 434 -6 403 -3 428 50 451 18 8 49 14 70 15 l37 0 0 -100z m880\r
+-1213 c69 -46 75 -69 75 -287 0 -179 -2 -198 -21 -230 -63 -107 -205 -107\r
+-268 0 -19 32 -21 51 -21 230 0 179 2 198 21 230 46 78 144 105 214 57z`}),e.jsx("path",{d:`M1152 4553 c-7 -3 -125 -230 -262 -504 -263 -526 -272 -547 -230\r
+-589 19 -19 33 -20 240 -20 l220 0 0 -300 c0 -287 1 -301 20 -320 20 -20 71\r
+-27 105 -14 9 4 126 227 266 505 262 526 271 547 229 589 -19 19 -33 20 -240\r
+20 l-220 0 0 300 c0 287 -1 301 -20 320 -19 19 -76 26 -108 13z m-8 -779 c16\r
+-11 61 -14 208 -14 103 0 188 -3 187 -7 0 -5 -58 -123 -129 -263 l-129 -255 0\r
+163 c-1 217 16 202 -231 202 -104 0 -190 2 -190 5 0 3 57 120 128 260 l127\r
+256 5 -167 c5 -149 7 -167 24 -180z`}),e.jsx("path",{d:"M3760 2240 l0 -80 80 0 80 0 0 80 0 80 -80 0 -80 0 0 -80z"})]})]})]}),e.jsxs("ul",{className:"menu-links desaparece-dispositivo aparece-PC",children:[e.jsx("li",{className:"linea-bottom py-1",children:l}),e.jsxs("li",{className:"linea-bottom py-1",children:["Salir ",e.jsx(a,{icon:h,onClick:t,className:"salir"})]}),e.jsxs("li",{className:"nav-item dropdown desaperecer-dashboard",children:[c?e.jsxs("svg",{fill:s==="dark"?"hsl(228, 100%, 96%)":"black",viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",width:"15.000000pt",height:"15.000000pt",children:[e.jsxs("rect",{x:"1",y:"4",width:"6",height:"14",opacity:"1",children:[e.jsx("animate",{id:"spinner_aqiq",begin:"0;spinner_xVBj.end-0.25s",attributeName:"y",dur:"0.75s",values:"1;5",fill:"freeze"}),e.jsx("animate",{begin:"0;spinner_xVBj.end-0.25s",attributeName:"height",dur:"0.75s",values:"22;14",fill:"freeze"}),e.jsx("animate",{begin:"0;spinner_xVBj.end-0.25s",attributeName:"opacity",dur:"0.75s",values:"1;.2",fill:"freeze"})]}),e.jsxs("rect",{x:"9",y:"4",width:"6",height:"14",opacity:".4",children:[e.jsx("animate",{begin:"spinner_aqiq.begin+0.15s",attributeName:"y",dur:"0.75s",values:"1;5",fill:"freeze"}),e.jsx("animate",{begin:"spinner_aqiq.begin+0.15s",attributeName:"height",dur:"0.75s",values:"22;14",fill:"freeze"}),e.jsx("animate",{begin:"spinner_aqiq.begin+0.15s",attributeName:"opacity",dur:"0.75s",values:"1;.2",fill:"freeze"})]}),e.jsxs("rect",{x:"17",y:"4",width:"6",height:"14",opacity:".3",children:[e.jsx("animate",{id:"spinner_xVBj",begin:"spinner_aqiq.begin+0.3s",attributeName:"y",dur:"0.75s",values:"1;5",fill:"freeze"}),e.jsx("animate",{begin:"spinner_aqiq.begin+0.3s",attributeName:"height",dur:"0.75s",values:"22;14",fill:"freeze"}),e.jsx("animate",{begin:"spinner_aqiq.begin+0.3s",attributeName:"opacity",dur:"0.75s",values:"1;.2",fill:"freeze"})]})]}):e.jsxs("a",{className:"nav-link dropdown-toggle mb-2 py-1",role:"button","data-bs-toggle":"dropdown",children:[" ",n," ",e.jsx(a,{icon:x})]}),e.jsxs("ul",{className:"dropdown-menu mt-4 menu-responsive-dashboard",children:[e.jsx("li",{children:e.jsx("a",{href:"#",className:"dropdown-item item-link-menu",children:"Cargar foto"})}),e.jsx("li",{children:e.jsx(u,{className:"dropdown-item item-link-menu",to:"/obtener-codigo",children:"Obtener Codigo"})}),e.jsx("li",{children:e.jsx("a",{href:"#",className:"dropdown-item item-link-menu",children:"Medios de pagos"})})]})]}),e.jsxs("li",{className:"nav-item dropdown",children:[e.jsxs("a",{className:"nav-link dropdown-toggle mb-2 py-1",role:"button","data-bs-toggle":"dropdown",children:["Clientes ",e.jsx(a,{icon:N})]}),e.jsx("ul",{className:"dropdown-menu mt-4",children:e.jsx("li",{children:e.jsx("a",{href:"#",className:"dropdown-item item-link-menu",children:"Cargar clientes"})})})]}),e.jsx("li",{className:"switch desaparecer-responsive ",children:e.jsx(m,{})})]}),e.jsxs("ul",{className:"nav-links-responsive-aparece desaparece-PC ",children:[e.jsxs("section",{className:"dropdown dropend",children:[e.jsxs("button",{type:"button",className:"dropdown-toggle","data-bs-toggle":"dropdown",children:[n," ",e.jsx(a,{icon:x})]}),e.jsx("ul",{className:"dropdown-menu",children:e.jsx("li",{children:e.jsx("a",{className:"dropdown-item ",href:"#",children:"Normal"})})})]}),e.jsxs("li",{className:"linea-bottom py-1",children:["Salir ",e.jsx(a,{icon:h,onClick:t,className:"salir"})]}),e.jsx("li",{className:"switch desaparecer-responsive ",children:e.jsx(m,{})})]})]})})},z=()=>{const[n,l]=r.useState(""),[s,c]=r.useState(""),i=p();return r.useEffect(()=>{const o=localStorage.getItem("token");f(o).then(t=>{const{message:d,user:g}=t.data;l(d),c(g)}).catch(()=>{localStorage.removeItem("token"),i("/ingresar")})},[i]),e.jsxs(e.Fragment,{children:[e.jsx(b,{children:"Dashboard | Tensiora Electric"}),e.jsx("section",{className:"container-dashboard",children:e.jsx(w,{user:s,message:n})})]})};export{z as default};
