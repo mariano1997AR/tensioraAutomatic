@@ -8,18 +8,6 @@
         <loc>https://mariano1997ar.github.io/tensioraAutomatic/servicios</loc>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://mariano1997ar.github.io/tensioraAutomatic/contacto</loc>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>
-            https://mariano1997ar.github.io/tensioraAutomatic/herramientas/formulas-para-electricistas</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://mariano1997ar.github.io/tensioraAutomatic/terminos-condiciones</loc>
-        <priority>0.5</priority>
-    </url>
+   
 
 </urlset>
