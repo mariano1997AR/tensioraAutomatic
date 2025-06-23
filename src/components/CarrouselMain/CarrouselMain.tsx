@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import cicloVidaPrograma from '../../assets/carousel/ciclo-vida-desarrollo.webp';
 import tensioraautomatic from '../../assets/carousel/bienvenida.webp';
 import website from '../../assets/carousel/website.webp';
-//import { useTheme } from '../ThemeContext/ThemeContext';
 import './CarrouselMain.css';
 
 const images = [
