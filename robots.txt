@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://mariano1997ar.github.io/tensioraAutomatic/sitemap.xml
