@@ -6,7 +6,7 @@ import { ModalFormulas } from '../../components/ModalFormulas/ModalFormulas';
 
 
 
-const CircuitoSerie: React.FC = () => {
+export const CircuitoSerie: React.FC = () => {
     const [resistencia, setResistencia] = useState<string>('R');
     const [itemsResistencias, setItemsResistencias] = useState<number[]>([]);
     const [voltajeTotal, setVoltajeTotal] = useState<string>("V");
@@ -169,5 +169,3 @@ const CircuitoSerie: React.FC = () => {
         </>
     )
 }
-
-export default CircuitoSerie;

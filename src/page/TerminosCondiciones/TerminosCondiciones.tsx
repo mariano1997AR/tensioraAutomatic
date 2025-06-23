@@ -3,7 +3,7 @@ import './TerminosCondiciones.css';
 import { Meta,Title } from "react-head";
 
 
-const TerminosCondiciones: React.FC = () => {
+export const TerminosCondiciones: React.FC = () => {
 
     const today = new Date();
     const day = today.getDate();
@@ -70,5 +70,3 @@ const TerminosCondiciones: React.FC = () => {
 
 
 }
-
-export default TerminosCondiciones;

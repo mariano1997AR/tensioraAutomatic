@@ -3,7 +3,7 @@ import './Servicios.css';
 import { Title,Meta } from 'react-head';
 
 
-const Servicios: React.FC = () => {
+export const Servicios: React.FC = () => {
     const { theme } = useTheme();
     return (
         <>
@@ -65,5 +65,3 @@ const Servicios: React.FC = () => {
         </>
     )
 }
-
-export default Servicios;

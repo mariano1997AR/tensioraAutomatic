@@ -7,8 +7,6 @@ interface Props{
 }
 
 
-const PublicRoute:React.FC<Props> = ({children})=>{
+export const PublicRoute:React.FC<Props> = ({children})=>{
     return isAuthenticated() ? <Navigate to='/dashboard' replace /> : children;
 }
-
-export default PublicRoute;

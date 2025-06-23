@@ -10,8 +10,9 @@ import { CarrouselMain } from '../../components/CarrouselMain/CarrouselMain';
 import { TiposServicios } from '../../components/TiposServicios/TiposServicios';
 
 
-const Home: React.FC = () => {
+export const Home: React.FC = () => {
     const { theme } = useTheme();
+  
     return (
         <>
             <Title>Inicio | Tensiora Automatic</Title>
@@ -206,7 +207,7 @@ c-27 27 -54 50 -60 50 -6 0 -37 -27 -70 -60z"/>
                                             Created by potrace 1.16, written by Peter Selinger 2001-2019
                                         </metadata>
                                         <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                                            fill={theme === "dark" ? 'white':'black'} stroke="none">
+                                            fill={theme === "dark" ? 'white' : 'black'} stroke="none">
                                             <path d="M2379 5113 c-42 -7 -55 -30 -86 -147 l-28 -109 -65 -22 c-36 -12 -89
 -34 -118 -49 l-53 -27 -92 56 c-123 73 -141 73 -227 -1 -115 -98 -210 -212
 -210 -252 0 -15 25 -70 56 -122 l55 -94 -31 -67 c-16 -36 -38 -90 -48 -120
@@ -403,5 +404,3 @@ l-15 -24 -132 132 c-121 121 -134 131 -169 131 -49 0 -77 -28 -77 -77 0 -34
         </>
     )
 }
-
-export default Home;

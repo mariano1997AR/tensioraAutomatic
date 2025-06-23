@@ -1,62 +1,62 @@
-import { lazy,Suspense } from 'react';
+//import { useEffect, useState } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
-
+import { Layout } from './components/Layout/Layout';
+import { Voltajes } from './page/Voltajes/Voltajes';
+import { CircuitoParalelo } from './page/CircuitoParalelo/CircuitoParalelo';
+import { CircuitoSerie } from './page/CircuitoSerie/CircuitoSerie';
+import { Potencia } from './page/Potencia/Potencia';
+import { CorrienteMonofasico } from './page/CorrienteMonofasico/CorrienteMonofasico';
+import { CorrienteTrifasico } from './page/CorrienteTrifasico/CorrienteTrifasico';
+import { Formulas } from './page/Formulas/Formulas';
+import { Contacto } from './page/Contacto/Contacto';
+import { CircuitoMixto } from './page/CircuitoMixto/CircuitoMixto';
+import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondiciones';
+import { Ingresar } from './page/Ingresar/Ingresar';
+import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
+import { Dashboard } from './page/Dashboard/Dashboard';
+import { TipoCables } from './page/TipoCables/TipoCables';
+import { PublicRoute } from './components/PublicRoute/PublicRoute';
+import { Servicios } from './page/Servicios/Servicios';
+import { Home } from './page/Home/Home';
 
 export const App: React.FC = () => {
+   // const [loading, setLoading] = useState<boolean>(true);
 
-   const Home = lazy(() => import('./page/Home/Home'));
-   const Voltajes = lazy(()=>import('./page/Voltajes/Voltajes'));
-   const CircuitoParalelo = lazy(()=>import('./page/CircuitoParalelo/CircuitoParalelo'));
-   const CircuitoSerie = lazy(()=>import('./page/CircuitoSerie/CircuitoSerie'))
-   const Potencia = lazy(()=>import('./page/Potencia/Potencia'));
-   const CorrienteMonofasico = lazy(()=>import('./page/CorrienteMonofasico/CorrienteMonofasico'));
-   const CorrienteTrifasico = lazy(()=>import('./page/CorrienteTrifasico/CorrienteTrifasico'));
-   const Servicios = lazy(()=>import('./page/Servicios/Servicios'));
-   const TipoCables = lazy(()=>import('./page/TipoCables/TipoCables'));
-   const Formulas = lazy(()=>import('./page/Formulas/Formulas'));
-   const Contacto = lazy(()=>import('./page/Contacto/Contacto'));
-   const TerminosCondiciones = lazy(()=>import('./page/TerminosCondiciones/TerminosCondiciones'))
-   const CircuitoMixto = lazy(()=>import('./page/CircuitoMixto/CircuitoMixto'));
-   const Ingresar = lazy(()=>import('./page/Ingresar/Ingresar'));
-   const Dashboard = lazy(()=>import('./page/Dashboard/Dashboard'));
-   const Loader = lazy(()=>import('./components/Loader/Loader'));
-   const Layout = lazy(()=>import('./components/Layout/Layout'));
-   const PrivateRoute = lazy(()=>import('./components/PrivateRoute/PrivateRoute'));
-   const PublicRoute = lazy(()=>import('./components/PublicRoute/PublicRoute'));
 
    return (
       <>
 
          <Routes>
-            <Route 
-                element={
-                  <Suspense fallback={<Loader />}>
-                       <Layout />
-                  </Suspense>
-                } 
-                
-                
-                >
-               <Route 
-                   path='/' 
-                   element={
-               
-                         <Home />
-                 
-                   } 
+            <Route
 
-                        
+               element={
+
+                  <Layout />
+
+               }
+
+
+            >
+               <Route
+                  path='/'
+                  element={
+
+                     <Home />
+
+                  }
+
+
                />
 
-               <Route 
-                   path='/home' 
-                   element={
-                 
-                        <Home />
-               
-                   } 
-                       
+               <Route
+                  path='/home'
+                  element={
+
+                     <Home />
+
+                  }
+
                />
                <Route path='/calcularVoltajes' element={<Voltajes />} />
                <Route path='/circuito-en-paralelo' element={<CircuitoParalelo />} />
@@ -94,4 +94,3 @@ export const App: React.FC = () => {
       </>
    )
 }
-

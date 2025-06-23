@@ -2,7 +2,7 @@ import './CorrienteMonofasico.css';
 
 
 
-const CorrienteMonofasico:React.FC = ()=>{
+export const CorrienteMonofasico:React.FC = ()=>{
     return(
         <>
             <section className='container-monofasico'>
@@ -13,5 +13,3 @@ const CorrienteMonofasico:React.FC = ()=>{
         </>
     )
 }
-
-export default CorrienteMonofasico;
