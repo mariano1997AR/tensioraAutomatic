@@ -3,7 +3,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom';
 
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
 
    const Home = lazy(() => import('./page/Home/Home'));
    const Voltajes = lazy(()=>import('./page/Voltajes/Voltajes'));
@@ -95,4 +95,3 @@ const App: React.FC = () => {
    )
 }
 
-export default App;
