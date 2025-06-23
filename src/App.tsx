@@ -32,42 +32,46 @@ export const App: React.FC = () => {
 
    return (
       <>
+         <Routes>
+            {loading ? <Loader /> :
+               <>
+                  <Route element={<Layout />} >
+                     <Route path='/' element={<Home />}></Route>
+                     <Route path='/home' element={<Home />} />
+                     <Route path='/calcularVoltajes' element={<Voltajes />} />
+                     <Route path='/circuito-en-paralelo' element={<CircuitoParalelo />} />
+                     <Route path='/circuito-en-serie' element={<CircuitoSerie />} />
+                     <Route path='/potencia-tension' element={<Potencia />} />
+                     <Route path='/corriente-monofasico' element={<CorrienteMonofasico />} />
+                     <Route path='/corriente-trifasico' element={<CorrienteTrafasico />} />
+                     <Route path='/herramientas/formulas-para-electricistas' element={<Formulas />} />
+                     <Route path='/contacto' element={<Contacto />} />
+                     <Route path='/circuito-mixto' element={<CircuitoMixto />} />
+                     <Route path='/terminos-condiciones' element={<TerminosCondiciones />} />
+                     <Route path='/servicios' element={<Servicios />} />
+                     <Route path='/ingresar' element={
+                        <PublicRoute>
+                           <Ingresar />
+                        </PublicRoute>
+                     } />
+                     <Route path='/herramientas/tipo-de-cables' element={<TipoCables />} />
+                  </Route>
+                  <Route
+                     path='/dashboard'
 
-         {loading ? <Loader /> : <Routes>
-            <Route element={<Layout />} >
-               <Route path='/' element={<Home />}></Route>
-               <Route path='/home' element={<Home />} />
-               <Route path='/calcularVoltajes' element={<Voltajes />} />
-               <Route path='/circuito-en-paralelo' element={<CircuitoParalelo />} />
-               <Route path='/circuito-en-serie' element={<CircuitoSerie />} />
-               <Route path='/potencia-tension' element={<Potencia />} />
-               <Route path='/corriente-monofasico' element={<CorrienteMonofasico />} />
-               <Route path='/corriente-trifasico' element={<CorrienteTrafasico />} />
-               <Route path='/herramientas/formulas-para-electricistas' element={<Formulas />} />
-               <Route path='/contacto' element={<Contacto />} />
-               <Route path='/circuito-mixto' element={<CircuitoMixto />} />
-               <Route path='/terminos-condiciones' element={<TerminosCondiciones />} />
-               <Route path='/servicios' element={<Servicios />} />
-               <Route path='/ingresar' element={
-                  <PublicRoute>
-                     <Ingresar />
-                  </PublicRoute>
-               } />
-               <Route path='/herramientas/tipo-de-cables' element={<TipoCables />} />
-            </Route>
-            <Route
-               path='/dashboard'
+                     element={
+                        <PrivateRoute >
+                           <Dashboard />
+                        </PrivateRoute>
+                     }
 
-               element={
-                  <PrivateRoute >
-                     <Dashboard />
-                  </PrivateRoute>
-               }
+                  />
 
-            />
 
+               </>
+
+            }
          </Routes>
-         }
 
 
       </>
