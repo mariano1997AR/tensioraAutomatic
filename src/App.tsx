@@ -1,10 +1,9 @@
-//import { useEffect, useState } from 'react'
 import { lazy,Suspense } from 'react';
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
 
 
-export const App: React.FC = () => {
+const App: React.FC = () => {
 
    const Home = lazy(() => import('./page/Home/Home'));
    const Voltajes = lazy(()=>import('./page/Voltajes/Voltajes'));
@@ -95,3 +94,5 @@ export const App: React.FC = () => {
       </>
    )
 }
+
+export default App;
