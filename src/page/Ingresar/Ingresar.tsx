@@ -9,7 +9,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import { Title, Meta } from 'react-head';
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 
-export const Ingresar: React.FC = () => {
+
+const Ingresar: React.FC = () => {
 
     const { theme } = useTheme();
     const [user, setUser] = useState<string>("");
@@ -117,3 +118,5 @@ export const Ingresar: React.FC = () => {
         </>
     )
 }
+
+export default Ingresar;

@@ -5,7 +5,7 @@ import './Dashboard.css';
 import { NavbarDashboard } from "../../components/NavbarDashboard/NavbarDashboard";
 import {Title} from 'react-head';
 
-export const Dashboard: React.FC = () => {
+ const Dashboard: React.FC = () => {
   const [message, setMessage] = useState<string>("");
   const [user, setUser] = useState<string>("");
   const navigate = useNavigate();
@@ -41,3 +41,5 @@ export const Dashboard: React.FC = () => {
     </>
   )
 }
+
+export default Dashboard;

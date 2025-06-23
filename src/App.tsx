@@ -4,16 +4,11 @@ import './App.css'
 import { Loader } from './components/Loader/Loader';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
-import { CircuitoMixto } from './page/CircuitoMixto/CircuitoMixto';
-import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondiciones';
-import { Ingresar } from './page/Ingresar/Ingresar';
 import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
-import { Dashboard } from './page/Dashboard/Dashboard';
 import { PublicRoute } from './components/PublicRoute/PublicRoute';
 
 
 export const App: React.FC = () => {
-  // const [loading, setLoading] = useState<boolean>(true);
 
    const Home = lazy(() => import('./page/Home/Home'));
    const Voltajes = lazy(()=>import('./page/Voltajes/Voltajes'));
@@ -26,6 +21,10 @@ export const App: React.FC = () => {
    const TipoCables = lazy(()=>import('./page/TipoCables/TipoCables'));
    const Formulas = lazy(()=>import('./page/Formulas/Formulas'));
    const Contacto = lazy(()=>import('./page/Contacto/Contacto'));
+   const TerminosCondiciones = lazy(()=>import('./page/TerminosCondiciones/TerminosCondiciones'))
+   const CircuitoMixto = lazy(()=>import('./page/CircuitoMixto/CircuitoMixto'));
+   const Ingresar = lazy(()=>import('./page/Ingresar/Ingresar'));
+   const Dashboard = lazy(()=>import('./page/Dashboard/Dashboard'));
 
    return (
       <>

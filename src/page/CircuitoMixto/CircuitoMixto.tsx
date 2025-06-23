@@ -3,10 +3,12 @@ import './CircuitoMixto.css';
 
 
 
-export const CircuitoMixto:React.FC = ()=>{
+const CircuitoMixto:React.FC = ()=>{
     return(
         <>
         
         </>
     )
 }
+
+export default CircuitoMixto;
