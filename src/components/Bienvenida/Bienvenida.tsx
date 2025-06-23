@@ -7,8 +7,12 @@ import './Bienvenida.css';
 export const Bienvenida: React.FC = () => {
     const frases = [
         "Bienvenido a Tensionar Automatic",
-        "Realiza tus trabajos electricos en tiempo y forma",
-        "Mejora tu productividad mediante la actualizacion",
+        "Transformamos ideas en software funcional",
+        "Soluciones a medida para tu negocio",
+        "Creamos sistemas que funcionan, escalan y te hacen la vida más facil",
+        "Automatizá procesos y ahorrá tiempo con software inteligente",
+        "Bots, scripts y soluciones que hacen el trabajo por vos",
+        "Menos trabajo manual, más eficiencia."
 
     ]
 
