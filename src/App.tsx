@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+//import { useEffect, useState } from 'react'
 import './App.css'
-import { Loader } from './components/Loader/Loader';
+//import { Loader } from './components/Loader/Loader';
 import { Routes,Route } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
 import { Home } from './page/Home/Home';
@@ -22,19 +22,17 @@ import { PublicRoute } from './components/PublicRoute/PublicRoute';
 import { Servicios } from './page/Servicios/Servicios';
 
 export const App:React.FC =()=> {
-  const [loading,setLoading] = useState<boolean>(true);
-
+//  const [loading,setLoading] = useState<boolean>(true);
+ /*
   useEffect(()=>{
     setTimeout(()=>{
         setLoading(false);
     },3500)
-  },[]);
+  },[]);*/
 
   return (
     <>
-       {loading ? (
-          <Loader />
-       ):(
+     
           <Routes>
                <Route element={<Layout />} >
                   <Route path='/' element={<Home />}></Route>
@@ -70,7 +68,7 @@ export const App:React.FC =()=> {
                
           </Routes>
 
-       )}
+       
       
     </>
   )
