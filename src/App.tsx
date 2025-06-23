@@ -1,38 +1,31 @@
 //import { useEffect, useState } from 'react'
-import { Suspense, lazy } from 'react';
+import { lazy,Suspense } from 'react';
 import './App.css'
 import { Loader } from './components/Loader/Loader';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
-import { Voltajes } from './page/Voltajes/Voltajes';
-import { CircuitoParalelo } from './page/CircuitoParalelo/CircuitoParalelo';
-import { CircuitoSerie } from './page/CircuitoSerie/CircuitoSerie';
-import { Potencia } from './page/Potencia/Potencia';
-import { CorrienteMonofasico } from './page/CorrienteMonofasico/CorrienteMonofasico';
-import { CorrienteTrafasico } from './page/CorrienteTrifasico/CorrienteTrifasico';
-import { Formulas } from './page/Formulas/Formulas';
-import { Contacto } from './page/Contacto/Contacto';
 import { CircuitoMixto } from './page/CircuitoMixto/CircuitoMixto';
 import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondiciones';
 import { Ingresar } from './page/Ingresar/Ingresar';
 import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 import { Dashboard } from './page/Dashboard/Dashboard';
-import { TipoCables } from './page/TipoCables/TipoCables';
 import { PublicRoute } from './components/PublicRoute/PublicRoute';
-import { Servicios } from './page/Servicios/Servicios';
+
 
 export const App: React.FC = () => {
   // const [loading, setLoading] = useState<boolean>(true);
 
    const Home = lazy(() => import('./page/Home/Home'));
-   
-
-    /*
-   useEffect(() => {
-      setTimeout(() => {
-         setLoading(false);
-      }, 3500)
-   }, []);*/
+   const Voltajes = lazy(()=>import('./page/Voltajes/Voltajes'));
+   const CircuitoParalelo = lazy(()=>import('./page/CircuitoParalelo/CircuitoParalelo'));
+   const CircuitoSerie = lazy(()=>import('./page/CircuitoSerie/CircuitoSerie'))
+   const Potencia = lazy(()=>import('./page/Potencia/Potencia'));
+   const CorrienteMonofasico = lazy(()=>import('./page/CorrienteMonofasico/CorrienteMonofasico'));
+   const CorrienteTrifasico = lazy(()=>import('./page/CorrienteTrifasico/CorrienteTrifasico'));
+   const Servicios = lazy(()=>import('./page/Servicios/Servicios'));
+   const TipoCables = lazy(()=>import('./page/TipoCables/TipoCables'));
+   const Formulas = lazy(()=>import('./page/Formulas/Formulas'));
+   const Contacto = lazy(()=>import('./page/Contacto/Contacto'));
 
    return (
       <>
@@ -72,7 +65,7 @@ export const App: React.FC = () => {
                <Route path='/circuito-en-serie' element={<CircuitoSerie />} />
                <Route path='/potencia-tension' element={<Potencia />} />
                <Route path='/corriente-monofasico' element={<CorrienteMonofasico />} />
-               <Route path='/corriente-trifasico' element={<CorrienteTrafasico />} />
+               <Route path='/corriente-trifasico' element={<CorrienteTrifasico />} />
                <Route path='/herramientas/formulas-para-electricistas' element={<Formulas />} />
                <Route path='/contacto' element={<Contacto />} />
                <Route path='/circuito-mixto' element={<CircuitoMixto />} />

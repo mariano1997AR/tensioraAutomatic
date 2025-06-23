@@ -7,7 +7,7 @@ import './Contacto.css';
 
 
 
-export const Contacto:React.FC = ()=>{
+const Contacto:React.FC = ()=>{
    
     return(
         <>
@@ -30,3 +30,5 @@ export const Contacto:React.FC = ()=>{
         </>
     )
 }
+
+export default Contacto;

@@ -6,7 +6,7 @@ import { ModalFormulas } from '../../components/ModalFormulas/ModalFormulas';
 
 
 
-export const CircuitoParalelo: React.FC = () => {
+const CircuitoParalelo: React.FC = () => {
     const [resistencia, setResistencia] = useState<string>('R');
     const [itemsResistencias, setItemsResistencias] = useState<number[]>([]);
     const [mostrarResistencia, setMostrarResistencia] = useState<boolean>(false);
@@ -168,3 +168,5 @@ export const CircuitoParalelo: React.FC = () => {
         </>
     )
 }
+
+export default CircuitoParalelo;

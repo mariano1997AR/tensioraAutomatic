@@ -3,10 +3,13 @@ import './CorrienteTrifasico.css';
 
 
 
-export const CorrienteTrafasico:React.FC = ()=>{
+const CorrienteTrifasico:React.FC = ()=>{
     return(
         <>
         
         </>
     )
 }
+
+
+export default CorrienteTrifasico;

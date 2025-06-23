@@ -14,7 +14,7 @@ const cards = [
 ];
 
 
-export const Formulas: React.FC = () => {
+const Formulas: React.FC = () => {
 
 
 
@@ -69,3 +69,5 @@ export const Formulas: React.FC = () => {
         </>
     )
 }
+
+export default Formulas;

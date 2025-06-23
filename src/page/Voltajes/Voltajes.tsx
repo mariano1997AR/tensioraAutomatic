@@ -4,7 +4,7 @@ import './Voltajes.css';
 import { useState } from 'react';
 
 
-export const Voltajes: React.FC = () => {
+const Voltajes: React.FC = () => {
 
     const [voltaje, setVoltaje] = useState<string>("V");
     const [resistencia, setResistencia] = useState<string>("R");
@@ -192,3 +192,5 @@ export const Voltajes: React.FC = () => {
         </>
     )
 }
+
+export default Voltajes;

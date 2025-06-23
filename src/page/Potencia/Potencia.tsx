@@ -3,7 +3,7 @@ import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 import './Potencia.css';
 
 
-export const Potencia: React.FC = () => {
+const Potencia: React.FC = () => {
     const [voltaje, setVoltaje] = useState<string>('V');
     const [corriente, setCorriente] = useState<string>("I");
     const [resistencia, setResistencia] = useState<string>("R");
@@ -122,3 +122,5 @@ export const Potencia: React.FC = () => {
         </>
     )
 }
+
+export default Potencia;

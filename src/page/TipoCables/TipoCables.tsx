@@ -1,7 +1,7 @@
 import './TipoCables.css';
 import { Title, Meta } from 'react-head';
 
-export const TipoCables: React.FC = () => {
+const TipoCables: React.FC = () => {
      return (
           <>
                <Title>Tipo de cables | Tensiora Automatic</Title>
@@ -72,3 +72,5 @@ export const TipoCables: React.FC = () => {
           </>
      )
 }
+
+export default TipoCables;
