@@ -34,7 +34,8 @@ export const App: React.FC = () => {
       <>
          <Routes>
             {loading ? <Loader /> :
-               <>
+
+               <Routes>
                   <Route element={<Layout />} >
                      <Route path='/' element={<Home />}></Route>
                      <Route path='/home' element={<Home />} />
@@ -67,8 +68,10 @@ export const App: React.FC = () => {
 
                   />
 
+               </Routes>
 
-               </>
+
+
 
             }
          </Routes>
