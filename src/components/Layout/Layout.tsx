@@ -1,21 +1,20 @@
 import { Outlet } from "react-router-dom"
 import { NavbarPage } from "../NavbarPage/NavbarPage"
 import { FooterPage } from "../FooterPage/FooterPage"
-//import { FooterPage } from "../FooterPage/FooterPage"
 
 
 
+export const Layout: React.FC = () => {
 
-export const Layout:React.FC = ()=>{
-    return(
+    return (
         <>
-           <NavbarPage />
-           <main>
-              <Outlet />
-           </main>
-           <FooterPage />
-         
-        
+            <NavbarPage />
+            <main>
+                <Outlet />
+            </main>
+            <FooterPage />
+
+
         </>
     )
 }

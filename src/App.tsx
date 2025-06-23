@@ -25,6 +25,7 @@ export const App: React.FC = () => {
   // const [loading, setLoading] = useState<boolean>(true);
 
    const Home = lazy(() => import('./page/Home/Home'));
+   
 
     /*
    useEffect(() => {
@@ -37,13 +38,21 @@ export const App: React.FC = () => {
       <>
 
          <Routes>
-            <Route element={<Layout />} >
+            <Route 
+                element={
+                  <Suspense fallback={<Loader />}>
+                       <Layout />
+                  </Suspense>
+                } 
+                
+                
+                >
                <Route 
                    path='/' 
                    element={
-                     <Suspense fallback={<Loader />}>
+               
                          <Home />
-                     </Suspense>
+                 
                    } 
 
                         
@@ -52,9 +61,9 @@ export const App: React.FC = () => {
                <Route 
                    path='/home' 
                    element={
-                     <Suspense fallback={<Loader />}>
+                 
                         <Home />
-                     </Suspense>
+               
                    } 
                        
                />

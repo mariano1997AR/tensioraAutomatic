@@ -5,6 +5,7 @@ import { useTheme } from '../ThemeContext/ThemeContext';
 
 export const Loader: React.FC = () => {
     const [progress, setProgress] = useState<number>(0);
+    const [loading, setLoading] = useState<boolean>(true);
     const { theme } = useTheme();
 
 
@@ -14,17 +15,27 @@ export const Loader: React.FC = () => {
             setProgress((prev) => {
                 if (prev >= 100) {
                     clearInterval(interval);
+
                 }
                 return prev + 1;
             });
-        }, 30);
+        }, 1);
 
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setLoading(false);
+        }, 3500)
+
+        return () => clearTimeout(timeout);
+    }, []);
+
+
     return (
         <>
-            <section className="container-load" style={{ background: theme === "dark" ? '#222' : '#F2F4F7' }}>
+            {loading && <section className="container-load" style={{ background: theme === "dark" ? '#222' : '#F2F4F7' }}>
                 <section className='text-center mx-2 logo-responsive items-center gap-2 py-2 logo-loader'>
                     <h1 className='text-center py-4'>Tensiora <span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>Automatic</span></h1>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +101,7 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                     <div className="loader-bar" style={{ background: theme === "dark" ? '#FFA55D' : '#60B5FF', width: `${progress}%` }} />
                     <span className="loader-text">{progress}%</span>
                 </section>
-            </section>
+            </section>}
         </>
     )
 }
