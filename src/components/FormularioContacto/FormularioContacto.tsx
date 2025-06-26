@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
 
 
 
-export const FormularioContacto: React.FC = () => {
+export const FormularioContacto = () => {
 
     const { theme } = useTheme();
     const [nombre, setNombre] = useState<string>("");
@@ -20,8 +20,6 @@ export const FormularioContacto: React.FC = () => {
 
     const form = useRef<HTMLFormElement>(null);
 
-
-    //const navigate = useNavigate();
 
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

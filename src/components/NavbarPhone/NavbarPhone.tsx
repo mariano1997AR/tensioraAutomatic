@@ -96,8 +96,8 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                             Herramientas
                         </button>
                         <ul className="dropdown-menu">
-                            <li><Link to='/herramientas/formulas-para-electricistas' className={`dropdown-item  a-link-navbar-responsive `} >Formulas</Link></li>
-                            <li><Link to='/herramientas/tipo-de-cables' className={`dropdown-item  a-link-navbar-responsive`}>Tipo de cables</Link></li>
+                            <li><Link to='/herramientas/demos' className={`dropdown-item  a-link-navbar-responsive `} >Demos</Link></li>
+                            <li><Link to='/herramientas/Productos' className={`dropdown-item  a-link-navbar-responsive`}>Productos</Link></li>
                         </ul>
                     </li>
                     <li><Link to='/servicios' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Servicios</Link></li>

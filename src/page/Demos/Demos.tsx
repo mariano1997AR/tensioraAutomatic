@@ -1,4 +1,4 @@
-import './Formulas.css';
+import './Demos.css';
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 
 import { Title, Meta } from 'react-head';

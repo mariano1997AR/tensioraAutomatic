@@ -12,6 +12,7 @@ import { TiposServicios } from '../../components/TiposServicios/TiposServicios';
 
 export const Home: React.FC = () => {
     const { theme } = useTheme();
+ 
   
     return (
         <>

@@ -2,7 +2,7 @@
   "name": "tensiora",
   "homepage": "https://github.com/mariano1997AR/tensioraAutomatic",
   "private": true,
-  "version": "2.5.9",
+  "version": "2.6.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -24,7 +24,6 @@
     "@tailwindcss/vite": "^4.1.8",
     "axios": "^1.9.0",
     "bootstrap": "^5.3.6",
-    "lite-youtube-embed": "^0.3.3",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-calendly": "^4.4.0",
