@@ -6,6 +6,7 @@ import type { Producto } from './ListaProductos';
 import { useState } from 'react';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 
 export const Productos = () => {
@@ -46,33 +47,54 @@ export const Productos = () => {
         setProductos((prev) => prev.filter((l) => l.id !== id))
     };
 
-    const enviarEmail = () => {
+    const enviarEmail = async () => {
         if (productos.length === 0) {
-            alert('No hay productos para enviar'); //modificar
+         //   alert('No hay productos para enviar'); //modificar
             return;
         }
 
-        const listaFormateada = productos
-            .map((prod, i) => `${i + 1}.${prod.nombre}${prod.completada ? "✅" : ""}`)
-            .join("\n");
+
 
         const templateParams = {
-            user_email: email,
-            product_list: listaFormateada
+            to_email: email,
+            product_list: productos.map((p) => p.nombre).join(', ')
         };
 
-        emailjs
-            .send("service_154g6mb", "template_w6guzf5", templateParams, "Piq7AaS3INx_H6EFB")
-            .then(() => {
-                alert("Lista enviada con exito");
-                setEmail("");
-                setProductos([]);
+        const loadingToast = toast.loading("Estamos preparando sus datos..");
+
+
+        try {
+            await emailjs
+                .send("service_154g6mb", "template_w6guzf5", templateParams, "Piq7AaS3INx_H6EFB")
+                .then(() => {
+                   // alert("Lista enviada con exito");
+                    setEmail("");
+                    setProductos([]);
+                });
+
+            toast.update(loadingToast, {
+                render: "Enviando datos a su casilla de correo",
+                type: "success",
+                isLoading: false,
+                autoClose: 3000,
+                closeButton: true,
             })
 
-            .catch((error) => {
-                console.error("Error al enviar", error);
-                alert("Ocurrio un error al enviar el correo");
-            })
+
+        } catch (error: any) {
+            toast.update(loadingToast, {
+                render: 'Error al enviar el mensaje',
+                type: "error",
+                isLoading: false,
+                autoClose: 4000,
+                closeButton: true,
+            });
+   
+            console.error("Error al enviar", error);
+        }
+
+
+
 
     }
 
@@ -159,8 +181,8 @@ export const Productos = () => {
                                     </section>
                                 </section>
                                 <section>
-                                       <article>
-                                         <h4 className='text-center'>Enviar los datos</h4>
+                                    <article>
+                                        <h4 className='text-center'>Enviar los datos</h4>
                                     </article>
                                 </section>
                                 <section className='container-enviar-email-productos'>
@@ -176,12 +198,13 @@ export const Productos = () => {
                                         `}
                                         />
                                     </article>
-                                
+
                                     <article className='item-enviar-email-right-productos'>
 
                                         <button className='btn-enviar-producto' onClick={enviarEmail}>
                                             ✉️ Enviar por correo
                                         </button>
+                                        <ToastContainer />
                                     </article>
                                 </section>
 
