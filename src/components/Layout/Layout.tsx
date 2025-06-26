@@ -11,8 +11,17 @@ import { Loader } from "../Loader/Loader"
 
 export const Layout: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
+    const [noMostrarRuta,setNoMostrarRuta] = useState<boolean>(true);
     const navigation = useNavigation();
+   
 
+    useEffect(()=>{
+         let timeout = setTimeout(()=>{
+             setNoMostrarRuta(false);
+         },3500);
+
+         return ()=> clearTimeout(timeout);
+    },[])
 
 
     useEffect(() => {
@@ -37,11 +46,12 @@ export const Layout: React.FC = () => {
     return (
         <>
 
-            <main>
-
-                {loading ? <Loader /> : <><NavbarPage /> <section><Outlet /></section>   <FooterPage /></>}
-
-            </main>
+        
+                {noMostrarRuta ? '': <NavbarPage />}
+              
+                {loading ? <Loader /> :  <main><Outlet /></main>}
+                 <FooterPage />
+          
 
 
 
