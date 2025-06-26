@@ -1,4 +1,4 @@
-import { Outlet, useNavigation } from "react-router-dom"
+import { Outlet, useLocation, useNavigation } from "react-router-dom"
 import { NavbarPage } from "../NavbarPage/NavbarPage"
 import { FooterPage } from "../FooterPage/FooterPage"
 import { useEffect, useState } from "react"
@@ -12,7 +12,11 @@ import { Loader } from "../Loader/Loader"
 export const Layout: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [noMostrarRuta,setNoMostrarRuta] = useState<boolean>(true);
+    const location = useLocation();
     const navigation = useNavigation();
+
+      // ✅ Detectar si es un archivo estático
+  const isStaticFile = /\.(xml|png|jpg|jpeg|svg|pdf|json|ico)$/i.test(location.pathname);
    
 
     useEffect(()=>{
@@ -27,7 +31,7 @@ export const Layout: React.FC = () => {
     useEffect(() => {
         let timeout: NodeJS.Timeout;
 
-        if (navigation.state === 'loading') {
+        if (navigation.state === 'loading' && !isStaticFile) {
             setLoading(true);
             timeout = setTimeout(() => {
                 //despues de 3 segundos permitimos ocultar
@@ -41,7 +45,7 @@ export const Layout: React.FC = () => {
         }
 
         return () => clearTimeout(timeout);
-    }, [navigation.state]);
+    }, [navigation.state,isStaticFile]);
 
     return (
         <>
