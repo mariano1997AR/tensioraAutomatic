@@ -85,7 +85,7 @@
     color: #F5F5F5;
 }
 
-.fondo-blanco:hover{
+.fondo-blanco:hover {
     transition: all 1s;
     box-shadow: 10px 10px #222831;
 }
@@ -98,22 +98,54 @@
 
 
 .card-row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .card-column {
-  width: 33.33%;
-  box-sizing: border-box;
-  padding: 1rem;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 1rem;
 }
+
+.carousel-container-demo {
+    /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.carousel-background {
+    overflow: hidden;
+    flex: 50%;
+
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.carousel-content {
+    flex: 50%;
+    background-color: #1A1A19;
+    width: 100%;
+    height: auto;
+}
+.carousel-content p{
+    margin: 500px auto;
+}
+
+
 
 
 /*salir de calculadora*/
 
-.btn-atras-formulas{
+.btn-atras-formulas {
     max-width: 1800px;
     margin: 0 auto;
 }
@@ -131,7 +163,7 @@
     .container-dashboard-responsive {
         margin-left: 6px;
         margin-right: 5px;
-        
+
     }
 
     .section-app-item {
@@ -140,11 +172,11 @@
 
     }
 
-   
-    .btn-atras-formulas{
+
+    .btn-atras-formulas {
         margin-left: 10px;
     }
 
-   
+
 
 }

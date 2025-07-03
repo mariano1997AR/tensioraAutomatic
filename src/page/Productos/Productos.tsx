@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
+import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 
 
 export const Productos = () => {
@@ -103,6 +104,7 @@ export const Productos = () => {
         <>
             <Title>Productos | Tensiora Automatic</Title>
             <section className='container-productos'>
+                <BtnAtras />
                 <section>
                     <h1 className='text-center titulo-producto py-4 '>Productos</h1>
                     <section className='presentacion-productos-flex'>
@@ -134,7 +136,7 @@ export const Productos = () => {
                                     <p className='py-15'>Clasificador de imagenes</p>
                                 </article>
                                 <article className='items-productos-left'>
-                                    <p className='py-15'>Visión Artificial</p>
+                                    <p className='py-15'>Asistente virtual con NPL</p>
                                 </article>
 
                             </section>
@@ -182,7 +184,7 @@ export const Productos = () => {
                                 </section>
                                 <section>
                                     <article>
-                                        <h4 className='text-center'>Enviar los datos</h4>
+                                        <h4 className='text-center py-4'>Enviar los datos</h4>
                                     </article>
                                 </section>
                                 <section className='container-enviar-email-productos'>
@@ -193,7 +195,7 @@ export const Productos = () => {
                                             onChange={(e) => setEmail(e.target.value)}
                                             placeholder='Ingresa tu correo'
                                             className={`
-                                           border p-2 rounded mx-4 input-email-productos
+                                           border p-2 rounded mx-4 input-email-productos 
                                            ${theme === "dark" ? 'placeholder-oscuro' : 'placeholder-claro'}
                                         `}
                                         />

@@ -47,12 +47,12 @@ export const Servicios: React.FC = () => {
                          </ul>
                     </article>
                     <article className='item-servicios' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
-                         <h2 className='text-center py-3 subtitulo' style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} >AI y Machine Learning</h2>
+                         <h2 className='text-center py-3 subtitulo' style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} >Chatbots</h2>
                         
                          <ul>
                               <li> - Chatbots personalizados</li>
-                              <li> - Análisis predictivos</li>
-                              <li> - Visión artificial (reconocimiento de imágenes)</li>
+                              <li> - Chatbots con NPL</li>
+                              <li> - Chatbot con NLP y IA</li>
                               <li> - Clasificación de datos (clientes, productos,etc)</li>
 
                          </ul>
