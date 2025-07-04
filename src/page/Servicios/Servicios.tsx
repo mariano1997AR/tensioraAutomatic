@@ -11,7 +11,7 @@ export const Servicios: React.FC = () => {
             <Meta name='keywords' content='desarrollo web, sistemas a medida, automatización,programador de software, desarrollo backend, IA con Machine Learning, desarrollo de aplicaciones, programador freelance,React,Node.js, php,git '/>
             <Meta name='description' content='Ofrecemos servicios de desarrollo web, automatización,base de datos, AI y Machine Learning y asesoramiento en aplicaciónes' />
             <main>
-                <h1 className='text-center py-4'>Programación</h1>
+                <h1 className='text-center py-4'>Servicios</h1>
                 <section className='container-servicios'>
 
                     <article className='item-servicios' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} >
