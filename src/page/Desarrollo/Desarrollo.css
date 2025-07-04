@@ -183,6 +183,9 @@
     .container-demos-tecnologias-usadas-chatbot {
         flex-direction: column;
     }
+    .container-info-rocketv3 {
+        flex-direction: column;
+    }
 
     .desaparecer-dispositivo {
         display: none;
