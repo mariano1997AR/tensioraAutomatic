@@ -8,7 +8,7 @@ export const NavbarPc: React.FC = () => {
     return (
         <>
             <ul className="menu-links desaparece-dispositivo aparece-PC">
-                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/Home" >Inicio</Link></li>
+                <li className="linea-bottom py-1"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/inicio" >Inicio</Link></li>
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle mb-2 py-1" role="button" data-bs-toggle="dropdown">Herramientas</a>
                     <ul className="dropdown-menu mt-4">

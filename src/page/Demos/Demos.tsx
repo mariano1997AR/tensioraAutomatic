@@ -8,7 +8,6 @@ import tecnologiaClaude from '../../assets/demo/chatbot-with-claude-mejorado.web
 import chatbotRocket from '../../assets/demo/chatbot-with-Rocket-mejorado.webp';
 
 import { Title, Meta } from 'react-head';
-//import { Card3D } from '../../components/Card3D/Card3D';
 import { useTheme } from '../../components/ThemeContext/ThemeContext';
 
 const imagesDemo: string[] = [
@@ -28,15 +27,6 @@ const frases: string[] = [
     "Usando procesamiento de texto con Claude IA "
 ]
 
-{/*
-const cards = [
-    { title: 'Voltaje', linkText: 'Ir a voltaje', to: '/calcularVoltajes' },
-    { title: 'Circuito en Paralelo', linkText: 'Ir a circuito en paralelo', to: '/circuito-en-paralelo' },
-    { title: 'Circuito en Serie', linkText: 'Ir a Circuito en serie', to: '/circuito-en-serie' },
-    { title: 'Circuito Mixto', linkText: 'Ir a Circuito mixto', to: '/circuito-mixto' },
-    { title: 'Potencia', linkText: 'Ir a potencia', to: '/potencia-tension' },
-    { title: 'Corriente Monofasico', linkText: 'Ir a corriente monofasica', to: '/corriente-monofasico' },
-];*/}
 
 
 
@@ -267,24 +257,7 @@ export const Formulas: React.FC = () => {
 
                 </section>
 
-                {/*
-                <section className='container-dashboard-responsive desaparecer-pc'>
-
-                    <section>
-                        <h4 className='text-center py-2 text-2xl'>Demo</h4>
-
-                    </section>
-
-                    <section className='card-row '>
-                        {cards.map((card, index) => (
-                            <div key={index} className="card-column">
-                                <Card3D {...card} />
-                            </div>
-                        ))}
-                    </section>
-
-                </section>*/}
-
+              
             </main>
 
         </>

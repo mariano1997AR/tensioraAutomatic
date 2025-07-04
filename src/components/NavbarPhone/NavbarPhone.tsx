@@ -15,7 +15,7 @@ export const NavbarPhone: React.FC = () => {
 
                 <section className='logo-responsive items-center gap-2' style={{ color: theme === "dark" ? 'white' : 'black' }}>
 
-                    <Link className="a-logo " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/home">
+                    <Link className="a-logo " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/inicio">
                         Tensiora <span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>Automatic</span>
                     </Link>
 
