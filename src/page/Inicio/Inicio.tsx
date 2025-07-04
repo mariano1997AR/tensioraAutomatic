@@ -1,4 +1,4 @@
-import './Home.css';
+import './Inicio.css';
 import { InformacionApp } from '../../components/InformacionApp/InformacionApp';
 import { Banner } from '../../components/Banner/Banner';
 import { TarjetaFlip } from '../../components/TarjetaFlip/TarjetaFlip';
@@ -10,7 +10,7 @@ import { CarrouselMain } from '../../components/CarrouselMain/CarrouselMain';
 import { TiposServicios } from '../../components/TiposServicios/TiposServicios';
 
 
-export const Home: React.FC = () => {
+export const Inicio: React.FC = () => {
     const { theme } = useTheme();
  
   

@@ -38,7 +38,7 @@ export const FooterPage: React.FC = () => {
 
                     <section className='top-line-copy' style={{ borderTopColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                         <ul className='submenu-enterprise-footer'>
-                            <li>Copyright 2025 - Tensionar<span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}> Automatic™</span></li>
+                            <li>Copyright 2025 - Tensiora<span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}> Automatic™</span></li>
                             <li><a></a></li>
                             <li><a></a></li>
                             <li><Link to='/medios-pagos' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} >Medios de Pagos</Link></li>

@@ -4,7 +4,7 @@ import './index.css'
 import { ThemeProvider } from './components/ThemeContext/ThemeContext.tsx';
 import { HeadProvider } from 'react-head';
 import { Layout } from './components/Layout/Layout.tsx';
-import { Home } from './page/Home/Home.tsx';
+import { Inicio } from './page/Inicio/Inicio.tsx';
 import { Contacto } from './page/Contacto/Contacto.tsx';
 import { Servicios } from './page/Servicios/Servicios.tsx';
 import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondiciones.tsx';
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         path:'/',
         element:<Layout />,
         children:[
-            {index:true,element:<Home />},
-            {path:'inicio',element:<Home />},
+            {index:true,element:<Inicio />},
+            {path:'inicio',element:<Inicio />},
             {path:'contacto',element:<Contacto />},
             {path:'servicios',element:<Servicios />},
             {path:'terminos-condiciones',element:<TerminosCondiciones />},

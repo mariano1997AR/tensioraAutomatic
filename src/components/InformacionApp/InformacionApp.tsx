@@ -73,8 +73,8 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                     </section>
                     <section className='item-right-info'>
                         <h2 className='text-center py-2'>¿Qué es Tensiora Automatic?</h2>
-                        <p className='text-2xl'>Tensiora Automatic es una software factory donde ademas realizamos trabajos de automatización para empresas u organizaciones. Donde 
-                            Nos orientamos al desarrollo de aplicaciones web y mobile. Tanto en el software como en el hardware </p>
+                        <p className='text-2xl'>Tensiora Automatic es una empresa que se encarga de automatizar procesos de trabajo repetitivos por medio de asistentes virtuales y chatbot donde ademas realizamos sitios web para empresas u organizaciones. Donde
+                            Nos orientamos al desarrollo de aplicaciones web y mobile. Tanto en el software como en la implementacion de dichos chatbot para el sitio web que lo requiera. </p>
                     </section>
 
 
@@ -160,11 +160,36 @@ l-87 0 50 105 c27 58 49 117 49 131 0 54 -74 92 -123 63z"/>
                         </header>
                     </section>
                     <section className='item-right-info'>
-                        <h2 className='text-center py-2'>¿Comó podemos ayudarte?</h2>
+                        <h2 className='text-center py-2'>¿Comó funciona Tensiora?</h2>
                         <p className='text-2xl' >Vamos a ayudarte a desarrollar tu proyecto u idea para que puedas escalar facilmente donde vas a tener asesoria y recomendacion. Ya que dependiendo el trabajo que desees vas a tener opciones de usar diferentes lenguajes de programacion para la misma creación de la app</p>
                     </section>
 
+                </section>
 
+
+                <section className={`container-flex-informacionApp ${theme === "dark" ? 'fondo-oscuro' : 'fondo-claro'}`} >
+                    <section className='item-left-image' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
+                        <header className='logo-marca' >
+                            <p className='text-2xl mx-3'>Rocket <span className="azul" style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>V3</span></p>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="38.000000pt" height="38.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                                <metadata>
+                                    Created by potrace 1.16, written by Peter Selinger 2001-2019
+                                    <meta name="Producer" content="Online-Convert" /></metadata>
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill={theme === "dark" ? 'white':'black'} stroke="none">
+                                    <path d="M2467 5070 c-98 -25 -190 -102 -235 -198 -24 -50 -27 -70 -27 -157 0 -89 3 -106 27 -155 38 -77 107 -143 184 -177 l64 -27 0 -168 0 -168 -858 0 c-577 0 -878 -4 -917 -11 -119 -22 -215 -93 -264 -198 -23 -49 -26 -71 -29 -173 l-4 -118 -101 0 c-86 0 -110 -4 -152 -24 -59 -27 -108 -74 -135 -131 -20 -40 -20 -63 -20 -961 l0 -920 26 -52 c27 -55 79 -103 138 -127 24 -10 70 -15 140 -15 l104 0 4 -123 c3 -108 7 -128 30 -173 36 -69 69 -106 126 -142 81 -53 139 -62 394 -62 l228 0 0 -354 0 -355 26 -20 c15 -12 39 -21 53 -21 17 0 266 138 677 375 l649 375 895 0 c986 0 965 -1 1062 62 57 36 90 73 126 142 23 45 27 65 30 174 l4 122 104 0 c70 0 116 5 140 15 59 24 111 72 138 127 l26 52 0 920 c0 898 0 921 -20 961 -27 57 -76 104 -135 131 -42 20 -66 24 -152 24 l-101 0 -4 118 c-3 102 -6 124 -29 173 -49 105 -145 176 -264 198 -39 7 -340 11 -917 11 l-858 0 0 168 0 168 64 27 c77 34 146 100 184 177 24 49 27 66 27 155 0 87 -3 107 -27 157 -34 72 -104 143 -174 175 -62 28 -182 39 -247 23z m173 -182 c67 -35 103 -86 108 -156 7 -98 -47 -173 -145 -203 -78 -23 -173 23 -214 103 -31 61 -23 144 17 195 36 46 105 83 154 83 20 0 56 -10 80 -22z m1794 -1063 c22 -11 54 -37 70 -58 l31 -39 3 -1296 c1 -714 0 -1312 -3 -1330 -8 -42 -59 -100 -110 -123 -38 -18 -92 -19 -960 -19 l-920 0 -590 -340 c-324 -187 -590 -340 -591 -340 -2 0 -4 141 -6 314 l-3 314 -24 26 -24 26 -286 0 c-257 0 -290 2 -326 19 -47 22 -89 64 -104 104 -8 20 -11 433 -11 1324 0 1421 -4 1327 59 1387 60 58 -40 55 1936 53 1798 -2 1820 -2 1859 -22z m-4024 -1420 l0 -945 -89 0 c-103 0 -133 16 -151 78 -14 51 -14 1683 0 1734 18 62 48 78 151 78 l89 0 0 -945z m4503 925 c15 -12 31 -38 37 -58 14 -51 14 -1683 0 -1734 -18 -62 -48 -78 -151 -78 l-89 0 0 945 0 945 89 0 c74 0 93 -3 114 -20z" />
+                                    <path d="M1507 3150 c-62 -16 -138 -59 -192 -111 -182 -172 -180 -460 4 -633 199 -185 528 -138 668 95 133 223 44 510 -193 621 -56 26 -80 31 -158 34 -50 2 -108 -1 -129 -6z m198 -177 c56 -19 121 -79 150 -138 28 -57 27 -166 -2 -221 -60 -114 -187 -175 -300 -145 -199 54 -267 298 -124 441 75 75 175 98 276 63z" />
+                                    <path d="M3397 3150 c-197 -50 -339 -246 -324 -450 12 -175 115 -317 277 -382 79 -31 230 -31 313 1 109 43 206 140 247 248 83 215 -16 457 -226 555 -56 26 -80 31 -158 34 -50 2 -108 -1 -129 -6z m195 -176 c151 -51 221 -234 142 -374 -87 -155 -289 -184 -413 -59 -105 105 -106 264 0 370 72 73 173 97 271 63z" />
+                                    <path d="M1962 1797 c-25 -27 -29 -82 -8 -113 20 -27 193 -108 299 -138 264 -76 543 -51 800 72 109 51 127 69 127 122 0 80 -74 102 -165 50 -134 -76 -281 -113 -455 -113 -174 0 -321 37 -455 113 -65 37 -113 39 -143 7z" />
+                                </g>
+                            </svg>
+                        </header>
+                    </section>
+                    <section className='item-right-info'>
+                        <h2 className='text-center py-2'>¿Qué es Rocket V3?</h2>
+                        <p className='text-2xl' >Rocket V3 es nuestro chatbot con NLP donde va a ser su asistente virtual preferido ya que esta optimizado para ser implementado en diferentes rubros donde se necesite. En caso que necesite delegar mas funciones al bot se puede ajustar a sus necesidades como organización. 
+
+                        </p>
+                    </section>
 
                 </section>
 
