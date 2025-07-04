@@ -22,7 +22,7 @@ export const FooterPage: React.FC = () => {
                                 <li className='subtitulo-footer'><b>Nuestra politicas</b></li>
                                 <li><Link to='/terminos-condiciones' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Politicas de privacidad</Link></li>
                                 <li><Link to='/terminos-condiciones' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Terminos y condiciones</Link></li>
-                                <li><Link to='/home' className='link' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Inicio</Link></li>
+                                <li><Link to='/inicio' className='link' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Inicio</Link></li>
                             </ul>
                         </article>
 
