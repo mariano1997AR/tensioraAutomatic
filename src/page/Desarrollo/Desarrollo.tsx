@@ -64,7 +64,7 @@ export const Desarrollo: React.FC = () => {
                 </section>
                 <section>
                     <article>
-                        <h1 className="text-center centrar mostrar" style={{ color: theme === "dark" ? 'white' : 'white' }}>{fraseActual}</h1>
+                        <h1 className="text-center centrar mostrar" style={{ color: theme === "dark" ? 'white' : 'black' }}>{fraseActual}</h1>
                     </article>
                 </section>
                 <section className={` container-dashboard`} >
