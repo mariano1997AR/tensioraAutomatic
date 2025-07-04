@@ -140,20 +140,50 @@
     margin: 0 auto;
 }
 
+/*Bloque de codigo para rocket v3*/
+
+
+.container-info-rocketv3 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-item-left-rocketv3 {
+    flex: 50%;
+    
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.flex-item-right-rocketv3 {
+    flex: 50%;
+
+}
+.imagen-representativa-rocket{
+    border-radius: 100px 100px 100px 100px;
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+.bloque-informacion-rocket{
+    margin: 150px auto;
+}
+
 
 @media (max-width: 860px) {
-    .imagen-logo-tecnologias-demo{
+    .imagen-logo-tecnologias-demo {
         margin-left: 30px;
-       
+
     }
 
 }
 
 
 @media (max-width: 800px) {
-    .container-demos-tecnologias-usadas-chatbot{
+    .container-demos-tecnologias-usadas-chatbot {
         flex-direction: column;
     }
+
     .desaparecer-dispositivo {
         display: none;
     }
@@ -178,26 +208,29 @@
     .btn-atras-formulas {
         margin-left: 10px;
     }
-     .imagen-logo-tecnologias-demo{
+
+    .imagen-logo-tecnologias-demo {
         width: 100%;
-     }
-     .carousel-background{
+    }
+
+    .carousel-background {
         width: 100%;
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 200px;
-     }
+    }
 
 
 
 }
 
 @media (max-width: 1450px) {
-   .carousel-container-demo{
-       flex-direction: column;
-   }
-   .carousel-content{
-     display: none;
-   }
+    .carousel-container-demo {
+        flex-direction: column;
+    }
+
+    .carousel-content {
+        display: none;
+    }
 
 }

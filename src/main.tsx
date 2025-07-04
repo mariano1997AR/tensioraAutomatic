@@ -9,7 +9,7 @@ import { Contacto } from './page/Contacto/Contacto.tsx';
 import { Servicios } from './page/Servicios/Servicios.tsx';
 import { TerminosCondiciones } from './page/TerminosCondiciones/TerminosCondiciones.tsx';
 import { Productos } from './page/Productos/Productos.tsx';
-import { Formulas } from './page/Demos/Demos.tsx';
+import { Desarrollo } from './page/Desarrollo/Desarrollo.tsx';
 
 
 const router = createBrowserRouter([
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
             {path:'servicios',element:<Servicios />},
             {path:'terminos-condiciones',element:<TerminosCondiciones />},
             {path:'herramientas/Productos',element:<Productos />},
-            {path:'herramientas/demos',element:<Formulas />}
+            {path:'herramientas/desarrollo',element:<Desarrollo />}
            
            
         ]

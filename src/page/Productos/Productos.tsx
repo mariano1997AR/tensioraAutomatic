@@ -133,7 +133,7 @@ export const Productos = () => {
                                     <p className='py-15'>Chatbot personalizado</p>
                                 </article>
                                 <article className='items-productos-left'>
-                                    <p className='py-15'>Clasificador de imagenes</p>
+                                    <p className='py-15'>Rocket v1 - Asistente virtual</p>
                                 </article>
                                 <article className='items-productos-left'>
                                     <p className='py-15'>Asistente virtual con NPL</p>
@@ -146,11 +146,11 @@ export const Productos = () => {
                                     <p className='py-15'>Asesorias en tecnologia</p>
                                 </article>
                                 <article className='items-productos-left'>
-                                    <p className='py-15'>Clasificación de datos</p>
+                                    <p className='py-15'>Desarrollo web</p>
                                 </article>
 
                                 <article className='items-productos-left'>
-                                    <p className='py-15'>Algoritmos de data</p>
+                                    <p className='py-15'>Aplicaciones Web</p>
                                 </article>
 
                             </section>

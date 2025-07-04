@@ -12,7 +12,7 @@ export const NavbarPc: React.FC = () => {
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle mb-2 py-1" role="button" data-bs-toggle="dropdown">Herramientas</a>
                     <ul className="dropdown-menu mt-4">
-                        <li><Link className="dropdown-item item-link-menu" to='/herramientas/demos'>Demos</Link></li>
+                        <li><Link className="dropdown-item item-link-menu" to='/herramientas/desarrollo'>Desarrollo</Link></li>
                         <li><Link className='dropdown-item item-link-menu' to='/herramientas/Productos'>Productos</Link></li>
 
                     </ul>
