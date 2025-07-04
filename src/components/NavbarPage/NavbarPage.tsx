@@ -13,7 +13,7 @@ export const NavbarPage: React.FC = () => {
         <>
             <nav className="navbar-container mb-4" style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
                 <header className="logo flex items-center gap-2">
-                    <Link className="a mx-2 " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/home">
+                    <Link className="a mx-2 " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/inicio">
                         Tensiora <span style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}>Automatic </span>
                     </Link>
 

@@ -22,7 +22,7 @@ export const TerminosCondiciones: React.FC = () => {
                     <article className='terminos-condiciones'>
                         <p className='terminos-privacidad text-center'><u>TÉRMINOS Y CONDICIONES DE USO</u></p>
                         <p className='pb-3'><b>Última actualizacion:</b> {day}/{month}/{year}</p>
-                        <p>Estos Términos regular el uso de la aplicación <strong>Tensiora Electric</strong>. Al acceder o usar la app, aceptás estos términos.</p>
+                        <p>Estos Términos regular el uso de la aplicación <strong>Tensiora Automatic</strong>. Al acceder o usar la app, aceptás estos términos.</p>
                     </article>
                     <article className='pb-3 py-3'>
                         <p><b>1. Uso permitido</b></p>

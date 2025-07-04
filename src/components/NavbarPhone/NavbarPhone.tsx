@@ -89,7 +89,7 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                 </section>☰</label>
 
                 <ul className="menu py-1" >
-                    <li><Link to='/home' className={`a-link-navbar-responsive  ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
+                    <li><Link to='/inicio' className={`a-link-navbar-responsive  ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Inicio</Link></li>
                     {/*<li><Link to='/formulas-para-electricistas' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }}>Formulas</Link></li>*/}
                     <li className="dropdown dropend">
                         <button type="button" className="btn  btn-herramientas-toggle dropdown-toggle" style={{ color: theme === "dark" ? 'white' : 'black' }} data-bs-toggle="dropdown">

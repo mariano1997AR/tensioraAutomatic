@@ -15,14 +15,14 @@ export const TiposServicios: React.FC = () => {
                            <h2 className='text-center '>Automatización</h2>
                            <ul className='text-center text-2xl'>
                                <li> 
-                                    - Instalación y configuración de PLCs(controladores lógicos programables)
+                                    - Chatbot con NLP
                                 
                                </li>
                                <li>
-                                   - Configuración y programación de PLCs y HMI.
+                                   - Asistente Virtuales con IA
                                </li>
                                <li>
-                                   - Montajes de tableros eléctricos de control.
+                                   - Chatbot personalizados para diferentes rubros
                                </li>
                            </ul>
 
@@ -32,13 +32,13 @@ export const TiposServicios: React.FC = () => {
                         
                     </article>
                     <article className='left-items-tipos-servicios text-center' style={{ borderColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
-                           <h2 className='text-center'>Programación </h2>
+                           <h2 className='text-center'>Desarrollo </h2>
                            <ul className='text-center text-2xl'>
                                <li> 
                                       - Desarrollo web
                                </li>
                                <li>
-                                     - Automatización y Scripts
+                                     - Asesorias en implementación de bot y chatbot
                                </li>
                                <li>
                                      - Base de datos
