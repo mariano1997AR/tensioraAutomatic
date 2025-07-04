@@ -163,7 +163,7 @@
     border-radius: 100px 100px 100px 100px;
     margin-left: 10px;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .bloque-informacion-rocket{
     margin: 150px auto;
@@ -185,6 +185,11 @@
     }
     .container-info-rocketv3 {
         flex-direction: column;
+    }
+    .flex-item-right-rocketv3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 20px;
     }
 
     .desaparecer-dispositivo {
