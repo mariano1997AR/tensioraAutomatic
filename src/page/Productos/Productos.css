@@ -99,6 +99,8 @@
     margin: 0 auto;
 }
 
+
+
 .btn-enviar-producto {
     margin-top: 15px;
     margin-left: 42%;
@@ -107,6 +109,21 @@
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* bot rocket */
+.bot-rocket-test{
+    width: 100%;
+    height: 500px;
+    border: 1px dotted black;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}
+
+.bot-rocket-test:hover{
+    transition: all 1s ease-in-out;
+    border: 1px solid black;
 }
 
 /*Media querys*/

@@ -8,6 +8,7 @@ import { useTheme } from '../../components/ThemeContext/ThemeContext';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
+import { Chatbot } from '../../components/Chatbot/Chatbot';
 
 
 export const Productos = () => {
@@ -105,6 +106,10 @@ export const Productos = () => {
             <Title>Productos | Tensiora Automatic</Title>
             <section className='container-productos'>
                 <BtnAtras />
+
+                <section className='bot-rocket-test' style={{borderColor:theme === "dark" ? 'white':'black'}}>
+                       <Chatbot />
+                </section>
                 <section>
                     <h1 className='text-center titulo-producto py-4 '>Productos</h1>
                     <section className='presentacion-productos-flex'>

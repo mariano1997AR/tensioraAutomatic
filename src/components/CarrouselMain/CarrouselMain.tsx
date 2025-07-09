@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react';
 import cicloVidaPrograma from '../../assets/carousel/ciclo-vida-desarrollo.webp';
 import tensioraautomatic from '../../assets/carousel/bienvenida.webp';
 import website from '../../assets/carousel/website.webp';
+import presentacionrocket from '../../assets/carousel/presentacion-av-rocket.webp'
 import './CarrouselMain.css';
 
 const images = [
     tensioraautomatic,
     cicloVidaPrograma,
-    website
+    website,
+    presentacionrocket
 ]
 
 
