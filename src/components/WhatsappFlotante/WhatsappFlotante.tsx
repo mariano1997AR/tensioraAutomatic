@@ -9,7 +9,7 @@ export const WhatsappFlotante:React.FC = ()=>{
     const {theme} = useTheme();
     return(
         <>
-           <section>
+           <section className="container-whatsapp">
                 <a 
                    href="https://wa.me/5491133550437?text=Hola,%20quiero%20hablar%20contigo"
                    target="_blank"

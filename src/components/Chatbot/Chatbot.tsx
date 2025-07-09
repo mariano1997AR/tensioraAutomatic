@@ -119,7 +119,7 @@ export const Chatbot = () => {
 
             <div className="fixed flex flex-col  shadow rounded completo">
                 {/* Barra superior */}
-                <section className="barrera-superior  flex justify-between items-center  text-white px-4 py-2 " style={{background:theme === 'dark' ? '#393E46':''}}>
+                <section className="barrera-superior  flex justify-between items-center  text-white px-4 py-2 " style={{background:theme === 'dark' ? '#393E46':'#f5f5f5'}}>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="30.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                             <metadata>
