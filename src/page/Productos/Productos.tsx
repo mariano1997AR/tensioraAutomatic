@@ -17,6 +17,7 @@ export const Productos = () => {
     const [nombre, setNombre] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const { theme } = useTheme();
+    const [visible, setMostrarChatbot] = useState<boolean>(false); //visible 
 
     const agregarProducto = () => {
         if (nombre.trim() === "") return;
@@ -41,6 +42,7 @@ export const Productos = () => {
         )
 
     };
+
 
 
 
@@ -106,11 +108,15 @@ export const Productos = () => {
             <Title>Productos | Tensiora Automatic</Title>
             <section className='container-productos'>
                 <BtnAtras />
-
-                <section className='bot-rocket-test' style={{borderColor:theme === "dark" ? 'white':'black'}}>
-                       <Chatbot />
-                </section>
                 <section>
+                    <h1 className='text-center'>Asistente Virtual</h1>
+                </section>
+                <section className='bot-rocket-test' style={{borderColor:theme === "dark" ? 'white':'black'}}>
+                    
+                       <Chatbot setMostrarChatbot={setMostrarChatbot} />
+                </section>
+                {!visible && (
+                      <section>
                     <h1 className='text-center titulo-producto py-4 '>Productos</h1>
                     <section className='presentacion-productos-flex'>
                         <article className='flex-item-left-productos'>
@@ -221,6 +227,7 @@ export const Productos = () => {
                     </section>
 
                 </section>
+                )}
             </section>
 
         </>

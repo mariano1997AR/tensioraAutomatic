@@ -4,7 +4,7 @@ import type { Msg } from "../types/types";
 import { useTheme } from '../ThemeContext/ThemeContext';
 
 
-export const Chatbot = () => {
+export const Chatbot = ({setMostrarChatbot}:{setMostrarChatbot:(c:boolean) => void}) => {
     const [messages, setMessages] = useState<Msg[]>([]);
     const [input, setInput] = useState<string>("");
     const [isTyping, setIsTyping] = useState<boolean>(false);
@@ -83,7 +83,10 @@ export const Chatbot = () => {
         return (
             <section className=" rocket group ">
                 <button
-                    onClick={() => setVisible(true)}
+                    onClick={() => {
+                        setVisible(true)
+                        setMostrarChatbot(true)
+                    }}
                     className=" btn-bot  sm:bottom-10 md:bottom-6 sm:right-6 w-[18vw] sm:w-20 py-3 pb-3 px-3    max-h-[80vh] sm:max-h-[600px] flex flex-col  "
                 >
                     <section className={`borde-exterior-icon ${theme === 'dark' ? 'shadow-blanco':'shadow-oscuro'}`} style={{borderColor:theme == 'dark' ? 'white':'black'}}>
@@ -117,7 +120,7 @@ export const Chatbot = () => {
     return (
         <>
 
-            <div className="fixed flex flex-col  shadow rounded completo">
+            <div className=" flex flex-col  shadow rounded completo">
                 {/* Barra superior */}
                 <section className="barrera-superior  flex justify-between items-center  text-white px-4 py-2 " style={{background:theme === 'dark' ? '#393E46':'#f5f5f5'}}>
                     <span>
@@ -134,7 +137,10 @@ export const Chatbot = () => {
                         </svg>
 
                     </span>
-                    <button onClick={() => setVisible(false)} className="text-white hover:text-red-300">
+                    <button onClick={() => {
+                        setVisible(false);
+                        setMostrarChatbot(false);
+                    }} className="text-white hover:text-red-300">
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="20.000000pt" height="20.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                             <metadata>
                                 Created by potrace 1.16, written by Peter Selinger 2001-2019
@@ -156,9 +162,10 @@ export const Chatbot = () => {
                                 ? "bg-blue-200 self-end"
                                 : "bg-gray-500 self-start"
                                 }`}
+                            style={{background:theme === "dark" ? '#222831':'#F2F2F2'}}
                                 
                         >
-                            <div className="parrafo-mensaje">{m.from}: {m.text}</div>
+                            <div className="parrafo-mensaje" style={{color:theme === "dark" ? 'white':'black'}}>{m.from}: {m.text}</div>
 
                             {/* Mostrar opciones si las tiene */}
                             {m.options && m.options.length > 0 && (
@@ -195,6 +202,7 @@ export const Chatbot = () => {
                         onChange={(e) => setInput(e.target.value)}
                         onKeyDown={(e) => {
                             if (e.key == "Enter" && input.trim()) {
+                                e.preventDefault();
                                 setMessages((prev) => [...prev, { from: "user", text: input.trim() }]);
                                 sendMessages(input.trim());
                             }
@@ -202,6 +210,7 @@ export const Chatbot = () => {
                         placeholder="Escribe tu mensaje..."
                         style={{color:theme == 'dark' ? 'black':''}}
                         className="flex-1 border rounded px-3 py-2"
+                        autoFocus={false}
                     />
                     <button
                         onClick={() => sendMessages(input.trim())}
