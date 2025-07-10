@@ -7,6 +7,11 @@ import {VitePWA} from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
+  server:{
+    fs:{
+      strict:true,
+    }
+  },
   base:"/tensioraAutomatic/",
   plugins: [
     react(),
