@@ -91,7 +91,7 @@ export const Chatbot = ({setMostrarChatbot}:{setMostrarChatbot:(c:boolean) => vo
                 >
                     <section className={`borde-exterior-icon ${theme === 'dark' ? 'shadow-blanco':'shadow-oscuro'}`} style={{borderColor:theme == 'dark' ? 'white':'black'}}>
                         <section className="icon-robot" style={{ borderColor: theme == 'dark' ? 'white' : 'black' }}>
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100.000000pt" height="100.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                            <svg className='rocket-icon-svg' xmlns="http://www.w3.org/2000/svg" version="1.0" width="100.000000pt" height="100.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                                 <metadata>
                                     Created by potrace 1.16, written by Peter Selinger 2001-2019
                                     <meta name="Producer" content="Online-Convert" /></metadata>
@@ -102,6 +102,7 @@ export const Chatbot = ({setMostrarChatbot}:{setMostrarChatbot:(c:boolean) => vo
                                     <path d="M1993 1355 c-28 -19 -58 -100 -72 -195 -7 -41 -13 -76 -15 -77 -2 -2 -23 1 -47 6 -215 50 -472 -68 -575 -263 l-32 -59 -60 -3 c-65 -4 -157 -34 -193 -63 -22 -18 -24 -18 -85 24 -239 164 -556 130 -754 -81 -114 -122 -160 -241 -160 -413 0 -120 19 -204 50 -221 26 -14 83 -13 103 3 25 17 35 66 24 112 -5 22 -7 80 -5 130 3 75 9 101 35 157 55 117 158 202 283 234 136 35 265 -4 385 -116 62 -58 70 -62 103 -56 23 3 48 18 71 41 66 69 123 86 231 71 47 -7 59 -5 81 12 14 12 31 40 38 64 29 100 108 189 209 236 48 23 71 27 142 27 81 0 91 -3 173 -43 98 -48 124 -48 161 1 18 25 19 31 7 110 -13 89 -6 162 25 249 8 24 12 53 9 65 -13 55 -85 81 -132 48z" />
                                     <path d="M3019 1341 c-33 -33 -36 -56 -14 -108 28 -66 37 -158 24 -244 -12 -74 -11 -81 7 -106 37 -49 63 -49 161 -1 82 40 92 43 173 43 71 0 94 -4 142 -27 101 -47 180 -136 209 -236 7 -24 24 -52 38 -64 22 -17 34 -19 81 -12 109 15 154 2 226 -67 26 -25 53 -42 76 -45 33 -6 41 -1 106 58 80 74 141 106 229 121 171 30 357 -73 435 -240 27 -57 33 -82 36 -158 2 -50 -1 -110 -6 -133 -12 -51 0 -97 28 -112 24 -13 76 -13 100 0 31 17 50 101 50 221 0 172 -46 291 -160 413 -198 211 -515 245 -754 81 -61 -42 -63 -42 -85 -24 -36 29 -128 59 -193 63 l-60 3 -32 59 c-103 195 -360 313 -575 263 -24 -5 -45 -8 -47 -6 -2 1 -8 36 -15 77 -14 95 -44 176 -72 195 -34 24 -75 19 -108 -14z" />
                                 </g>
+                               
                             </svg>
                         </section>
                     </section>
