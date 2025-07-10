@@ -162,10 +162,10 @@ export const Chatbot = ({setMostrarChatbot}:{setMostrarChatbot:(c:boolean) => vo
                                 ? "bg-blue-200 self-end"
                                 : "bg-gray-500 self-start"
                                 }`}
-                            style={{background:theme === "dark" ? '#222831':'#F2F2F2'}}
+                         
                                 
                         >
-                            <div className="parrafo-mensaje" style={{color:theme === "dark" ? 'white':'black'}}>{m.from}: {m.text}</div>
+                            <div className="parrafo-mensaje" style={{color:theme === "dark" ? 'white':'white'}}>{m.from}: {m.text}</div>
 
                             {/* Mostrar opciones si las tiene */}
                             {m.options && m.options.length > 0 && (

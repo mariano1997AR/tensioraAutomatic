@@ -52,11 +52,7 @@ export const FooterPage: React.FC = () => {
                         <li className='li-submenu'><Link to='/terminos-condiciones'  style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} > Términos y Condiciones</Link></li>
                          <li className='li-submenu'><a target='_blank' className='link' style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://wa.me/5491133550437?text=Hola,%20quiero%20hablar%20contigo">Whatsapp</a></li>
                         <li className='li-submenu'><a target="_blank" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://www.linkedin.com/company/tensiora-automatic/?viewAsMember=true">Linkedln</a></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                     
                     </ul>
                 </section>
                 <WhatsappFlotante />
