@@ -107,12 +107,13 @@
        
   }
   .dropdown-menu{
-    padding-left: 10px;
+    padding-left: -10px;
     padding-right: 30px;
   }
    .dropdown-item{
-     padding-right: 20px;
-     padding-left: 20px;
+  
+     margin-right: 5px;
+     
   }
 
 
