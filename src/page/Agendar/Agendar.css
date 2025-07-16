@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-left-item-informacion-calendario{
+    flex: 50%;
+    padding: 10px;
+   
+}
+.flex-right-item-calendario{
+    flex: 50%;
+}
+
+@media (max-width: 1060px) {
+  .container {
+    flex-direction: column;
+  }
+}

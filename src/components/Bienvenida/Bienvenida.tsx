@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Bienvenida.css';
+import { useTheme } from '../ThemeContext/ThemeContext';
 
 
 
@@ -7,30 +8,21 @@ import './Bienvenida.css';
 export const Bienvenida: React.FC = () => {
     const frases = [
         "Bienvenido a Tensiora Automatic",
-        "Transformamos ideas en software funcional",
-        "Soluciones a medida para tu negocio",
-        "Creamos sistemas que funcionan, escalan y te hacen la vida más facil",
-        "Automatizá procesos y ahorrá tiempo con software inteligente",
-        "Bots, scripts y soluciones que hacen el trabajo por vos",
-        "Menos trabajo manual, más eficiencia.",
-        "Prueba nuestro Asistente Virtual Rocket v3"
+        "Automatizá conversaciones, mejorá la experiencia",
+        "Tu asistente virtual 24/7, sin interrupciones",
+        "Conversaciones automáticas que tus clientes van a agradecer",
+        "Tu asistente virtual, listo para resolver dudas en tu organización",
+        "Soporte inteligente para equipos y clientes",
+        "Automatizá soporte. Escalá tu empresa",
+        "Prueba nuestro Asistente Virtual Rocket "
 
     ]
 
-    const ref = useRef<HTMLDivElement>(null);
-    const [visible, setVisible] = useState<boolean>(false);
+ 
     const [fraseActual, setFraseActual] = useState<string>(frases[0]);
+    const {theme} = useTheme();
 
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => setVisible(entry.isIntersecting),
-            { threshold: 0.1 }
-        );
-
-        if (ref.current) observer.observe(ref.current);
-        return () => observer.disconnect();
-    }, []);
 
     useEffect(()=>{
          const interval = setInterval(()=>{
@@ -42,8 +34,8 @@ export const Bienvenida: React.FC = () => {
 
     return (
         <>
-            <section ref={ref} className={`zoom-animado text-center ${visible ? 'visible' : ''}`}>
-                <h1 className='py-4'>Bienvenido a Tensiora </h1>
+            <section className='text-center'>
+                <h1 className='py-4' >Bienvenido a  <span style={{color:theme === "dark" ? '#FFA55D' : '#60B5FF'}}>Tensiora</span></h1>
                 <p className='py-4 text-2xl'>{fraseActual}</p>
             </section>
 

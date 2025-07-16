@@ -17,10 +17,10 @@ export const NavbarPc: React.FC = () => {
 
                     </ul>
                 </li>
-                
 
-                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FFA55D' : '#60B5FF' }} to='/servicios'>Servicios</Link></li>
-                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FFA55D' : '#60B5FF' }} to='/contacto'>Contacto</Link></li>
+
+                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FFA55D' : '#60B5FF' }} to='/clientes'>Clientes</Link></li>
+                <li className="click "><Link className="a mb-2 bordes" style={{ color: theme === "dark" ? '#4A4947' : '#F5F5F5', background: theme === "dark" ? '#FFA55D' : '#60B5FF' }} to='/agendar'>Agendar</Link></li>
                 <li className="switch desaparecer-responsive "><ThemeSwitcher /></li>
             </ul>
 

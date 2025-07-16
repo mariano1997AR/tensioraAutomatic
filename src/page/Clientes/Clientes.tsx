@@ -1,4 +1,4 @@
-import './Ingresar.css';
+import './Clientes.css';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../../components/apis/apis';
@@ -9,7 +9,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import { Title, Meta } from 'react-head';
 import { BtnAtras } from '../../components/BtnAtras/BtnAtras';
 
-export const Ingresar: React.FC = () => {
+export const Clientes: React.FC = () => {
 
     const { theme } = useTheme();
     const [user, setUser] = useState<string>("");
@@ -42,7 +42,7 @@ export const Ingresar: React.FC = () => {
 
     return (
         <>
-            <Title>Ingresar | Tensiora Electric</Title>
+            <Title>Clientes | Tensiora Automatic</Title>
             <Meta name='description' content='Sitio de ingreso para entrar en la aplicacion de tensiora Electric' />
             <Meta name='keywords' content='login de tensiora electric, entrada de tensiora electric, electricos' />
             <main className='container-ingresar-tensiora'>
@@ -52,7 +52,7 @@ export const Ingresar: React.FC = () => {
                 <section className="flex-container-iniciar-sesion">
                     <section className="flex-item-left-sesion" style={{ background: theme === "dark" ? 'white' : '#2C2C2C', border: theme === 'dark' ? '1px white' : 'black' }}>
                         <article>
-                            <h1 className='titulo-bienvenida-tensiora-login' style={{ color: theme === 'dark' ? '#222831' : '#F2F2F2' }}>Bienvenidos! A Tensiora <span className='mx-2' style={{ color: theme === "dark" ? '#222831' : '#60B5FF' }}> Electric</span></h1>
+                            <h1 className='titulo-bienvenida-tensiora-login' style={{ color: theme === 'dark' ? '#222831' : '#F2F2F2' }}>Bienvenidos! A Tensiora <span className='mx-2' style={{ color: theme === "dark" ? '#FFA55D' : '#60B5FF' }}> Automatic</span></h1>
                         </article>
                     </section>
                     <section className="flex-item-right-sesion mx-5">
@@ -92,7 +92,7 @@ export const Ingresar: React.FC = () => {
                                 <FontAwesomeIcon className="i" onClick={toggleMostrar} icon={mostrar ? faEyeSlash : faEye} />
                             </article>
                             <article className="mb-2 ">
-                                <p className="py-2 pt-2 mb-3">¿Aún no eres usuario? </p><Link className="registrarse" style={{ border: theme === "dark" ? "2px solid white" : "2px solid black", color: theme === "dark" ? "#f5f5f5" : "#333" }} to='/prestador'>Se un Prestador</Link>
+                                <p className="py-2 pt-2 mb-3">¿Aún no eres usuario? </p><Link className="registrarse" style={{ border: theme === "dark" ? "2px solid white" : "2px solid black", color: theme === "dark" ? "#f5f5f5" : "#333" }} to='/prestador'>Registrate</Link>
                             </article>
 
                             <button

@@ -100,8 +100,9 @@ m254 -206 c185 -127 137 -398 -80 -450 -150 -36 -299 84 -299 241 0 33 6 74
                             <li><Link to='/herramientas/Productos' className={`dropdown-item  a-link-navbar-responsive`}>Productos</Link></li>
                         </ul>
                     </li>
-                    <li><Link to='/servicios' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Servicios</Link></li>
-                    <li><Link to='/contacto' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Contacto</Link></li>
+                    <li><Link to='/clientes' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Clientes</Link></li>
+                    <li><Link to='/agendar' className={`a-link-navbar-responsive ${theme === "dark" ? 'borde-blanco' : 'borde-negro'}`} style={{ color: theme === "dark" ? 'white' : 'black' }} >Agendar</Link></li>
+                   
                 </ul>
 
             </nav>

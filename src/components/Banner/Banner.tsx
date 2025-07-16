@@ -9,7 +9,7 @@ export const Banner: React.FC = () => {
     return (
         <>
             <section className="container-banner">
-                <section className=" flex-container-iniciar-registro" style={{ background: theme === "dark" ? '#213448' : '#AFDDFF' }}>
+                <section className=" flex-container-iniciar-registro" style={{ background: theme === "dark" ?  '#FFA55D' : '#60B5FF' }}>
                     <article className="flex-item-iniciar-registro-left">
                           <img 
                              src={imagenqr}
@@ -20,7 +20,7 @@ export const Banner: React.FC = () => {
                        
 
                     </article>
-                    <article className="flex-item-iniciar-registro-right py-30 pr-5" >
+                    <article className="flex-item-iniciar-registro-right py-30 pr-5"  >
                         <h3 className="text-center text-2xl "><b className="subtitulo-hover">Escanea el código QR</b></h3>
                         <p className="mb-4 mx-2">
                             Si quieres conocer más de nuestros servicios haz click en el boton de abajo.

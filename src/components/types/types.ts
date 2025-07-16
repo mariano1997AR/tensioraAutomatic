@@ -3,3 +3,14 @@ export type Msg = {
     text: string;
     options?:string[];
 };
+
+export type switchPriceComponent = {
+    checked:boolean;
+    onChange:(checked:boolean) => void;
+}
+
+export type mostrarPrecioProps = {
+    precioOriginal:number;
+    descuento:boolean;
+   
+}

@@ -1,74 +1,291 @@
-.container-flex-informacionApp{
+/* Nuevos cambios en estilos css para el inicio*/
+
+.subtitulo-caracteristica {
+    width: 390px;
+    word-break: break-all;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.2em;
+
+}
+
+.titulo-caracteristica {
+    font-size: 1.3em;
+}
+
+.parrafo-caracteristicas {
+    width: 510px;
+    word-break: break-all;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.container-card-caracteristica {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cards {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+.parrafo-automatizado {
+    width: 320px;
+    word-break: break-all;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.svg-container {
+
+    padding: 15px;
+    border-radius: 50px;
+
+}
+
+.container-precio-servicio {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.cuadro-precio {
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+
+}
+
+.subtitulo-precios {
+    font-size: 2em;
+}
+
+.container-switch-precio {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+.precio-tamanio {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subtitulo-preguntas-frecuentes {
+    font-size: 2.3em;
+}
+
+.container-preguntas-frecuentes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.container-preguntas-frecuentes__icons {
     display: flex;
     flex-direction: row;
-    background-color: #f5f5f5;
-    margin-bottom: 20px;
-
+    margin: 20px auto;
 }
 
-
-.image-informacion{
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    background-attachment: fixed;
-}
-
-.item-left-image{
+.item-svg-image {
     flex: 50%;
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    margin-right: 10px;
-    
-   
-     
+    margin: 10px auto;
+    border-radius: 50px;
+    padding: 10px;
+
 }
 
-.item-left-image:hover{
-    transition: all 1s;
-    border-radius: 30px;
-}
-.item-right-info{
+.item-info-svg {
     flex: 50%;
-  
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    
+    margin-left: 10px;
+
+
 }
 
-.fondo-oscuro{
-    background-color: #222;
+.subtitulo-preguntas {
+    width: 650px;
+
 }
-.logo-marca{
-    width: 500px;
-    height: 300px;
+
+.parrafo-preguntas-frecuentes {
+    width: 600px;
+    word-break: break-all;
+}
+
+.subtitulo-mas-funcionalidades {
+    font-size: 1.4em;
+    margin-top: 150px;
+}
+
+.parrafo-mas-funcionalidades {
+    width: 560px;
+    word-break: break-all;
     margin: 0 auto;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    margin-bottom: 70px;
+    font-size: 0.9em;
+}
+
+.mas-funcionalidad-card {
+    margin-bottom: 70px;
+}
+
+/*web animada con scroll dinamico*/
+.animado {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zoom-animado {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: transform, opacity;
+}
+
+.zoom-animado.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* boton para redirigir hacia login*/
+.btn-ir-login {
+    margin-left: 130px;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 20px;
+}
+
+.btn-ir-login:hover {
+    transition: all 1s ease-in-out;
+    border-radius: 15px;
+
+}
+
+.subtitulo-funcionalidades{
+    font-size: 0.7em;
+    width: 270px;
+    margin-top: 10px;
 }
 
 
 
-@media (max-width: 798px) {
-    .container-flex-informacionApp{
+/*responsive design 768 -- Smartphones */
+@media (max-width: 767px) {
+
+    /*estilos para contenedores*/
+    .container-precio-servicio {
+        display: flex;
         flex-direction: column;
     }
-    .image-informacion{
-        width: 100%;
-        height: 100%;
-        margin: auto;
+
+    .container-card-caracteristica {
+        display: flex;
+        flex-direction: column;
+
     }
-    .item-left-image{
+
+    /* estilos para hijos de los contenedores*/
+    .cuadro-precio {
+        margin: 20px auto;
         width: 100%;
-        
     }
-    .logo-marca{
+
+    .lista-submenu-servicios {
+        text-align: center;
+
+    }
+
+    .lista-submenu-servicios li {
+        padding-bottom: 10px;
+    }
+
+
+
+
+    .parrafo-automatizado {
+        width: 350px;
+        word-break: break-all;
+
+
+    }
+
+    .container-preguntas-frecuentes__icons {
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .container-preguntas-frecuentes {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .item-svg-image {
         width: 100%;
+        border-radius: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
+
+    .svg-responsive {
+        margin: 0 auto;
+
+    }
+
+    .parrafo-caracteristicas {
+        width: 300px;
+        word-break: break-all;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .parrafo-mas-funcionalidades {
+        width: 350px;
+    }
+
+    .item-info-svg {
+        margin-top: 40px;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    .subtitulo-preguntas{
+        width: 350px;
+    }
+    .parrafo-preguntas-frecuentes{
+        width: 349px;
+    }
+
+
+
 
 }

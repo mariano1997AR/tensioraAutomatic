@@ -1,0 +1,35 @@
+.container-presentacion-tensiora{
+    position: relative;
+}
+
+.texto-centrado{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-10%,-50%);
+    font-size: 1.4em;
+}
+
+.img-presentacion-sitio{
+    width: 100%;
+    height: auto;
+}
+.btn-auto {
+   
+    margin-left: 640px;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+   
+}
+
+.btn-auto:hover{
+    transition: all 1s ease-in-out;
+    border-radius: 50px;
+}
+
+.link-ir-clientes{
+    text-decoration: none;
+}
