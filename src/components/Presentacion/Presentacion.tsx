@@ -21,7 +21,7 @@ export const Presentacion = () => {
                              <h1 className="text-center">Automatiza tu negocio con un asistente virtual</h1>
                              <p className="text-center">Deja tus tareas repetitivas en manos de nuestro asistente rocket en donde va a responder a las necesidades que quieras que haga.
                                  No pierdas tiempo con contratar a una persona sino dejala en manos de rocket 
-                                 </p><Link to='/clientes' className="link-ir-clientes text-center btn-auto " style={{borderColor:theme === "dark" ? 'white':'black',color:theme === "dark" ? 'white':'black'}}>Empieza ahora</Link>
+                                 </p><Link to='/agendar' className="link-ir-clientes text-center btn-auto " style={{borderColor:theme === "dark" ? 'white':'black',color:theme === "dark" ? 'white':'black'}}>Empieza ahora</Link>
                        
                         </article>
                     </section>
