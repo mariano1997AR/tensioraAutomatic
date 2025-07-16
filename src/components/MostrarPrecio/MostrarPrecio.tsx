@@ -9,7 +9,6 @@ export const MostrarPrecio = ({ precioOriginal, descuento }: mostrarPrecioProps)
     return (
         <>
 
-
             {descuento ? (
                 <span>
 
