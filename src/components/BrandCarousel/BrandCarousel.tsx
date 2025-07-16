@@ -1,5 +1,4 @@
 import './BrandCarousel.css';
-import claudeia from '../../assets/brands/ClaudeAi-logo.webp';
 import jsLogo from '../../assets/brands/js-logo.webp';
 import nodejslogo from '../../assets/brands/nodejs.webp';
 import reactlogo from '../../assets/brands/react-logo.webp';
@@ -7,11 +6,9 @@ import phplogo from '../../assets/brands/php-logo.webp';
 import typescriptlogo from '../../assets/brands/typescript-logo.webp';
 import donwebcloud from '../../assets/brands/donwebcloud-logo.webp';
 import javalogo from '../../assets/brands/java-logo.webp';
-import siemenslogo from '../../assets/brands/siemens-logo.webp';
 import { useEffect, useRef } from 'react';
 
 const brands = [
-    claudeia,
     jsLogo,
     nodejslogo,
     reactlogo,
@@ -19,7 +16,6 @@ const brands = [
     typescriptlogo,
     donwebcloud,
     javalogo,
-    siemenslogo
 ]
 
 
