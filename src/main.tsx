@@ -11,6 +11,7 @@ import { Productos } from './page/Productos/Productos.tsx';
 import { Desarrollo } from './page/Desarrollo/Desarrollo.tsx';
 import { Clientes } from './page/Clientes/Clientes.tsx';
 import { Agendar } from './page/Agendar/Agendar.tsx';
+import { Dashboard } from './page/Dashboard/Dashboard.tsx';
 
 
 const router = createBrowserRouter([
@@ -24,11 +25,17 @@ const router = createBrowserRouter([
             {path:'terminos-condiciones',element:<TerminosCondiciones />},
             {path:'herramientas/Productos',element:<Productos />},
             {path:'herramientas/desarrollo',element:<Desarrollo />},
-            {path:'agendar',element:<Agendar />}
+            {path:'agendar',element:<Agendar />},
+
 
            
            
-        ]
+        ],
+        
+    },
+    {
+        path:'/dashboard',
+        element:<Dashboard />
     }
 ],{
     basename:'/tensioraAutomatic/'

@@ -1,8 +1,8 @@
 import axios from 'axios';
-
+//https://tensioraapi.onrender.com/
 
 const API  = axios.create({
-    baseURL:'https://tensioraapi.onrender.com/' ,
+    baseURL:'http://localhost:3000/' ,
     withCredentials:true,
     headers:{
         "Content-Type":"application/json"

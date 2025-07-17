@@ -1,0 +1,61 @@
+.container-steOne{
+    width: 100%;
+    height: auto;
+}
+
+.flex-container-form-datos-empresa{
+    display: flex;
+    flex-direction: row;
+}
+
+.item-flex-left-form-datos-empresa{
+    flex: 50%;
+   
+}
+
+.item-flex-right-form-datos-empresa{
+    flex: 50%;
+    margin: 320px auto;
+    text-align: center;
+}
+
+.btn-enviar-datos-organizacion{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.input-dato-empresa{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin: 10px  auto;
+    
+}
+
+.container-form-datos-empresa{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.opcion-pais{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left:20px ;
+}
+
+.telefono-form{
+    margin: 0 auto;
+}
+
+.errors{
+    margin-left: 150px;
+   
+}

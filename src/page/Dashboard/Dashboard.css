@@ -1,0 +1,17 @@
+.container-capas {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+
+.svg-container-carga {
+    margin: 300px auto;
+}
+
+.container-pasos {
+    max-width: 1800px;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    padding-right: 35px;
+}
